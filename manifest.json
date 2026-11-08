@@ -739,15 +739,15 @@
   "title": "Tạo Merkle tree và input cho circuit bỏ phiếu"
  },
  {
-  "id": "12_03",
-  "number": "12.3",
+  "id": "12_04",
+  "number": "12.4",
   "chapter": 12,
   "caption": "Train model MNIST và export sang ONNX cho zkML",
   "tex": "chapters/ch12/main.tex",
-  "line": 776,
+  "line": 823,
   "expected": null,
-  "file": "ch12/ma_nguon_12_03_train_model_mnist_va_export.py",
-  "page": 384,
+  "file": "ch12/ma_nguon_12_04_train_model_mnist_va_export.py",
+  "page": 394,
   "deps": [],
   "title": "Train model MNIST và export sang ONNX cho zkML"
  },
@@ -760,7 +760,7 @@
   "line": 171,
   "expected": "z1 = [1, 12, 3, 9]  thỏa: True\nz2 = [1, 30, 5, 25]  thỏa: True\n\nr = 16\nGộp ngây thơ  z = [17, 7, 83, 21]  thỏa: False\nCross term    T = [93, 0]\nFolded        z = [17, 7, 83, 21]  E = [33, 0]  thỏa: True\n\nr = 41\nFolded lần 2  z = [58, 72, 79, 90]  E = [51, 0]  thỏa: True\n",
   "file": "ch13/ma_nguon_13_01_folding_hai_va_ba_instance.py",
-  "page": 390,
+  "page": 400,
   "deps": [],
   "title": "Folding hai và ba instance relaxed R1CS theo công thức của Nova"
  }

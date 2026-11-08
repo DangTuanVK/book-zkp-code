@@ -1,5 +1,5 @@
 # Mã nguồn 13.1 - Folding hai và ba instance relaxed R1CS theo công thức của Nova
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 13, trang 390
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 13, trang 400
 # Trích tự động từ chapters/ch13/main.tex (dòng 171) bằng extract.py; không sửa tay file này.
 
 # === nova_fold.py – Folding relaxed R1CS (không có commitment) ===
@@ -21,7 +21,7 @@ def hadamard(a, b):
     return [(x * y) % p for x, y in zip(a, b)]
 
 def is_relaxed_sat(z, E):
-    # Kiểm tra (Az) ∘ (Bz) = u·(Cz) + E, với u = z[0]
+    # Kiểm tra (Az) * (Bz) = u·(Cz) + E (nhân từng phần tử), với u = z[0]
     u = z[0]
     lhs = hadamard(mat_vec(A, z), mat_vec(B, z))
     rhs = [(u * c + e) % p for c, e in zip(mat_vec(C, z), E)]
@@ -36,7 +36,7 @@ def fold(z1, E1, z2, E2, r):
     u1, u2 = z1[0], z2[0]
     Az1, Bz1, Cz1 = mat_vec(A, z1), mat_vec(B, z1), mat_vec(C, z1)
     Az2, Bz2, Cz2 = mat_vec(A, z2), mat_vec(B, z2), mat_vec(C, z2)
-    # Cross term T = Az1∘Bz2 + Az2∘Bz1 − u1·Cz2 − u2·Cz1
+    # Cross term T = Az1*Bz2 + Az2*Bz1 − u1·Cz2 − u2·Cz1 (nhân từng phần tử)
     T = [(a1 * b2 + a2 * b1 - u1 * c2 - u2 * c1) % p
          for a1, b1, c1, a2, b2, c2 in zip(Az1, Bz1, Cz1, Az2, Bz2, Cz2)]
     z = [(a + r * b) % p for a, b in zip(z1, z2)]   # gồm u = u1 + r·u2

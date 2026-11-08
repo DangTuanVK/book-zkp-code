@@ -6,7 +6,7 @@ Trạng thái: **KHỚP SÁCH** (chạy được và kết quả trùng với "K
 
 | Mã nguồn | Trang | Nội dung | Trạng thái | Thời gian | Kết quả |
 |---|---|---|---|---|---|
-| 1.1 | 15 | Completeness, soundness error và tấn công grinding | KHỚP SÁCH | 13.6 s | [ma_nguon_1_01.txt](ch01/ma_nguon_1_01.txt) |
+| 1.1 | 15 | Completeness, soundness error và tấn công grinding | KHỚP SÁCH | 14.2 s | [ma_nguon_1_01.txt](ch01/ma_nguon_1_01.txt) |
 | 2.1 | 42 | Các phép toán số học modular cơ bản trong Python | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_2_01.txt](ch02/ma_nguon_2_01.txt) |
 | 2.2 | 43 | Minh họa bài toán logarit rời rạc với số nguyên tố 255-bit | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_2_02.txt](ch02/ma_nguon_2_02.txt) |
 | 2.3 | 48 | Lớp Fp biểu diễn phần tử trường hữu hạn F_p | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_2_03.txt](ch02/ma_nguon_2_03.txt) |
@@ -31,7 +31,7 @@ Trạng thái: **KHỚP SÁCH** (chạy được và kết quả trùng với "K
 | 3.1b | 103 | (phần nối tiếp của Mã nguồn 3.1) | KHỚP SÁCH | 0.0 s | [ma_nguon_3_01b.txt](ch03/ma_nguon_3_01b.txt) |
 | 3.2 | 107 | Schnorr NIZK sử dụng biến đổi Fiat-Shamir | KHỚP SÁCH | 0.0 s | [ma_nguon_3_02.txt](ch03/ma_nguon_3_02.txt) |
 | 3.3 | 109 | Chứng minh DLEQ bằng giao thức Chaum-Pedersen NIZK | KHỚP SÁCH | 0.0 s | [ma_nguon_3_03.txt](ch03/ma_nguon_3_03.txt) |
-| 3.4 | 111 | Đo lường hiệu năng và phân tích tính zero-knowledge, soundness | KHỚP SÁCH | 6.4 s | [ma_nguon_3_04.txt](ch03/ma_nguon_3_04.txt) |
+| 3.4 | 111 | Đo lường hiệu năng và phân tích tính zero-knowledge, soundness | KHỚP SÁCH | 6.5 s | [ma_nguon_3_04.txt](ch03/ma_nguon_3_04.txt) |
 | 4.1 | 125 | Hệ ràng buộc, lỗi thiếu ràng buộc và mẫu IsZero | KHỚP SÁCH | 0.0 s | [ma_nguon_4_01.txt](ch04/ma_nguon_4_01.txt) |
 | 4.2 | 128 | Biểu diễn và tính toán arithmetic circuit cho x^3 + x + 5 = 35 | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_4_02.txt](ch04/ma_nguon_4_02.txt) |
 | 4.3 | 131 | Arithmetization: cổng logic thành đa thức trên F_p, và chi phí của một bộ cộng 8 bit so với phép cộng bản địa | KHỚP SÁCH | 0.0 s | [ma_nguon_4_03.txt](ch04/ma_nguon_4_03.txt) |
@@ -59,5 +59,5 @@ Trạng thái: **KHỚP SÁCH** (chạy được và kết quả trùng với "K
 | 6.3 | 272 | Lab 6.3: So sánh R1CS và PLONKish cho cùng bài toán | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_6_03.txt](ch06/ma_nguon_6_03.txt) |
 | 7.4 | 287 | Lab 7.4: Tổng hợp và so sánh kết quả benchmark | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_7_04.txt](ch07/ma_nguon_7_04.txt) |
 | 8.28 | 314 | Tạo Merkle tree và input cho circuit bỏ phiếu | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_8_28.txt](ch08/ma_nguon_8_28.txt) |
-| 12.3 | 384 | Train model MNIST và export sang ONNX cho zkML | CHẠY ĐƯỢC | 1.3 s | [ma_nguon_12_03.txt](ch12/ma_nguon_12_03.txt) |
-| 13.1 | 390 | Folding hai và ba instance relaxed R1CS theo công thức của Nova | KHỚP SÁCH | 0.0 s | [ma_nguon_13_01.txt](ch13/ma_nguon_13_01.txt) |
+| 12.4 | 394 | Train model MNIST và export sang ONNX cho zkML | CHẠY ĐƯỢC | 1.3 s | [ma_nguon_12_04.txt](ch12/ma_nguon_12_04.txt) |
+| 13.1 | 400 | Folding hai và ba instance relaxed R1CS theo công thức của Nova | KHỚP SÁCH | 0.0 s | [ma_nguon_13_01.txt](ch13/ma_nguon_13_01.txt) |

@@ -28,7 +28,7 @@ C = np.array([[0,   0,  0,  1,  0],    # Constraint 1: w1
              dtype=int)
 
 def check_r1cs(A, B, C, s, p):
-    """Kiểm tra (A·s) ∘ (B·s) = C·s (mod p)."""
+    """Kiểm tra (A·s) * (B·s) = C·s (mod p), nhân từng phần tử."""
     As = A.dot(s) % p
     Bs = B.dot(s) % p
     Cs = C.dot(s) % p
