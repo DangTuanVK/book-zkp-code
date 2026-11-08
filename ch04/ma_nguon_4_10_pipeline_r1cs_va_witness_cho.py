@@ -1,6 +1,6 @@
 # Mã nguồn 4.10 - Pipeline R1CS và witness cho Mini-SNARK
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 174
-# Trích tự động từ chapters/ch4/main.tex (dòng 3925) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch4/main.tex (dòng 3926) bằng extract.py; không sửa tay file này.
 
 # === lab4_minisnark.py – Mini-SNARK end-to-end ===
 # Bài toán: chứng minh biết x sao cho x^3 + x + 5 = 35

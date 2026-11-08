@@ -1,6 +1,6 @@
 # Mã nguồn 4.11 - Nội suy Lagrange chuyển R1CS sang QAP và kiểm tra
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 175
-# Trích tự động từ chapters/ch4/main.tex (dòng 3988) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch4/main.tex (dòng 3989) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 4.10 ---
 import contextlib as _ctx, io as _io

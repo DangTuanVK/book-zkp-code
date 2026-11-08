@@ -1,6 +1,6 @@
 # Mã nguồn 4.12 - Mini-SNARK: tạo và xác minh proof, thử gian lận
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 177
-# Trích tự động từ chapters/ch4/main.tex (dòng 4066) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch4/main.tex (dòng 4067) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 4.11 ---
 import contextlib as _ctx, io as _io
