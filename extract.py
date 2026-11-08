@@ -164,6 +164,11 @@ def main():
         b["deps"] = deps_all.get(b["id"], [])
         b["title"] = plain(b["caption"])
         by_id[b["id"]] = b
+    # Xóa file mã nguồn cũ không còn trong sách (số mã nguồn đổi khi sách sửa)
+    keep = {HERE / b["file"] for b in blocks}
+    for old in HERE.glob("ch[0-9]*/ma_nguon_*.py"):
+        if old not in keep:
+            old.unlink()
     for b in blocks:
         out = HERE / b["file"]
         out.parent.mkdir(parents=True, exist_ok=True)

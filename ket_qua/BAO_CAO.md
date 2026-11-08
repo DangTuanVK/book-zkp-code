@@ -6,7 +6,7 @@ Trạng thái: **KHỚP SÁCH** (chạy được và kết quả trùng với "K
 
 | Mã nguồn | Trang | Nội dung | Trạng thái | Thời gian | Kết quả |
 |---|---|---|---|---|---|
-| 1.1 | 15 | Completeness, soundness error và tấn công grinding | KHỚP SÁCH | 14.2 s | [ma_nguon_1_01.txt](ch01/ma_nguon_1_01.txt) |
+| 1.1 | 15 | Completeness, soundness error và tấn công grinding | KHỚP SÁCH | 14.0 s | [ma_nguon_1_01.txt](ch01/ma_nguon_1_01.txt) |
 | 2.1 | 42 | Các phép toán số học modular cơ bản trong Python | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_2_01.txt](ch02/ma_nguon_2_01.txt) |
 | 2.2 | 43 | Minh họa bài toán logarit rời rạc với số nguyên tố 255-bit | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_2_02.txt](ch02/ma_nguon_2_02.txt) |
 | 2.3 | 48 | Lớp Fp biểu diễn phần tử trường hữu hạn F_p | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_2_03.txt](ch02/ma_nguon_2_03.txt) |

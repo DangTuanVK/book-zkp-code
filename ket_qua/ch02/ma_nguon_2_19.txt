@@ -8,7 +8,7 @@
   f(50) = 92 (nội suy), 92 (thực), match: True
 
 --- Schwartz-Zippel Test ---
-z = 60
-f(z) = 67, g(z) = 70
+z = 81
+f(z) = 76, g(z) = 79
 f(z) == g(z)? False
 → Nếu f ≠ g: f(z) = g(z) chỉ với xác suất ≤ d/p
