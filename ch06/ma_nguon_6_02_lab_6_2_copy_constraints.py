@@ -1,6 +1,6 @@
 # Mã nguồn 6.2 - Lab 6.2: Copy constraints và grand product permutation argument
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 6, trang 271
-# Trích tự động từ chapters/ch6/main.tex (dòng 892) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch6/main.tex (dòng 893) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 6.1 ---
 import contextlib as _ctx, io as _io

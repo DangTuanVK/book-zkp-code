@@ -1,6 +1,6 @@
 # Mã nguồn 6.3 - Lab 6.3: So sánh R1CS và PLONKish cho cùng bài toán
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 6, trang 272
-# Trích tự động từ chapters/ch6/main.tex (dòng 1026) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch6/main.tex (dòng 1027) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 6.2 ---
 import contextlib as _ctx, io as _io

@@ -72,7 +72,7 @@ Chạy vài mã nguồn qua `run_all.py`: `python run_all.py 2_08 4_06`.
 ## Kết quả kiểm tra
 
 Toàn bộ 54 mã nguồn chạy không lỗi với Python 3.10, numpy 2.2, torch 2.5.1.
-Với 27 mã nguồn có in "Kết quả chạy" trong sách, kết quả thực tế trùng từng
+Với 28 mã nguồn có in "Kết quả chạy" trong sách, kết quả thực tế trùng từng
 dòng với sách. Chi tiết trong [ket_qua/BAO_CAO.md](ket_qua/BAO_CAO.md).
 
 Một số mã nguồn dùng số ngẫu nhiên không cố định hạt giống hoặc đo thời gian

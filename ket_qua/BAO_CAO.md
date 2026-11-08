@@ -1,12 +1,12 @@
 # Báo cáo chạy mã nguồn Python của sách
 
-Python 3.10.22; 54 mã nguồn: CHẠY ĐƯỢC 27, KHỚP SÁCH 27.
+Python 3.10.22; 54 mã nguồn: CHẠY ĐƯỢC 26, KHỚP SÁCH 28.
 
 Trạng thái: **KHỚP SÁCH** (chạy được và kết quả trùng với "Kết quả chạy" in trong sách), **CHẠY ĐƯỢC** (sách không in kết quả), **LỆCH SÁCH**, **LỖI**, **TIMEOUT**.
 
 | Mã nguồn | Trang | Nội dung | Trạng thái | Thời gian | Kết quả |
 |---|---|---|---|---|---|
-| 1.1 | 15 | Completeness, soundness error và tấn công grinding | KHỚP SÁCH | 13.4 s | [ma_nguon_1_01.txt](ch01/ma_nguon_1_01.txt) |
+| 1.1 | 15 | Completeness, soundness error và tấn công grinding | KHỚP SÁCH | 15.0 s | [ma_nguon_1_01.txt](ch01/ma_nguon_1_01.txt) |
 | 2.1 | 42 | Các phép toán số học modular cơ bản trong Python | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_2_01.txt](ch02/ma_nguon_2_01.txt) |
 | 2.2 | 43 | Minh họa bài toán logarit rời rạc với số nguyên tố 255-bit | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_2_02.txt](ch02/ma_nguon_2_02.txt) |
 | 2.3 | 48 | Lớp Fp biểu diễn phần tử trường hữu hạn F_p | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_2_03.txt](ch02/ma_nguon_2_03.txt) |
@@ -57,6 +57,6 @@ Trạng thái: **KHỚP SÁCH** (chạy được và kết quả trùng với "K
 | 6.1 | 268 | Lab 6.1: Xây dựng PLONKish gate table và kiểm tra constraints | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_6_01.txt](ch06/ma_nguon_6_01.txt) |
 | 6.2 | 271 | Lab 6.2: Copy constraints và grand product permutation argument | KHỚP SÁCH | 0.0 s | [ma_nguon_6_02.txt](ch06/ma_nguon_6_02.txt) |
 | 6.3 | 272 | Lab 6.3: So sánh R1CS và PLONKish cho cùng bài toán | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_6_03.txt](ch06/ma_nguon_6_03.txt) |
-| 7.4 | 287 | Lab 7.4: Tổng hợp và so sánh kết quả benchmark | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_7_04.txt](ch07/ma_nguon_7_04.txt) |
-| 12.4 | 401 | Train model MNIST và export sang ONNX cho zkML | CHẠY ĐƯỢC | 1.3 s | [ma_nguon_12_04.txt](ch12/ma_nguon_12_04.txt) |
-| 13.1 | 407 | Folding hai và ba instance relaxed R1CS theo công thức của Nova | KHỚP SÁCH | 0.0 s | [ma_nguon_13_01.txt](ch13/ma_nguon_13_01.txt) |
+| 7.4 | 290 | Lab 7.4: Tổng hợp và so sánh kết quả benchmark | KHỚP SÁCH | 0.0 s | [ma_nguon_7_04.txt](ch07/ma_nguon_7_04.txt) |
+| 12.4 | 412 | Train model MNIST và export sang ONNX cho zkML | CHẠY ĐƯỢC | 1.3 s | [ma_nguon_12_04.txt](ch12/ma_nguon_12_04.txt) |
+| 13.1 | 418 | Folding hai và ba instance relaxed R1CS theo công thức của Nova | KHỚP SÁCH | 0.0 s | [ma_nguon_13_01.txt](ch13/ma_nguon_13_01.txt) |
