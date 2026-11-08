@@ -4,3 +4,4 @@
 Root: 40242fd200ea1d2d...
 Proof cho item_3: 3 sibling hashes
 Kết quả xác minh: True
+Cây 5 lá, xác minh từng lá: [True, True, True, True, True]

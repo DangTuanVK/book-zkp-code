@@ -5,8 +5,8 @@
 ==================================================
 CHAUM-PEDERSEN DLEQ NIZK
 ==================================================
-Secret x = 15
-h1 = [x]G = (9, 7)
-h2 = [x]F = (19, 5)
+Secret x = 24
+h1 = [x]G = (7, 3)
+h2 = [x]F = (1, 12)
 DLEQ Proof: valid = True
 Gian lận (x khác nhau): valid = False

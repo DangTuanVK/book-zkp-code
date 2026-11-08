@@ -1,5 +1,5 @@
 # Mã nguồn 4.2 - Biểu diễn và tính toán arithmetic circuit cho x^3 + x + 5 = 35
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 119
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 128
 # Trích tự động từ chapters/ch4/main.tex (dòng 709) bằng extract.py; không sửa tay file này.
 
 # === Arithmetic Circuit đơn giản ===

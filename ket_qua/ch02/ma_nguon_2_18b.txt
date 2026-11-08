@@ -3,7 +3,7 @@
 
 
 --- Pedersen Homomorphic ---
-C(3) + C(7) = (13, 7)
-C(3+7=10) = (13, 7)
+C(3) + C(7) = (12, 19)
+C(3+7=10) = (12, 19)
 Bằng nhau? True
-→ Có thể cộng commitment mà không cần mở!
+→ Có thể cộng commitment mà không cần mở

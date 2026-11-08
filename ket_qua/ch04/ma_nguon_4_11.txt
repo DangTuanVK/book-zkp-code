@@ -2,12 +2,11 @@
 # Lệnh: python ma_nguon_4_11_noi_suy_lagrange_chuyen_r1cs.py   (mã thoát: 0, 0.0 s)
 
 
-=== BƯỚC 3-4: QAP & Setup ===
-τ (toxic waste) = 38
-A(τ) = 34
-B(τ) = 24
-C(τ) = 20
-Z_H(τ) = 3
-P(τ) = A(τ)·B(τ) - C(τ) = 17
-H(τ) = P(τ)/Z_H(τ) = 33
-QAP check: H(τ)·Z_H(τ) = 17 == P(τ)? True
+=== BƯỚC 3: QAP (hệ số từ bậc thấp đến bậc cao) ===
+A(x) = [23, 8, 13], B(x) = [1, 3, 40], C(x) = [28, 24, 39]
+Z_H(x) = [35, 11, 35, 1]
+P(x) = A(x)B(x) - C(x) = [36, 12, 16, 31, 28]
+h(x) = [35, 28], dư = [0] -> P chia hết cho Z_H: True
+
+=== BƯỚC 4: Setup ===
+τ (toxic waste) = 32, SRS = [1, 32, 40], Z_H(τ) = 33

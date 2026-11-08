@@ -1,0 +1,13 @@
+# Mã nguồn 13.1: ch13/ma_nguon_13_01_folding_hai_va_ba_instance.py
+# Lệnh: python ma_nguon_13_01_folding_hai_va_ba_instance.py   (mã thoát: 0, 0.0 s)
+
+z1 = [1, 12, 3, 9]  thỏa: True
+z2 = [1, 30, 5, 25]  thỏa: True
+
+r = 16
+Gộp ngây thơ  z = [17, 7, 83, 21]  thỏa: False
+Cross term    T = [93, 0]
+Folded        z = [17, 7, 83, 21]  E = [33, 0]  thỏa: True
+
+r = 41
+Folded lần 2  z = [58, 72, 79, 90]  E = [51, 0]  thỏa: True

@@ -1,6 +1,6 @@
 # Mã nguồn 2.12 - Tạo và xác minh Merkle proof
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 75
-# Trích tự động từ chapters/ch2/main.tex (dòng 2291) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 77
+# Trích tự động từ chapters/ch2/main.tex (dòng 2343) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 2.11 ---
 import contextlib as _ctx, io as _io
@@ -13,8 +13,10 @@ def get_merkle_proof(tree, index):
     proof = []
     for level in tree[:-1]:
         sibling = index ^ 1  # XOR để lấy anh em
-        if sibling < len(level):
-            proof.append((level[sibling], index % 2))
+        if sibling >= len(level):
+            sibling = index  # Nút lẻ cuối tầng: ghép với chính nó,
+                             # khớp với build_merkle_tree
+        proof.append((level[sibling], index % 2))
         index //= 2
     return proof
 

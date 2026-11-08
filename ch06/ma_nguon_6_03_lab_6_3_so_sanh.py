@@ -1,6 +1,6 @@
 # Mã nguồn 6.3 - Lab 6.3: So sánh R1CS và PLONKish cho cùng bài toán
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 6, trang 255
-# Trích tự động từ chapters/ch6/main.tex (dòng 958) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 6, trang 272
+# Trích tự động từ chapters/ch6/main.tex (dòng 1026) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 6.2 ---
 import contextlib as _ctx, io as _io
@@ -19,7 +19,8 @@ print(f"{'='*55}")
 # R1CS: cần ma trận A, B, C
 # Biến: s = [1, out, x, w1]
 # RC1: x * x = w1        → A=[0,0,1,0], B=[0,0,1,0], C=[0,0,0,1]
-# RC2: (out-w1-x)*1 = 0  → A=[-12%p,1,-1,-1], B=[1,0,0,0], C=[0,0,0,0]
+# RC2: (x + w1) * 1 = out → A=[0,0,1,1], B=[1,0,0,0], C=[0,1,0,0]
+# (out = 12 là public input, gán trực tiếp trong vector s)
 print(f"\nR1CS:")
 print(f"  Biến: s = [1, out, x, w1] = [1, 12, 3, 9]")
 print(f"  Ràng buộc: 2 (1 nhân + 1 output check)")

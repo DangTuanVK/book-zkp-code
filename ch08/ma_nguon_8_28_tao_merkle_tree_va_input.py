@@ -1,19 +1,24 @@
 # Mã nguồn 8.28 - Tạo Merkle tree và input cho circuit bỏ phiếu
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 8, trang 295
-# Trích tự động từ chapters/ch8/main.tex (dòng 1181) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 8, trang 314
+# Trích tự động từ chapters/ch8/main.tex (dòng 1238) bằng extract.py; không sửa tay file này.
 
 # === generate_input.py – Tạo input cho circuit ===
 # (Chạy offline để tạo Merkle tree + witness)
 
 import hashlib, json
 
-# Giả lập Poseidon hash bằng SHA-256 (demo only!)
-# Production: dùng thư viện poseidon-hash thật
+# Bậc của trường vô hướng BN254 (trường mà Circom tính toán)
+R = int("21888242871839275222246405745257275088"
+        "548364400416034343698204186575808495617")
+
+# Giả lập Poseidon bằng SHA-256 (chỉ minh họa flow)
+# Root tính ra KHÔNG khớp với circuit; input thật phải dùng
+# Poseidon của circomlibjs (xem ghi chú sau mã nguồn)
 def mock_poseidon(*args):
     h = hashlib.sha256()
     for a in args:
         h.update(str(a).encode())
-    return int(h.hexdigest(), 16) % (2**254)  # Truncate to field
+    return int(h.hexdigest(), 16) % R  # Đưa về trường BN254
 
 # 4 cử tri đăng ký
 voters = []

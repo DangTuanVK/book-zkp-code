@@ -1,6 +1,6 @@
 # Mã nguồn 4.6 - Chuyển đổi R1CS sang QAP và kiểm tra tính chia hết cho Z_H(x)
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 142
-# Trích tự động từ chapters/ch4/main.tex (dòng 2038) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 152
+# Trích tự động từ chapters/ch4/main.tex (dòng 2031) bằng extract.py; không sửa tay file này.
 
 # === QAP từ R1CS: làm việc với ĐA THỨC, không chỉ giá trị tại một điểm ===
 p = 41
@@ -79,10 +79,10 @@ def qap_polys(s):
 def qap_check(s):
     """Bước 3: s thỏa QAP  <=>  P(x) chia hết cho Z_H(x) (dư bằng 0)."""
     *_, P = qap_polys(s)
-    H, rem = poly_divmod(P, Z)
-    return rem == [0], H, rem
+    h, rem = poly_divmod(P, Z)
+    return rem == [0], h, rem
 
-ok, H, _ = qap_check([1, 35, 3, 9, 27])           # witness đúng, x = 3
-print("Witness đúng (x=3): chia hết =", ok, "| H(x) =", H)
+ok, h, _ = qap_check([1, 35, 3, 9, 27])           # witness đúng, x = 3
+print("Witness đúng (x=3): chia hết =", ok, "| h(x) =", h)
 ok, _, rem = qap_check([1, 35, 4, 16, 64 % p])    # witness sai, x = 4
 print("Witness sai  (x=4): chia hết =", ok, "| dư =", rem)

@@ -1,6 +1,6 @@
 # Mã nguồn 7.4 - Lab 7.4: Tổng hợp và so sánh kết quả benchmark
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 7, trang 269
-# Trích tự động từ chapters/ch7/main.tex (dòng 582) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 7, trang 287
+# Trích tự động từ chapters/ch7/main.tex (dòng 617) bằng extract.py; không sửa tay file này.
 
 # === lab7_results.py – Tổng hợp và trực quan hóa ===
 
@@ -10,7 +10,7 @@ results = {
     'Groth16': {
         'prove_time_s': 1.2,     # Thay bằng số đo được
         'verify_time_ms': 3.5,
-        'proof_size_bytes': 804,  # JSON format, binary ~192
+        'proof_size_bytes': 804,  # dạng JSON; nhị phân BN254: 256 B (không nén), 128 B (nén)
         'setup': 'circuit-specific',
     },
     'PLONK': {
@@ -58,7 +58,7 @@ print(f"\n{'n':>5} {'~Constraints':>15} {'Groth16 (s)':>12} "
       f"{'PLONK (s)':>10}")
 print("-" * 45)
 for n in sizes:
-    constraints = n * 300  # ~300 constraints per Poseidon hash
+    constraints = (n - 1) * 240  # PoseidonChain(n): n-1 lần hash, ~240 constraints/hash
     # Ước tính (thay bằng số đo thực)
     g16_time = n * 0.12
     plonk_time = n * 0.21

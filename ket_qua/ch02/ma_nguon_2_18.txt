@@ -2,11 +2,11 @@
 # Lệnh: python ma_nguon_2_18_pedersen_commitment_cam_ket_va.py   (mã thoát: 0, 0.0 s)
 
 Giá trị bí mật:   v = 5
-Blinding factor:  r = 22
-Commitment:       C = (19, 5)
+Blinding factor:  r = 3
+Commitment:       C = (13, 16)
 
-Prover mở: v=5, r=22
+Prover mở: v=5, r=3
 Verify: True
 
-Thử gian lận: v=10, r=22
+Thử gian lận: v=10, r=10
 Verify: False

@@ -1,6 +1,6 @@
 # Mã nguồn 6.2 - Lab 6.2: Copy constraints và grand product permutation argument
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 6, trang 254
-# Trích tự động từ chapters/ch6/main.tex (dòng 869) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 6, trang 271
+# Trích tự động từ chapters/ch6/main.tex (dòng 892) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 6.1 ---
 import contextlib as _ctx, io as _io
@@ -54,19 +54,37 @@ print(f"  All copies: {'PASS' if copy_ok else 'FAIL'}")
 # ============================================================
 # BƯỚC 5: Grand Product (Permutation Argument)
 # ============================================================
-beta = random.randint(1, p - 1)
-gamma = random.randint(1, p - 1)
+# Cố định hạt giống để kết quả chạy tái lập được
+rng = random.Random(2026)
 
+def factors(values, beta, gamma):
+    # Thừa số tử số (f_i + β·i + γ) và mẫu số (f_i + β·σ(i) + γ)
+    nums = [mod(values[i] + beta * i + gamma) for i in range(len(values))]
+    dens = [mod(values[i] + beta * sigma[i] + gamma)
+            for i in range(len(values))]
+    return nums, dens
+
+def sample_challenges(values):
+    # Chọn (β, γ) ngẫu nhiên; chọn lại nếu có thừa số bằng 0.
+    # Với p = 41, khoảng 20% cặp (β, γ) làm một thừa số bằng 0
+    # (mẫu số 0 thì không nghịch đảo được). Với p cỡ 2^254 như
+    # PLONK thực tế, xác suất này không đáng kể.
+    while True:
+        beta = rng.randint(1, p - 1)
+        gamma = rng.randint(1, p - 1)
+        nums, dens = factors(values, beta, gamma)
+        if 0 not in nums and 0 not in dens:
+            return beta, gamma
+
+beta, gamma = sample_challenges(wire_values)
 print(f"\n=== Grand Product (β={beta}, γ={gamma}) ===")
 
 numerator_prod = 1
 denominator_prod = 1
 Z_acc = [1]  # Z[0] = 1
 
-for i in range(len(wire_values)):
-    f_i = wire_values[i]
-    num_i = mod(f_i + beta * i + gamma)
-    den_i = mod(f_i + beta * sigma[i] + gamma)
+nums, dens = factors(wire_values, beta, gamma)
+for num_i, den_i in zip(nums, dens):
     numerator_prod = mod(numerator_prod * num_i)
     denominator_prod = mod(denominator_prod * den_i)
     Z_next = mod(numerator_prod * inv(denominator_prod))
@@ -82,10 +100,12 @@ bad_wires = wire_values[:]
 bad_wires[4] = 5  # Đổi G2.b từ x=3 thành 5 (sai!)
 print(f"Bad wire values: {bad_wires}")
 
-num_bad, den_bad = 1, 1
-for i in range(len(bad_wires)):
-    num_bad = mod(num_bad * (bad_wires[i] + beta * i + gamma))
-    den_bad = mod(den_bad * (bad_wires[i] + beta * sigma[i] + gamma))
-Z_bad = mod(num_bad * inv(den_bad))
-print(f"  Z[n] = {Z_bad} (should be 1): "
-      f"{'PASS' if Z_bad == 1 else 'FAIL – PHÁT HIỆN GIAN LẬN'}")
+num_bad, den_bad = factors(bad_wires, beta, gamma)
+if 0 in den_bad:
+    print("  Mẫu số bằng 0 → bác bỏ proof")
+else:
+    Z_bad = 1
+    for n_i, d_i in zip(num_bad, den_bad):
+        Z_bad = mod(Z_bad * n_i * inv(d_i))
+    print(f"  Z[n] = {Z_bad} (should be 1): "
+          f"{'PASS' if Z_bad == 1 else 'FAIL – PHÁT HIỆN GIAN LẬN'}")

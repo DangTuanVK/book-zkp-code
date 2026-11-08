@@ -1,6 +1,6 @@
 # Mã nguồn 2.19 - Nội suy Lagrange và kiểm tra Schwartz-Zippel trên F_p
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 83
-# Trích tự động từ chapters/ch2/main.tex (dòng 2764) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 87
+# Trích tự động từ chapters/ch2/main.tex (dòng 2866) bằng extract.py; không sửa tay file này.
 
 # === lab2_polynomial.py – Đa thức trên F_p ===
 import random
@@ -41,9 +41,9 @@ for x_test in [0, 4, 5, 50]:
 def g_secret(x):  # Đa thức khác
     return (3 * x**2 + 7 * x + 5) % p  # Khác f ở hệ số tự do
 
-r = random.randint(0, p - 1)  # Challenge ngẫu nhiên
+z = random.randint(0, p - 1)  # Điểm kiểm tra ngẫu nhiên (challenge)
 print(f"\n--- Schwartz-Zippel Test ---")
-print(f"r = {r}")
-print(f"f(r) = {f_secret(r)}, g(r) = {g_secret(r)}")
-print(f"f(r) == g(r)? {f_secret(r) == g_secret(r)}")
-print(f"→ Nếu khác tại r ngẫu nhiên: f ≠ g (xác suất lỗi ≤ d/p ≈ 0)")
+print(f"z = {z}")
+print(f"f(z) = {f_secret(z)}, g(z) = {g_secret(z)}")
+print(f"f(z) == g(z)? {f_secret(z) == g_secret(z)}")
+print(f"→ Nếu f ≠ g: f(z) = g(z) chỉ với xác suất ≤ d/p")

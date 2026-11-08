@@ -3,5 +3,6 @@
 
 
 === Merkle Commitment ===
-  Committed 16 evaluations
-  Merkle root: 82e637bfd26a5760
+  Cam kết 16 giá trị của t|L, root = 7c39041fada6fb1f
+  Mở vị trí 3: t(L[3]) = 75, đường Merkle 4 hash, hợp lệ: True
+  Mở sai giá trị 76: hợp lệ: False

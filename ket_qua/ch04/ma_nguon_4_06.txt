@@ -1,5 +1,5 @@
 # Mã nguồn 4.6: ch04/ma_nguon_4_06_chuyen_doi_r1cs_sang_qap.py
 # Lệnh: python ma_nguon_4_06_chuyen_doi_r1cs_sang_qap.py   (mã thoát: 0, 0.0 s)
 
-Witness đúng (x=3): chia hết = True | H(x) = [35, 28]
+Witness đúng (x=3): chia hết = True | h(x) = [35, 28]
 Witness sai  (x=4): chia hết = False | dư = [3, 16, 22]

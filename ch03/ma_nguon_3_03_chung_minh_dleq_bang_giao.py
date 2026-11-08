@@ -1,6 +1,6 @@
 # Mã nguồn 3.3 - Chứng minh DLEQ bằng giao thức Chaum-Pedersen NIZK
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 3, trang 102
-# Trích tự động từ chapters/ch3/main.tex (dòng 938) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 3, trang 109
+# Trích tự động từ chapters/ch3/main.tex (dòng 1063) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 3.2 ---
 import contextlib as _ctx, io as _io
@@ -15,7 +15,7 @@ with _ctx.redirect_stdout(_io.StringIO()):
 
 def dleq_nizk_prove(G, F, h1, h2, x, order):
     """DLEQ NIZK: chứng minh h1 = [x]G và h2 = [x]F."""
-    r = random.randint(1, order - 1)
+    r = random.randrange(order)
     a1 = r * G
     a2 = r * F
 

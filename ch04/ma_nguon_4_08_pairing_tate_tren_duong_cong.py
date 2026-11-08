@@ -1,6 +1,6 @@
 # Mã nguồn 4.8 - Pairing Tate trên đường cong tham số nhỏ: vòng lặp Miller (Thuật toán~refalg:miller-loop) và lũy thừa cuối (Thuật toán~refalg:final-exp); kiểm tra tính song tuyến tính
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 166
-# Trích tự động từ chapters/ch4/main.tex (dòng 3471) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 176
+# Trích tự động từ chapters/ch4/main.tex (dòng 3489) bằng extract.py; không sửa tay file này.
 
 # === Pairing Tate trên đường cong tham số nhỏ: vòng lặp Miller + lũy thừa cuối ===
 # E: y^2 = x^3 + x trên F_p, p = 3 (mod 4): đường cong siêu kỳ dị, #E = p + 1,

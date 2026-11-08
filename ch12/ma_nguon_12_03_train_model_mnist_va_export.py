@@ -1,6 +1,6 @@
 # Mã nguồn 12.3 - Train model MNIST và export sang ONNX cho zkML
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 12, trang 364
-# Trích tự động từ chapters/ch12/main.tex (dòng 724) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 12, trang 384
+# Trích tự động từ chapters/ch12/main.tex (dòng 776) bằng extract.py; không sửa tay file này.
 
 # === zkml_demo.py – Train + Export + Prove ===
 import torch

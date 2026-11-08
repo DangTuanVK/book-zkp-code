@@ -1,6 +1,6 @@
 # Mã nguồn 3.1b - (phần nối tiếp của Mã nguồn 3.1)
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 3, trang 98
-# Trích tự động từ chapters/ch3/main.tex (dòng 801) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 3, trang 103
+# Trích tự động từ chapters/ch3/main.tex (dòng 883) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 3.1 ---
 import contextlib as _ctx, io as _io
@@ -14,8 +14,8 @@ with _ctx.redirect_stdout(_io.StringIO()):
 
 def schnorr_interactive_prove_commit(G, order):
     """Bước 1: Prover tạo commitment."""
-    r = random.randint(1, order - 1)  # Randomness bí mật
-    a = r * G                          # Commitment
+    r = random.randrange(order)  # Randomness bí mật, đều trên Z_q
+    a = r * G                    # Commitment
     return a, r  # r giữ bí mật cho bước 3
 
 def schnorr_interactive_challenge(order):
@@ -61,3 +61,9 @@ z_fake = schnorr_interactive_respond(r, e, x_fake, order)
 valid_fake = schnorr_interactive_verify(G, H_public, a, e, z_fake)
 print(f"\nVới witness giả (x={x_fake}): "
       f"{'ACCEPT' if valid_fake else 'REJECT'}")
+
+# --- Extractor: tua lại Prover, hỏi challenge thứ hai ---
+e2 = (e + 1) % order or 1          # challenge khác e
+z2 = schnorr_interactive_respond(r, e2, x_secret, order)
+x_extracted = (z - z2) * pow(e - e2, -1, order) % order
+print(f"Extractor từ (a,{e},{z}) và (a,{e2},{z2}): x = {x_extracted}")

@@ -1,6 +1,6 @@
-# Mã nguồn 4.7 - Ba tấn công lên một ``SNARK'' chỉ gồm QAP: chọn H sau tau, tự chế C', và dò witness khi không làm mù
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 147
-# Trích tự động từ chapters/ch4/main.tex (dòng 2379) bằng extract.py; không sửa tay file này.
+# Mã nguồn 4.7 - Ba tấn công lên một ``SNARK'' chỉ gồm QAP: chọn h sau tau, tự chế C', và dò witness khi không làm mù
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 157
+# Trích tự động từ chapters/ch4/main.tex (dòng 2373) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 4.6 ---
 import contextlib as _ctx, io as _io
@@ -13,17 +13,17 @@ import random
 s_bad = [1, 35, 4, 16, 64 % p]                    # x = 4: KHÔNG thỏa R1CS
 Ax, Bx, Cx, P = qap_polys(s_bad)
 
-# --- Tấn công 1: chọn H SAU khi biết tau ---
+# --- Tấn công 1: chọn h SAU khi biết tau ---
 tau = random.randrange(4, p)                      # tau ngoài {1, 2, 3}
-H_tau = poly_eval(P, tau) * pow(poly_eval(Z, tau), p - 2, p) % p
-print("[1] H chọn sau tau:  qua kiểm tra =",
-      poly_eval(P, tau) == H_tau * poly_eval(Z, tau) % p)
+h_tau = poly_eval(P, tau) * pow(poly_eval(Z, tau), p - 2, p) % p
+print("[1] h chọn sau tau:  qua kiểm tra =",
+      poly_eval(P, tau) == h_tau * poly_eval(Z, tau) % p)
 
-# Nếu H phải cố định TRƯỚC (lấy thương tốt nhất), tau ngẫu nhiên bắt được:
-H, _ = poly_divmod(P, Z)
+# Nếu h phải cố định TRƯỚC (lấy thương tốt nhất), tau ngẫu nhiên bắt được:
+h, _ = poly_divmod(P, Z)
 lot = [t for t in range(4, p)
-       if poly_eval(P, t) == poly_eval(H, t) * poly_eval(Z, t) % p]
-print(f"    H cố định trước: lọt ở {len(lot)}/{p - 4} giá trị tau {lot}")
+       if poly_eval(P, t) == poly_eval(h, t) * poly_eval(Z, t) % p]
+print(f"    h cố định trước: lọt ở {len(lot)}/{p - 4} giá trị tau {lot}")
 
 # --- Tấn công 2: không dùng CÙNG s cho A, B, C ---
 _, C_fake = poly_divmod(poly_mul(Ax, Bx), Z)      # C' = A*B mod Z_H

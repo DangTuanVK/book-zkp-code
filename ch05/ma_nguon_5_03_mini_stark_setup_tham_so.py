@@ -1,6 +1,6 @@
 # Mã nguồn 5.3 - Mini-STARK: Setup (tham số), Prove và Verify với LDE, đa thức hợp thành, DEEP, FRI, grinding và Fiat-Shamir
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 215
-# Trích tự động từ chapters/ch5/main.tex (dòng 1829) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 227
+# Trích tự động từ chapters/ch5/main.tex (dòng 1862) bằng extract.py; không sửa tay file này.
 
 # === Mini-STARK: chứng minh "x_{i+1} = x_i^2, x_0 = 3" qua n bước ===
 # Không zero-knowledge, tham số nhỏ: chỉ để minh họa các bước của thuật toán.

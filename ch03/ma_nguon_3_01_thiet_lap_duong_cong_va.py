@@ -1,6 +1,6 @@
 # Mã nguồn 3.1 - Thiết lập đường cong và sinh cặp khóa cho Schnorr ZKP
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 3, trang 98
-# Trích tự động từ chapters/ch3/main.tex (dòng 760) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 3, trang 103
+# Trích tự động từ chapters/ch3/main.tex (dòng 826) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 2.17 ---
 import contextlib as _ctx, io as _io
@@ -16,25 +16,28 @@ import random
 # --- Tái sử dụng class Fp và ECPoint từ chương 2 ---
 # (giả sử đã import hoặc copy ở trên)
 
+random.seed(2024)  # Cố định hạt giống để kết quả tái lập được
+
 # ============================================================
-# SETUP: Đường cong E(F_23): y^2 = x^3 + x + 1
+# SETUP: Đường cong E(F_23): y^2 = x^3 + x + 4
+# Nhóm điểm có 29 phần tử (số nguyên tố), nên mọi điểm khác O
+# đều là phần tử sinh và Z_29 là một trường: (e1 - e2)^(-1) luôn
+# tồn tại khi e1 != e2, extractor luôn hoạt động.
 # (nhỏ để dễ quan sát – production dùng BN254/BLS12-381)
 # ============================================================
 p = 23
-E = EllipticCurve(a=1, b=1, p=p)
-G = E.point(0, 1)
+E = EllipticCurve(a=1, b=4, p=p)
+G = E.point(0, 2)
 
-# Tìm bậc nhóm (order)
-order = None
+# Tìm bậc của G: số k nhỏ nhất sao cho [k]G = O
+order = 1
 Q = G
-for k in range(1, 100):
-    Q = Q + G if k > 1 else G
-    kG = (k + 1) * G  # Đơn giản: dùng scalar_mult
-# Cách nhanh hơn:
-order = 28  # Đã tính ở lab chương 2
+while not Q.is_infinity:
+    Q = Q + G
+    order += 1
 
-print(f"Đường cong: y^2 = x^3 + x + 1 (mod {p})")
-print(f"Generator G = {G}, order = {order}")
+print(f"Đường cong: y^2 = x^3 + x + 4 (mod {p})")
+print(f"Generator G = {G}, order = {order} (số nguyên tố)")
 
 # ============================================================
 # KEY GENERATION

@@ -1,8 +1,8 @@
 # Mã nguồn 4.7: ch04/ma_nguon_4_07_ba_tan_cong_len_mot.py
 # Lệnh: python ma_nguon_4_07_ba_tan_cong_len_mot.py   (mã thoát: 0, 0.0 s)
 
-[1] H chọn sau tau:  qua kiểm tra = True
-    H cố định trước: lọt ở 0/37 giá trị tau []
+[1] h chọn sau tau:  qua kiểm tra = True
+    h cố định trước: lọt ở 0/37 giá trị tau []
 [2] C' tự chế:       Z_H | A*B - C' = True | C' = sum s_j c_j ? False
 [3] Không làm mù:    x khớp = [3]
     Có làm mù:       41/41 giá trị x đều khả dĩ

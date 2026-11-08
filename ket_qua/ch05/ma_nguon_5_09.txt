@@ -3,30 +3,20 @@
 
 
 === FRI Query Phase ===
-  Query indices: [5, 6, 4]
+[1] Prover trung thực:
+    query 0 (j=7), vòng 1: gấp f[7]=42, f[15]=10 -> 38, tầng sau [7] = 38
+    query 0 (j=7), vòng 2: gấp f[3]=27, f[7]=38 -> 34, tầng sau [3] = 34
+    query 1 (j=6), vòng 1: gấp f[6]=26, f[14]=17 -> 0, tầng sau [6] = 0
+    query 1 (j=6), vòng 2: gấp f[2]=65, f[6]=0 -> 34, tầng sau [2] = 34
+    query 2 (j=0), vòng 1: gấp f[0]=47, f[8]=96 -> 45, tầng sau [0] = 45
+    query 2 (j=0), vòng 2: gấp f[0]=45, f[4]=20 -> 34, tầng sau [0] = 34
+  -> chấp nhận
+[2] Tầng 1 bị sửa:
+    query 0 (j=0), vòng 1: gấp f[0]=47, f[8]=96 -> 45, tầng sau [0] = 46
+  -> từ chối: vòng gấp 1 không nhất quán
 
-  --- Query index 5 ---
-    Round 1: f[10]=4, f[11]=7, alpha=15, next=49
-    Round 2: f[4]=70, f[5]=49, alpha=72, next=71
-    Round 3: f[2]=71, f[3]=56, alpha=6, next=40
-
-  --- Query index 6 ---
-    Round 1: f[12]=58, f[13]=0, alpha=15, next=61
-    Round 2: f[6]=61, f[7]=14, alpha=72, next=56
-    Round 3: f[2]=71, f[3]=56, alpha=6, next=40
-
-  --- Query index 4 ---
-    Round 1: f[8]=91, f[9]=12, alpha=15, next=70
-    Round 2: f[4]=70, f[5]=49, alpha=72, next=71
-    Round 3: f[2]=71, f[3]=56, alpha=6, next=40
-
-  FRI Verify: completed 3 queries
-
-=== So sánh: Witness đúng vs sai ===
-Bad trace: [3, 9, 80, 62]
-Transition check:
-  T[1] = T[0]^2? 9 vs 9 → OK
-  T[2] = T[1]^2? 80 vs 81 → FAIL
-  T[3] = T[2]^2? 62 vs 95 → FAIL
-→ AIR constraint vi phạm → đa thức constraint C(x) ≠ 0
-→ FRI sẽ phát hiện: C(x)/Z_H(x) không phải đa thức bậc thấp
+=== Witness đúng vs sai ===
+  Trace đúng [3, 9, 81, 62]: tầng cuối = [9, 9, 9, 9]
+    -> chấp nhận
+  Trace sai  [3, 9, 80, 62]: tầng cuối = [43, 24, 35, 25]
+    -> từ chối: tầng cuối không phải hằng số

@@ -16,10 +16,10 @@ Copy constraint check:
   wire[6]=12 == wire[σ(6)=5]=12 → OK
   All copies: PASS
 
-=== Grand Product (β=39, γ=6) ===
-  Z accumulator: [1, 13, 9, 11, 9, 1, 15, 1, 1, 1]
+=== Grand Product (β=8, γ=21) ===
+  Z accumulator: [1, 11, 18, 29, 18, 1, 9, 1, 1, 1]
   Z[n] = 1 (should be 1): PASS
 
 --- Thử phá copy constraint ---
 Bad wire values: [3, 3, 9, 9, 5, 12, 12, 0, 0]
-  Z[n] = 36 (should be 1): FAIL – PHÁT HIỆN GIAN LẬN
+  Z[n] = 37 (should be 1): FAIL – PHÁT HIỆN GIAN LẬN

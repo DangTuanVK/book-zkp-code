@@ -1,5 +1,5 @@
 # Mã nguồn 4.1 - Hệ ràng buộc, lỗi thiếu ràng buộc và mẫu IsZero
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 116
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 125
 # Trích tự động từ chapters/ch4/main.tex (dòng 558) bằng extract.py; không sửa tay file này.
 
 # === Ràng buộc = phương trình đa thức P(z) = 0 trên F_p ===

@@ -1,6 +1,6 @@
-# Mã nguồn 5.9 - Lab 5.5: FRI verify - kiểm tra consistency và phát hiện witness sai
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 237
-# Trích tự động từ chapters/ch5/main.tex (dòng 3171) bằng extract.py; không sửa tay file này.
+# Mã nguồn 5.9 - Lab 5.5: FRI verify - kiểm tra tính nhất quán giữa các tầng và phát hiện witness sai
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 251
+# Trích tự động từ chapters/ch5/main.tex (dòng 3282) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 5.8 ---
 import contextlib as _ctx, io as _io
@@ -9,63 +9,61 @@ with _ctx.redirect_stdout(_io.StringIO()):
 # --- Hết phần thêm ---
 
 # ============================================================
-# BƯỚC 5: FRI Verify – Kiểm tra consistency
+# BƯỚC 5: FRI Verify – Query phase
 # ============================================================
+def fri_verify(layers, n_queries=3, verbose=True):
+    """Verifier chỉ đọc vài giá trị (kèm đường Merkle) ở mỗi tầng."""
+    roots = [root for _, _, (root, _) in layers]
+    betas = [challenge("fri", rt) for rt in roots[:-1]]  # tự tính lại beta
+    final = layers[-1][0]
+    if len(set(final)) != 1:                          # tầng cuối phải hằng số
+        return "từ chối: tầng cuối không phải hằng số"
+    N0 = len(layers[0][0])
+    for qi in range(n_queries):
+        j = challenge(*roots, "query", qi) % (N0 // 2)  # vị trí do băm chọn
+        for r in range(len(betas)):
+            vals, xs, (root, tree) = layers[r]
+            h = len(vals) // 2
+            a, b = j % h, j % h + h                    # cặp (x, -x)
+            for i in (a, b):              # Prover mở kèm đường Merkle
+                if not verify_proof(root, i, vals[i], get_proof(tree, i)):
+                    return f"từ chối: Merkle sai ở tầng {r}"
+            u = mod((vals[a] + vals[b]) * inv(2)
+                    + betas[r] * (vals[a] - vals[b]) * inv(2 * xs[a]))
+            nxt = layers[r + 1][0][a]                  # giá trị đã cam kết
+            if verbose:
+                print(f"    query {qi} (j={j}), vòng {r+1}: gấp f[{a}]={vals[a]}, "
+                      f"f[{b}]={vals[b]} -> {u}, tầng sau [{a}] = {nxt}")
+            if u != nxt:
+                return f"từ chối: vòng gấp {r+1} không nhất quán"
+            j = a
+    return "chấp nhận"
 
-print(f"\n=== FRI Query Phase ===")
+print("\n=== FRI Query Phase ===")
+print("[1] Prover trung thực:")
+print(f"  -> {fri_verify(fri_layers)}")
 
-# Verifier chọn q điểm ngẫu nhiên để kiểm tra
-n_queries = 3
-query_indices = random.sample(
-    range(0, len(fri_layers[0][0]) // 2),
-    min(n_queries, len(fri_layers[0][0]) // 2)
-)
-
-print(f"  Query indices: {query_indices}")
-
-all_consistent = True
-for qi in query_indices:
-    print(f"\n  --- Query index {qi} ---")
-    idx = qi
-
-    for round_idx in range(len(alphas)):
-        layer_evals = fri_layers[round_idx][0]
-        next_evals = fri_layers[round_idx + 1][0]
-        alpha = alphas[round_idx]
-
-        # Lấy cặp giá trị
-        idx_pair = idx * 2
-        if idx_pair + 1 < len(layer_evals):
-            f_left = layer_evals[idx_pair]
-            f_right = layer_evals[idx_pair + 1]
-            f_next = next_evals[idx] if idx < len(next_evals) else None
-
-            # Kiểm tra consistency (đơn giản hóa)
-            f_combined = mod(f_left + alpha * f_right)
-            consistent = (f_next is not None)
-
-            print(f"    Round {round_idx+1}: f[{idx_pair}]={f_left}, "
-                  f"f[{idx_pair+1}]={f_right}, "
-                  f"alpha={alpha}, next={f_next}")
-
-        idx = idx // 2
-
-print(f"\n  FRI Verify: completed {n_queries} queries")
+# Prover gian lận: gửi tầng 1 bị sửa (cộng 1 vào mọi giá trị) và cam kết nó
+vals1, xs1, _ = fri_layers[1]
+bad1 = [mod(v + 1) for v in vals1]
+tree1 = build_merkle(bad1)
+v2, x2 = fri_fold(bad1, xs1, challenge("fri", tree1[0]))   # gấp tiếp từ tầng giả
+tampered = [fri_layers[0], (bad1, xs1, tree1), (v2, x2, build_merkle(v2))]
+print("[2] Tầng 1 bị sửa:")
+print(f"  -> {fri_verify(tampered)}")
 
 # ============================================================
-# BƯỚC 6: So sánh – witness đúng vs sai
+# BƯỚC 6: Witness đúng vs sai – FRI trên thương ràng buộc
 # ============================================================
-print(f"\n=== So sánh: Witness đúng vs sai ===")
+def quotient_on_L(tr):
+    """Q(x) = (t(omega x) - t(x)^2) / Z_tr(x) trên L, Z_tr = (x^4-1)/(x - omega^3)."""
+    tl = [lagrange_eval(tr, H, x) for x in L]
+    return [mod((tl[(j + 4) % N] - tl[j] ** 2) * (L[j] - H[-1])
+                * inv(pow(L[j], n, p) - 1)) for j in range(N)]
 
-# Trace sai: a=3 nhưng bước 2 sai
-bad_trace = [3, 9, 80, 62]  # 80 ≠ 81 = 9^2
-print(f"Bad trace: {bad_trace}")
-print(f"Transition check:")
-for i in range(len(bad_trace) - 1):
-    expected = mod(bad_trace[i] ** 2)
-    actual = bad_trace[i + 1]
-    ok = expected == actual
-    print(f"  T[{i+1}] = T[{i}]^2? {actual} vs {expected} → "
-          f"{'OK' if ok else 'FAIL'}")
-print(f"→ AIR constraint vi phạm → đa thức constraint C(x) ≠ 0")
-print(f"→ FRI sẽ phát hiện: C(x)/Z_H(x) không phải đa thức bậc thấp")
+print("\n=== Witness đúng vs sai ===")
+bad_trace = [3, 9, 80, 62]                            # 80 khác 81 = 9^2
+for name, tr in (("Trace đúng", trace), ("Trace sai ", bad_trace)):
+    lay, _ = fri_commit(quotient_on_L(tr), L, rounds=2)
+    print(f"  {name} {tr}: tầng cuối = {lay[-1][0]}")
+    print(f"    -> {fri_verify(lay, verbose=False)}")

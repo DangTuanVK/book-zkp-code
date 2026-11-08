@@ -5,7 +5,7 @@
   "chapter": 1,
   "caption": "Completeness, soundness error và tấn công grinding",
   "tex": "chapters/ch1/main.tex",
-  "line": 726,
+  "line": 731,
   "expected": "k  | trung thực | gian lận  | (1/2)^k\n1  | 1.000      | 0.49870   | 0.50000\n2  | 1.000      | 0.25219   | 0.25000\n5  | 1.000      | 0.03156   | 0.03125\n10 | 1.000      | 0.00103   | 0.00098\n\nk bit | số lần băm trung bình | 2^k\n8     | 251                   | 256\n12    | 3914                  | 4096\n16    | 70837                 | 65536\n",
   "file": "ch01/ma_nguon_1_01_completeness_soundness_error_va_tan.py",
   "page": 15,
@@ -18,10 +18,10 @@
   "chapter": 2,
   "caption": "Các phép toán số học modular cơ bản trong Python",
   "tex": "chapters/ch2/main.tex",
-  "line": 174,
+  "line": 176,
   "expected": null,
   "file": "ch02/ma_nguon_2_01_cac_phep_toan_so_hoc.py",
-  "page": 41,
+  "page": 42,
   "deps": [],
   "title": "Các phép toán số học modular cơ bản trong Python"
  },
@@ -29,14 +29,14 @@
   "id": "2_02",
   "number": "2.2",
   "chapter": 2,
-  "caption": "Minh họa bài toán logarit rời rạc với số nguyên tố 256-bit",
+  "caption": "Minh họa bài toán logarit rời rạc với số nguyên tố 255-bit",
   "tex": "chapters/ch2/main.tex",
-  "line": 206,
+  "line": 208,
   "expected": null,
   "file": "ch02/ma_nguon_2_02_minh_hoa_bai_toan_logarit.py",
-  "page": 42,
+  "page": 43,
   "deps": [],
-  "title": "Minh họa bài toán logarit rời rạc với số nguyên tố 256-bit"
+  "title": "Minh họa bài toán logarit rời rạc với số nguyên tố 255-bit"
  },
  {
   "id": "2_03",
@@ -44,10 +44,10 @@
   "chapter": 2,
   "caption": "Lớp \\texttt{Fp} biểu diễn phần tử trường hữu hạn $\\mathbb{F}_p$",
   "tex": "chapters/ch2/main.tex",
-  "line": 518,
+  "line": 521,
   "expected": null,
   "file": "ch02/ma_nguon_2_03_lop_fp_bieu_dien_phan.py",
-  "page": 47,
+  "page": 48,
   "deps": [],
   "title": "Lớp Fp biểu diễn phần tử trường hữu hạn F_p"
  },
@@ -57,10 +57,10 @@
   "chapter": 2,
   "caption": "Kiểm tra nhóm cyclic $\\mathbb{Z}_7^*$ và phần tử sinh",
   "tex": "chapters/ch2/main.tex",
-  "line": 551,
+  "line": 554,
   "expected": null,
   "file": "ch02/ma_nguon_2_04_kiem_tra_nhom_cyclic_va.py",
-  "page": 47,
+  "page": 48,
   "deps": [],
   "title": "Kiểm tra nhóm cyclic Z_7^* và phần tử sinh"
  },
@@ -70,10 +70,10 @@
   "chapter": 2,
   "caption": "Phép nhân vô hướng trên đường cong Elliptic (double-and-add)",
   "tex": "chapters/ch2/main.tex",
-  "line": 818,
+  "line": 827,
   "expected": null,
   "file": "ch02/ma_nguon_2_05_phep_nhan_vo_huong_tren.py",
-  "page": 51,
+  "page": 53,
   "deps": [],
   "title": "Phép nhân vô hướng trên đường cong Elliptic (double-and-add)"
  },
@@ -83,10 +83,10 @@
   "chapter": 2,
   "caption": "Phép cộng điểm trên đường cong Elliptic $\\mathbb{F}_p$",
   "tex": "chapters/ch2/main.tex",
-  "line": 1070,
+  "line": 1081,
   "expected": null,
   "file": "ch02/ma_nguon_2_06_phep_cong_diem_tren_duong.py",
-  "page": 56,
+  "page": 58,
   "deps": [],
   "title": "Phép cộng điểm trên đường cong Elliptic F_p"
  },
@@ -96,10 +96,10 @@
   "chapter": 2,
   "caption": "Nhân vô hướng double-and-add và tìm bậc nhóm $E(\\mathbb{F}_{23})$",
   "tex": "chapters/ch2/main.tex",
-  "line": 1158,
+  "line": 1169,
   "expected": null,
   "file": "ch02/ma_nguon_2_07_nhan_vo_huong_double_and.py",
-  "page": 57,
+  "page": 59,
   "deps": [
    "2_06"
   ],
@@ -111,10 +111,10 @@
   "chapter": 2,
   "caption": "(phần nối tiếp của Mã nguồn 2.7)",
   "tex": "chapters/ch2/main.tex",
-  "line": 1185,
+  "line": 1196,
   "expected": null,
   "file": "ch02/ma_nguon_2_07b_nhan_vo_huong_double_and_tiep.py",
-  "page": 57,
+  "page": 59,
   "deps": [
    "2_07"
   ],
@@ -126,10 +126,10 @@
   "chapter": 2,
   "caption": "Nội suy Lagrange trên trường hữu hạn $\\mathbb{F}_p$",
   "tex": "chapters/ch2/main.tex",
-  "line": 1495,
+  "line": 1521,
   "expected": null,
   "file": "ch02/ma_nguon_2_08_noi_suy_lagrange_tren_truong.py",
-  "page": 62,
+  "page": 65,
   "deps": [],
   "title": "Nội suy Lagrange trên trường hữu hạn F_p"
  },
@@ -139,10 +139,10 @@
   "chapter": 2,
   "caption": "Minh họa hàm băm SHA-256 với các đầu vào khác nhau",
   "tex": "chapters/ch2/main.tex",
-  "line": 2007,
+  "line": 2046,
   "expected": null,
   "file": "ch02/ma_nguon_2_09_minh_hoa_ham_bam_sha.py",
-  "page": 70,
+  "page": 72,
   "deps": [],
   "title": "Minh họa hàm băm SHA-256 với các đầu vào khác nhau"
  },
@@ -152,10 +152,10 @@
   "chapter": 2,
   "caption": "Hàm hash và xây dựng cây Merkle",
   "tex": "chapters/ch2/main.tex",
-  "line": 2209,
+  "line": 2259,
   "expected": null,
   "file": "ch02/ma_nguon_2_11_ham_hash_va_xay_dung.py",
-  "page": 73,
+  "page": 75,
   "deps": [],
   "title": "Hàm hash và xây dựng cây Merkle"
  },
@@ -165,10 +165,10 @@
   "chapter": 2,
   "caption": "Tạo và xác minh Merkle proof",
   "tex": "chapters/ch2/main.tex",
-  "line": 2291,
+  "line": 2343,
   "expected": null,
   "file": "ch02/ma_nguon_2_12_tao_va_xac_minh_merkle.py",
-  "page": 75,
+  "page": 77,
   "deps": [
    "2_11"
   ],
@@ -178,16 +178,16 @@
   "id": "2_13",
   "number": "2.13",
   "chapter": 2,
-  "caption": "Demo Merkle proof: chứng minh phần tử thuộc cây",
+  "caption": "Demo Merkle proof: chứng minh phần tử thuộc cây 8 lá và cây 5 lá",
   "tex": "chapters/ch2/main.tex",
-  "line": 2404,
+  "line": 2460,
   "expected": null,
   "file": "ch02/ma_nguon_2_13_demo_merkle_proof_chung_minh.py",
-  "page": 76,
+  "page": 79,
   "deps": [
    "2_12"
   ],
-  "title": "Demo Merkle proof: chứng minh phần tử thuộc cây"
+  "title": "Demo Merkle proof: chứng minh phần tử thuộc cây 8 lá và cây 5 lá"
  },
  {
   "id": "2_14",
@@ -195,10 +195,10 @@
   "chapter": 2,
   "caption": "Lớp \\texttt{Fp} hoàn chỉnh: trường hữu hạn $\\mathbb{F}_p$",
   "tex": "chapters/ch2/main.tex",
-  "line": 2546,
+  "line": 2610,
   "expected": null,
   "file": "ch02/ma_nguon_2_14_lop_fp_hoan_chinh_truong.py",
-  "page": 78,
+  "page": 81,
   "deps": [],
   "title": "Lớp Fp hoàn chỉnh: trường hữu hạn F_p"
  },
@@ -208,10 +208,10 @@
   "chapter": 2,
   "caption": "Kiểm tra tính chất trường $\\mathbb{F}_{17}$",
   "tex": "chapters/ch2/main.tex",
-  "line": 2573,
+  "line": 2637,
   "expected": null,
   "file": "ch02/ma_nguon_2_15_kiem_tra_tinh_chat_truong.py",
-  "page": 78,
+  "page": 81,
   "deps": [
    "2_14"
   ],
@@ -223,10 +223,10 @@
   "chapter": 2,
   "caption": "Lớp \\texttt{ECPoint}: điểm trên đường cong Elliptic",
   "tex": "chapters/ch2/main.tex",
-  "line": 2593,
+  "line": 2657,
   "expected": null,
   "file": "ch02/ma_nguon_2_16_lop_ecpoint_diem_tren_duong.py",
-  "page": 80,
+  "page": 83,
   "deps": [
    "2_14"
   ],
@@ -238,10 +238,10 @@
   "chapter": 2,
   "caption": "Lớp \\texttt{EllipticCurve}, tìm bậc nhóm và minh họa ECDLP",
   "tex": "chapters/ch2/main.tex",
-  "line": 2644,
+  "line": 2708,
   "expected": null,
   "file": "ch02/ma_nguon_2_17_lop_ellipticcurve_tim_bac_nhom.py",
-  "page": 80,
+  "page": 83,
   "deps": [
    "2_16"
   ],
@@ -253,10 +253,10 @@
   "chapter": 2,
   "caption": "Pedersen Commitment: cam kết và mở giá trị bí mật",
   "tex": "chapters/ch2/main.tex",
-  "line": 2682,
+  "line": 2760,
   "expected": null,
   "file": "ch02/ma_nguon_2_18_pedersen_commitment_cam_ket_va.py",
-  "page": 82,
+  "page": 85,
   "deps": [
    "2_17"
   ],
@@ -268,10 +268,10 @@
   "chapter": 2,
   "caption": "(phần nối tiếp của Mã nguồn 2.18)",
   "tex": "chapters/ch2/main.tex",
-  "line": 2732,
-  "expected": null,
+  "line": 2815,
+  "expected": "Giá trị bí mật:   v = 5\nBlinding factor:  r = 3\nCommitment:       C = (13, 16)\n\nProver mở: v=5, r=3\nVerify: True\n\nThử gian lận: v=10, r=10\nVerify: False\n\n--- Pedersen Homomorphic ---\nC(3) + C(7) = (12, 19)\nC(3+7=10) = (12, 19)\nBằng nhau? True\n→ Có thể cộng commitment mà không cần mở\n",
   "file": "ch02/ma_nguon_2_18b_pedersen_commitment_cam_ket_va_tiep.py",
-  "page": 82,
+  "page": 85,
   "deps": [
    "2_18"
   ],
@@ -283,10 +283,10 @@
   "chapter": 2,
   "caption": "Nội suy Lagrange và kiểm tra Schwartz-Zippel trên $\\mathbb{F}_p$",
   "tex": "chapters/ch2/main.tex",
-  "line": 2764,
+  "line": 2866,
   "expected": null,
   "file": "ch02/ma_nguon_2_19_noi_suy_lagrange_va_kiem.py",
-  "page": 83,
+  "page": 87,
   "deps": [],
   "title": "Nội suy Lagrange và kiểm tra Schwartz-Zippel trên F_p"
  },
@@ -296,10 +296,10 @@
   "chapter": 3,
   "caption": "Thiết lập đường cong và sinh cặp khóa cho Schnorr ZKP",
   "tex": "chapters/ch3/main.tex",
-  "line": 760,
-  "expected": null,
+  "line": 826,
+  "expected": "Đường cong: y^2 = x^3 + x + 4 (mod 23)\nGenerator G = (0, 2), order = 29 (số nguyên tố)\n\n--- Key Generation ---\nSecret key x = 16\nPublic key H = [x]G = (8, 8)\n",
   "file": "ch03/ma_nguon_3_01_thiet_lap_duong_cong_va.py",
-  "page": 98,
+  "page": 103,
   "deps": [
    "2_17"
   ],
@@ -311,10 +311,10 @@
   "chapter": 3,
   "caption": "(phần nối tiếp của Mã nguồn 3.1)",
   "tex": "chapters/ch3/main.tex",
-  "line": 801,
-  "expected": null,
+  "line": 883,
+  "expected": "==================================================\nSCHNORR INTERACTIVE PROOF\n==================================================\n1. Prover gửi commitment:  a = (7, 20)\n2. Verifier gửi challenge: e = 24\n3. Prover gửi response:    z = 12\n4. Verification: ACCEPT\n\nVới witness giả (x=17): REJECT\nExtractor từ (a,24,12) và (a,25,28): x = 16\n",
   "file": "ch03/ma_nguon_3_01b_thiet_lap_duong_cong_va_tiep.py",
-  "page": 98,
+  "page": 103,
   "deps": [
    "3_01"
   ],
@@ -326,10 +326,10 @@
   "chapter": 3,
   "caption": "Schnorr NIZK sử dụng biến đổi Fiat-Shamir",
   "tex": "chapters/ch3/main.tex",
-  "line": 862,
-  "expected": null,
+  "line": 970,
+  "expected": "==================================================\nSCHNORR NIZK (FIAT-SHAMIR)\n==================================================\nProof: (a=(7, 20), z=23)\nProof size: 2 phần tử\nVerification: ACCEPT\n\n--- Tạo 5 proof khác nhau cho cùng statement ---\n  Proof 1: a=(9, 12), z=4 → True\n  Proof 2: a=(10, 18), z=11 → True\n  Proof 3: a=(4, 7), z=20 → True\n  Proof 4: a=(9, 11), z=15 → True\n  Proof 5: a=(0, 21), z=14 → True\n",
   "file": "ch03/ma_nguon_3_02_schnorr_nizk_su_dung_bien.py",
-  "page": 101,
+  "page": 107,
   "deps": [
    "3_01"
   ],
@@ -341,10 +341,10 @@
   "chapter": 3,
   "caption": "Chứng minh DLEQ bằng giao thức Chaum-Pedersen NIZK",
   "tex": "chapters/ch3/main.tex",
-  "line": 938,
-  "expected": null,
+  "line": 1063,
+  "expected": "==================================================\nCHAUM-PEDERSEN DLEQ NIZK\n==================================================\nSecret x = 24\nh1 = [x]G = (7, 3)\nh2 = [x]F = (1, 12)\nDLEQ Proof: valid = True\nGian lận (x khác nhau): valid = False\n",
   "file": "ch03/ma_nguon_3_03_chung_minh_dleq_bang_giao.py",
-  "page": 102,
+  "page": 109,
   "deps": [
    "3_02"
   ],
@@ -356,10 +356,10 @@
   "chapter": 3,
   "caption": "Đo lường hiệu năng và phân tích tính zero-knowledge, soundness",
   "tex": "chapters/ch3/main.tex",
-  "line": 1005,
-  "expected": null,
+  "line": 1142,
+  "expected": "==================================================\nPHÂN TÍCH HIỆU NĂNG\n==================================================\nTạo 100 proof:   < 1 ms/proof\nVerify 100 proof: < 1 ms/proof\nTất cả valid: True\n\n--- Zero-Knowledge Analysis (HVZK) ---\nSimulator: mọi transcript đều hợp lệ: True\n  Số giá trị z khác nhau: thật 29, giả 29 (tối đa 29)\n  Khoảng cách thống kê (z):     0.019\n  Khoảng cách thống kê (a, e):  0.110\n  Nhiễu lấy mẫu (hai mẫu đều):  0.110\n\n--- Soundness Test ---\nBrute-force 1000 proof ngẫu nhiên: 26 accepted\nXác suất: 0.0260 (expected ~1/29 ≈ 0.0345)\n",
   "file": "ch03/ma_nguon_3_04_do_luong_hieu_nang_va.py",
-  "page": 103,
+  "page": 111,
   "deps": [
    "3_02"
   ],
@@ -374,7 +374,7 @@
   "line": 558,
   "expected": "a=1, b=6: True\na=3, b=2: False\n\nThiếu ràng buộc, x=50: True\nĐầy đủ,         x=50: False\nĐầy đủ,         x=3 : True\n\nIsZero(0) = 1, hợp lệ: True\nIsZero(5) = 0, hợp lệ: True\na=5, out=1 với mọi u: False\n",
   "file": "ch04/ma_nguon_4_01_he_rang_buoc_loi_thieu.py",
-  "page": 116,
+  "page": 125,
   "deps": [],
   "title": "Hệ ràng buộc, lỗi thiếu ràng buộc và mẫu IsZero"
  },
@@ -387,7 +387,7 @@
   "line": 709,
   "expected": null,
   "file": "ch04/ma_nguon_4_02_bieu_dien_va_tinh_toan.py",
-  "page": 119,
+  "page": 128,
   "deps": [],
   "title": "Biểu diễn và tính toán arithmetic circuit cho x^3 + x + 5 = 35"
  },
@@ -400,7 +400,7 @@
   "line": 872,
   "expected": "Bảng chân trị NOT/AND/OR/XOR: khớp trên {0,1}\nadd8(200, 99) = 43  (đúng: 43), dùng 40 cổng nhân\nCộng trực tiếp trên F_p: 299, dùng 0 cổng nhân\n",
   "file": "ch04/ma_nguon_4_03_arithmetization_cong_logic_thanh_da.py",
-  "page": 121,
+  "page": 131,
   "deps": [],
   "title": "Arithmetization: cổng logic thành đa thức trên F_p, và chi phí của một bộ cộng 8 bit so với phép cộng bản địa"
  },
@@ -413,7 +413,7 @@
   "line": 1213,
   "expected": "Phép toán                      Thẳng  Tối ưu\nNghịch đảo trong F_p             121       1\nKiểm tra x < 2^64                 64       4\nĐọc arr[idx], n = 1024          2048       2\n",
   "file": "ch04/ma_nguon_4_04_dem_so_rang_buoc_cua.py",
-  "page": 128,
+  "page": 138,
   "deps": [],
   "title": "Đếm số ràng buộc của ba cặp cách biên dịch: thẳng và tối ưu"
  },
@@ -423,10 +423,10 @@
   "chapter": 4,
   "caption": "Xây dựng và kiểm tra hệ ràng buộc R1CS",
   "tex": "chapters/ch4/main.tex",
-  "line": 1668,
+  "line": 1657,
   "expected": null,
   "file": "ch04/ma_nguon_4_05_xay_dung_va_kiem_tra.py",
-  "page": 135,
+  "page": 145,
   "deps": [],
   "title": "Xây dựng và kiểm tra hệ ràng buộc R1CS"
  },
@@ -436,10 +436,10 @@
   "chapter": 4,
   "caption": "Chuyển đổi R1CS sang QAP và kiểm tra tính chia hết cho $Z_H(x)$",
   "tex": "chapters/ch4/main.tex",
-  "line": 2038,
-  "expected": "Witness đúng (x=3): chia hết = True | H(x) = [35, 28]\nWitness sai  (x=4): chia hết = False | dư = [3, 16, 22]\n",
+  "line": 2031,
+  "expected": "Witness đúng (x=3): chia hết = True | h(x) = [35, 28]\nWitness sai  (x=4): chia hết = False | dư = [3, 16, 22]\n",
   "file": "ch04/ma_nguon_4_06_chuyen_doi_r1cs_sang_qap.py",
-  "page": 142,
+  "page": 152,
   "deps": [],
   "title": "Chuyển đổi R1CS sang QAP và kiểm tra tính chia hết cho Z_H(x)"
  },
@@ -447,16 +447,16 @@
   "id": "4_07",
   "number": "4.7",
   "chapter": 4,
-  "caption": "Ba tấn công lên một ``SNARK'' chỉ gồm QAP: chọn $H$ sau $\\tau$, tự\nchế $C'$, và dò witness khi không làm mù",
+  "caption": "Ba tấn công lên một ``SNARK'' chỉ gồm QAP: chọn $h$ sau $\\tau$, tự\nchế $C'$, và dò witness khi không làm mù",
   "tex": "chapters/ch4/main.tex",
-  "line": 2379,
+  "line": 2373,
   "expected": null,
   "file": "ch04/ma_nguon_4_07_ba_tan_cong_len_mot.py",
-  "page": 147,
+  "page": 157,
   "deps": [
    "4_06"
   ],
-  "title": "Ba tấn công lên một ``SNARK'' chỉ gồm QAP: chọn H sau tau, tự chế C', và dò witness khi không làm mù"
+  "title": "Ba tấn công lên một ``SNARK'' chỉ gồm QAP: chọn h sau tau, tự chế C', và dò witness khi không làm mù"
  },
  {
   "id": "4_08",
@@ -464,10 +464,10 @@
   "chapter": 4,
   "caption": "Pairing Tate trên đường cong tham số nhỏ: vòng lặp Miller\n(Thuật toán~\\ref{alg:miller-loop}) và lũy thừa cuối\n(Thuật toán~\\ref{alg:final-exp}); kiểm tra tính song tuyến tính",
   "tex": "chapters/ch4/main.tex",
-  "line": 3471,
+  "line": 3489,
   "expected": "e(P, P)              = (39496, 10308) | khác 1: True\ne(P, P)^r            = (1, 0)  (cấp r)\nSong tuyến tính      : True\ne(aP, bP) = e(abP, P): True\nBỏ lũy thừa cuối     : False (chưa duy nhất)\n",
   "file": "ch04/ma_nguon_4_08_pairing_tate_tren_duong_cong.py",
-  "page": 166,
+  "page": 176,
   "deps": [],
   "title": "Pairing Tate trên đường cong tham số nhỏ: vòng lặp Miller (Thuật toán~refalg:miller-loop) và lũy thừa cuối (Thuật toán~refalg:final-exp); kiểm tra tính song tuyến tính"
  },
@@ -477,10 +477,10 @@
   "chapter": 4,
   "caption": "Mô phỏng Groth16 trong số mũ: khi $\\gamma = \\delta$, proof cho\n$\\text{out} = 35$ bị sửa thành proof hợp lệ cho $\\text{out} = 36$",
   "tex": "chapters/ch4/main.tex",
-  "line": 3695,
+  "line": 3713,
   "expected": "gamma != delta: verify(out=35) = True | proof giả cho out=36: False\ngamma =  delta: verify(out=35) = True | proof giả cho out=36: True\n",
   "file": "ch04/ma_nguon_4_09_mo_phong_groth16_trong_so.py",
-  "page": 170,
+  "page": 180,
   "deps": [
    "4_06"
   ],
@@ -492,10 +492,10 @@
   "chapter": 4,
   "caption": "Pipeline R1CS và witness cho Mini-SNARK",
   "tex": "chapters/ch4/main.tex",
-  "line": 3926,
-  "expected": null,
+  "line": 3949,
+  "expected": "=== BƯỚC 1-2: R1CS & Witness ===\nWitness s = [1, 35, 3, 9, 27]\n  RC1: 3 * 3 = 9, exp 9, OK\n  RC2: 9 * 3 = 27, exp 27, OK\n  RC3: 0 * 1 = 0, exp 0, OK\n",
   "file": "ch04/ma_nguon_4_10_pipeline_r1cs_va_witness_cho.py",
-  "page": 174,
+  "page": 184,
   "deps": [],
   "title": "Pipeline R1CS và witness cho Mini-SNARK"
  },
@@ -503,31 +503,31 @@
   "id": "4_11",
   "number": "4.11",
   "chapter": 4,
-  "caption": "Nội suy Lagrange chuyển R1CS sang QAP và kiểm tra",
+  "caption": "Nội suy Lagrange chuyển R1CS sang QAP, tính thương $h(x)$ và mô phỏng setup",
   "tex": "chapters/ch4/main.tex",
-  "line": 3989,
-  "expected": null,
+  "line": 4028,
+  "expected": "=== BƯỚC 3: QAP (hệ số từ bậc thấp đến bậc cao) ===\nA(x) = [23, 8, 13], B(x) = [1, 3, 40], C(x) = [28, 24, 39]\nZ_H(x) = [35, 11, 35, 1]\nP(x) = A(x)B(x) - C(x) = [36, 12, 16, 31, 28]\nh(x) = [35, 28], dư = [0] -> P chia hết cho Z_H: True\n\n=== BƯỚC 4: Setup ===\nτ (toxic waste) = 32, SRS = [1, 32, 40], Z_H(τ) = 33\n",
   "file": "ch04/ma_nguon_4_11_noi_suy_lagrange_chuyen_r1cs.py",
-  "page": 175,
+  "page": 186,
   "deps": [
    "4_10"
   ],
-  "title": "Nội suy Lagrange chuyển R1CS sang QAP và kiểm tra"
+  "title": "Nội suy Lagrange chuyển R1CS sang QAP, tính thương h(x) và mô phỏng setup"
  },
  {
   "id": "4_12",
   "number": "4.12",
   "chapter": 4,
-  "caption": "Mini-SNARK: tạo và xác minh proof, thử gian lận",
+  "caption": "Mini-SNARK: Prover chỉ dùng SRS; gian lận thất bại vì phép chia còn dư, chỉ lọt khi $\\tau$ bị lộ",
   "tex": "chapters/ch4/main.tex",
-  "line": 4067,
-  "expected": null,
-  "file": "ch04/ma_nguon_4_12_mini_snark_tao_va_xac.py",
-  "page": 177,
+  "line": 4152,
+  "expected": "=== BƯỚC 5: Mini-SNARK ===\nProof (witness đúng): {'A': 20, 'B': 16, 'C': 19, 'h': 29} -> verify = True\n\n--- Thử gian lận (x=4) ---\nprove(s_fake) = None\nP_fake(x) / Z_H(x): thương = [23, 29], dư = [3, 16, 22]\nCách 1 (dùng thương, bỏ dư): verify = False\n  Số giá trị τ để cách 1 lọt: 0/37\nCách 2 (τ bị lộ, h = P_fake(τ)/Z_H(τ)): verify = True\n",
+  "file": "ch04/ma_nguon_4_12_mini_snark_prover_chi_dung.py",
+  "page": 188,
   "deps": [
    "4_11"
   ],
-  "title": "Mini-SNARK: tạo và xác minh proof, thử gian lận"
+  "title": "Mini-SNARK: Prover chỉ dùng SRS; gian lận thất bại vì phép chia còn dư, chỉ lọt khi tau bị lộ"
  },
  {
   "id": "4_13",
@@ -535,10 +535,10 @@
   "chapter": 4,
   "caption": "Phân tích tại sao witness sai bị phát hiện qua đa thức",
   "tex": "chapters/ch4/main.tex",
-  "line": 4134,
-  "expected": null,
+  "line": 4228,
+  "expected": "=== Phân tích đa thức ===\nWitness đúng, x=3: P(r_i) tại H = [1, 2, 3]: [0, 0, 0]\nWitness SAI, x=4: P(r_i) tại H = [1, 2, 3]: [0, 0, 3]\n\nKẾT LUẬN:\n  Witness đúng: P(r_i) = 0 với mọi i -> Z_H | P -> có h(x)\n  Witness sai:  có i với P(r_i) != 0 -> P không chia hết\n                cho Z_H -> không tồn tại h(x)\n  deg P <= 2n - 2 = 4: với h cố định trước, τ đều trong\n  {4, ..., 40} bỏ sót gian lận với xác suất <= 4/37\n",
   "file": "ch04/ma_nguon_4_13_phan_tich_tai_sao_witness.py",
-  "page": 178,
+  "page": 189,
   "deps": [
    "4_12"
   ],
@@ -550,10 +550,10 @@
   "chapter": 5,
   "caption": "AIR cho phép bình phương liên tiếp trên $\\mathbb{F}_{97}$",
   "tex": "chapters/ch5/main.tex",
-  "line": 792,
+  "line": 803,
   "expected": null,
   "file": "ch05/ma_nguon_5_01_air_cho_phep_binh_phuong.py",
-  "page": 193,
+  "page": 204,
   "deps": [],
   "title": "AIR cho phép bình phương liên tiếp trên F_97"
  },
@@ -563,10 +563,10 @@
   "chapter": 5,
   "caption": "Chạy STARK từng bước trên $\\mathbb{F}_{97}$ với trace $a^8$,\n$n = 4$, $N = 16$: sinh mọi giá trị của Bảng~\\ref{tab:stark-walkthrough}\nvà Hình~\\ref{fig:stark-amplify}",
   "tex": "chapters/ch5/main.tex",
-  "line": 1704,
+  "line": 1737,
   "expected": "H = [1, 22, 96, 75]   L = [5, 40, 29, 38, 13, 7, 56, 60, 92, 57, 68, 59, 84, 90, 41, 37]\nGhi : trace = [3, 9, 81, 62]  t(X) = [63, 78, 76, 77]  t|L = [47, 53, 23, 75, 51, 92, 26, 42, 96, 94, 89, 28, 58, 13, 17, 10]  root_T = 955c9f8b\nGộp : alpha = (43, 85, 63)  CP(X) = [68, 62, 8, 66]  CP|L = [1, 60, 17, 65, 79, 58, 42, 3, 50, 68, 92, 89, 45, 86, 24, 18]  root_C = 1f643047\nHỏi : z = 42  t(z), t(wz), CP(z) = [63, 81, 41]\nGấp : gamma = (35, 86, 96)  f0 = [31, 11, 47, 75, 52, 65, 70, 79, 10, 37, 61, 90, 75, 55, 87, 21]\n      beta1 = 20  f1 = [14, 66, 96, 76, 57, 5, 72, 92]  beta2 = 58  f2 = [38, 38, 38, 38]\nMở  : query j = [1, 7]  cặp vị trí: [(1, 9), (7, 15)]\nTrace sai 1 ô: khác 1/4 điểm trên H, khác 16/16 điểm trên L\nt'|L = [73, 70, 0, 31, 76, 70, 19, 25, 57, 4, 79, 77, 45, 10, 56, 21]\n",
   "file": "ch05/ma_nguon_5_02_chay_stark_tung_buoc_tren.py",
-  "page": 209,
+  "page": 221,
   "deps": [],
   "title": "Chạy STARK từng bước trên F_97 với trace a^8, n = 4, N = 16: sinh mọi giá trị của Bảng~reftab:stark-walkthrough và Hình~reffig:stark-amplify"
  },
@@ -576,10 +576,10 @@
   "chapter": 5,
   "caption": "Mini-STARK: Setup (tham số), Prove và Verify với LDE, đa thức hợp\nthành, DEEP, FRI, grinding và Fiat--Shamir",
   "tex": "chapters/ch5/main.tex",
-  "line": 1829,
+  "line": 1862,
   "expected": "Trace: [3, 9, 81, 6561] ...  y = x_7 = 15603345547385675601\n[1] Trace đúng            -> chấp nhận  (proof ~11904 byte)\n[2] Sai phát biểu (y + 1) -> từ chối: AIR sai tại điểm ngoài miền\n[3] Trace sai một hàng    -> từ chối: AIR sai tại điểm ngoài miền\n[4] Trace sai, sửa OOD    -> từ chối: FRI tầng cuối sai\n[5] Sửa một giá trị mở    -> từ chối: Merkle trace sai\n",
   "file": "ch05/ma_nguon_5_03_mini_stark_setup_tham_so.py",
-  "page": 215,
+  "page": 227,
   "deps": [],
   "title": "Mini-STARK: Setup (tham số), Prove và Verify với LDE, đa thức hợp thành, DEEP, FRI, grinding và Fiat-Shamir"
  },
@@ -589,10 +589,10 @@
   "chapter": 5,
   "caption": "Minh họa soundness của STARK: một hàng sai trong trace buộc Prover\nchọn giữa bị FRI bác bỏ và trượt kiểm tra ràng buộc",
   "tex": "chapters/ch5/main.tex",
-  "line": 2544,
-  "expected": "Trace đúng: deg C = 14, dư khi chia Z' = [0]\nTrace sai : deg C = 14, dư khi chia Z' = [250, 158, 80, 64, 200, 163, 113]\nGian lận 1: qua 32/32 spot check, bậc trên L = 31 (giới hạn 7) -> FRI bác bỏ\nGian lận 2: bậc = 7, qua 0/32 spot check (cận lý thuyết 6/32)\n\nrho    | duy nhất (1-rho)/2 | Johnson 1-sqrt(rho) | giả thuyết 1-rho\n1/2    |                309 |                 257 |              128\n1/4    |                189 |                 128 |               64\n1/8    |                155 |                  86 |               43\n1/16   |                141 |                  64 |               32\n",
+  "line": 2600,
+  "expected": "Trace đúng: deg C = 14, dư khi chia Z_tr = [0]\nTrace sai : deg C = 14, dư khi chia Z_tr = [250, 158, 80, 64, 200, 163, 113]\nGian lận 1: qua 32/32 spot check, bậc trên L = 31 (giới hạn 7) -> FRI bác bỏ\nGian lận 2: bậc = 7, qua 0/32 spot check (cận lý thuyết 6/32)\n\nrho    | duy nhất (1-rho)/2 | Johnson 1-sqrt(rho) | giả thuyết 1-rho\n1/2    |                309 |                 256 |              128\n1/4    |                189 |                 128 |               64\n1/8    |                155 |                  86 |               43\n1/16   |                141 |                  64 |               32\n",
   "file": "ch05/ma_nguon_5_04_minh_hoa_soundness_cua_stark.py",
-  "page": 226,
+  "page": 239,
   "deps": [],
   "title": "Minh họa soundness của STARK: một hàng sai trong trace buộc Prover chọn giữa bị FRI bác bỏ và trượt kiểm tra ràng buộc"
  },
@@ -602,10 +602,10 @@
   "chapter": 5,
   "caption": "Lab 5.1: Tạo execution trace và kiểm tra AIR constraints",
   "tex": "chapters/ch5/main.tex",
-  "line": 2948,
-  "expected": null,
+  "line": 3023,
+  "expected": "=== Execution Trace (a^8, a=3) ===\n  trace = [3, 9, 81, 62], kết quả 3^8 = 62 (mod 97)\nAIR transition constraints:\n  T[1] = T[0]^2? 9 vs 9 -> OK\n  T[2] = T[1]^2? 81 vs 81 -> OK\n  T[3] = T[2]^2? 62 vs 62 -> OK\n  Tất cả: PASS\n",
   "file": "ch05/ma_nguon_5_05_lab_5_1_tao_execution.py",
-  "page": 232,
+  "page": 244,
   "deps": [],
   "title": "Lab 5.1: Tạo execution trace và kiểm tra AIR constraints"
  },
@@ -613,61 +613,61 @@
   "id": "5_06",
   "number": "5.6",
   "chapter": 5,
-  "caption": "Lab 5.2: Nội suy trace thành đa thức bằng Lagrange",
+  "caption": "Lab 5.2: Miền $H$, $L$ và nội suy trace thành đa thức bằng Lagrange",
   "tex": "chapters/ch5/main.tex",
-  "line": 2986,
-  "expected": null,
-  "file": "ch05/ma_nguon_5_06_lab_5_2_noi_suy.py",
-  "page": 233,
+  "line": 3081,
+  "expected": "=== Miền và nội suy ===\n  H = [1, 22, 96, 75]\n  L = [5, 40, 29, 38, 13, 7, 56, 60, 92, 57, 68, 59, 84, 90, 41, 37]\n  L giao H = set()\n  t(H) = [3, 9, 81, 62]\n  t|L  = [47, 53, 23, 75, 51, 92, 26, 42, 96, 94, 89, 28, 58, 13, 17, 10]\n  omega*L[j] = L[j+4]: True\n  -L[j] = L[j+8]:      True\n",
+  "file": "ch05/ma_nguon_5_06_lab_5_2_mien_va.py",
+  "page": 246,
   "deps": [
    "5_05"
   ],
-  "title": "Lab 5.2: Nội suy trace thành đa thức bằng Lagrange"
+  "title": "Lab 5.2: Miền H, L và nội suy trace thành đa thức bằng Lagrange"
  },
  {
   "id": "5_07",
   "number": "5.7",
   "chapter": 5,
-  "caption": "Lab 5.3: Xây dựng Merkle tree để commit các evaluation",
+  "caption": "Lab 5.3: Xây dựng Merkle tree để commit các evaluation và mở một vị trí",
   "tex": "chapters/ch5/main.tex",
-  "line": 3033,
-  "expected": null,
+  "line": 3140,
+  "expected": "=== Merkle Commitment ===\n  Cam kết 16 giá trị của t|L, root = 7c39041fada6fb1f\n  Mở vị trí 3: t(L[3]) = 75, đường Merkle 4 hash, hợp lệ: True\n  Mở sai giá trị 76: hợp lệ: False\n",
   "file": "ch05/ma_nguon_5_07_lab_5_3_xay_dung.py",
-  "page": 234,
+  "page": 247,
   "deps": [
    "5_06"
   ],
-  "title": "Lab 5.3: Xây dựng Merkle tree để commit các evaluation"
+  "title": "Lab 5.3: Xây dựng Merkle tree để commit các evaluation và mở một vị trí"
  },
  {
   "id": "5_08",
   "number": "5.8",
   "chapter": 5,
-  "caption": "Lab 5.4: FRI folding -- giảm bậc đa thức qua các vòng",
+  "caption": "Lab 5.4: FRI folding theo cặp $(x, -x)$ trên coset $L$",
   "tex": "chapters/ch5/main.tex",
-  "line": 3086,
-  "expected": null,
+  "line": 3212,
+  "expected": "=== FRI Folding (f0 = t|L, bậc < 4) ===\n  Tầng 0: 16 giá trị, root=7c39041fada6fb1f\n          [47, 53, 23, 75, 51, 92, 26, 42, 96, 94, 89, 28, 58, 13, 17, 10]\n  Tầng 1: beta=45, 8 giá trị, root=0eb9bdcdf6dbc30d\n          [45, 8, 65, 27, 20, 57, 0, 38]\n  Tầng 2: beta=3, 4 giá trị, root=a174cb41611d09a2\n          [34, 34, 34, 34]\n  Tầng cuối hằng số? True\n",
   "file": "ch05/ma_nguon_5_08_lab_5_4_fri_folding.py",
-  "page": 236,
+  "page": 249,
   "deps": [
    "5_07"
   ],
-  "title": "Lab 5.4: FRI folding - giảm bậc đa thức qua các vòng"
+  "title": "Lab 5.4: FRI folding theo cặp (x, -x) trên coset L"
  },
  {
   "id": "5_09",
   "number": "5.9",
   "chapter": 5,
-  "caption": "Lab 5.5: FRI verify -- kiểm tra consistency và phát hiện witness sai",
+  "caption": "Lab 5.5: FRI verify -- kiểm tra tính nhất quán giữa các tầng và phát hiện witness sai",
   "tex": "chapters/ch5/main.tex",
-  "line": 3171,
-  "expected": null,
+  "line": 3282,
+  "expected": "=== FRI Query Phase ===\n[1] Prover trung thực:\n    query 0 (j=7), vòng 1: gấp f[7]=42, f[15]=10 -> 38, tầng sau [7] = 38\n    query 0 (j=7), vòng 2: gấp f[3]=27, f[7]=38 -> 34, tầng sau [3] = 34\n    query 1 (j=6), vòng 1: gấp f[6]=26, f[14]=17 -> 0, tầng sau [6] = 0\n    query 1 (j=6), vòng 2: gấp f[2]=65, f[6]=0 -> 34, tầng sau [2] = 34\n    query 2 (j=0), vòng 1: gấp f[0]=47, f[8]=96 -> 45, tầng sau [0] = 45\n    query 2 (j=0), vòng 2: gấp f[0]=45, f[4]=20 -> 34, tầng sau [0] = 34\n  -> chấp nhận\n[2] Tầng 1 bị sửa:\n    query 0 (j=0), vòng 1: gấp f[0]=47, f[8]=96 -> 45, tầng sau [0] = 46\n  -> từ chối: vòng gấp 1 không nhất quán\n\n=== Witness đúng vs sai ===\n  Trace đúng [3, 9, 81, 62]: tầng cuối = [9, 9, 9, 9]\n    -> chấp nhận\n  Trace sai  [3, 9, 80, 62]: tầng cuối = [43, 24, 35, 25]\n    -> từ chối: tầng cuối không phải hằng số\n",
   "file": "ch05/ma_nguon_5_09_lab_5_5_fri_verify.py",
-  "page": 237,
+  "page": 251,
   "deps": [
    "5_08"
   ],
-  "title": "Lab 5.5: FRI verify - kiểm tra consistency và phát hiện witness sai"
+  "title": "Lab 5.5: FRI verify - kiểm tra tính nhất quán giữa các tầng và phát hiện witness sai"
  },
  {
   "id": "6_01",
@@ -675,10 +675,10 @@
   "chapter": 6,
   "caption": "Lab 6.1: Xây dựng PLONKish gate table và kiểm tra constraints",
   "tex": "chapters/ch6/main.tex",
-  "line": 791,
+  "line": 814,
   "expected": null,
   "file": "ch06/ma_nguon_6_01_lab_6_1_xay_dung.py",
-  "page": 252,
+  "page": 268,
   "deps": [],
   "title": "Lab 6.1: Xây dựng PLONKish gate table và kiểm tra constraints"
  },
@@ -688,10 +688,10 @@
   "chapter": 6,
   "caption": "Lab 6.2: Copy constraints và grand product permutation argument",
   "tex": "chapters/ch6/main.tex",
-  "line": 869,
-  "expected": null,
+  "line": 892,
+  "expected": "=== Copy Constraints ===\nWire values: [3, 3, 9, 9, 3, 12, 12, 0, 0]\nPermutation σ: [1, 4, 3, 2, 0, 6, 5, 7, 8]\n\nCopy constraint check:\n  wire[0]=3 == wire[σ(0)=1]=3 → OK\n  wire[1]=3 == wire[σ(1)=4]=3 → OK\n  wire[2]=9 == wire[σ(2)=3]=9 → OK\n  wire[3]=9 == wire[σ(3)=2]=9 → OK\n  wire[4]=3 == wire[σ(4)=0]=3 → OK\n  wire[5]=12 == wire[σ(5)=6]=12 → OK\n  wire[6]=12 == wire[σ(6)=5]=12 → OK\n  All copies: PASS\n\n=== Grand Product (β=8, γ=21) ===\n  Z accumulator: [1, 11, 18, 29, 18, 1, 9, 1, 1, 1]\n  Z[n] = 1 (should be 1): PASS\n\n--- Thử phá copy constraint ---\nBad wire values: [3, 3, 9, 9, 5, 12, 12, 0, 0]\n  Z[n] = 37 (should be 1): FAIL – PHÁT HIỆN GIAN LẬN\n",
   "file": "ch06/ma_nguon_6_02_lab_6_2_copy_constraints.py",
-  "page": 254,
+  "page": 271,
   "deps": [
    "6_01"
   ],
@@ -703,10 +703,10 @@
   "chapter": 6,
   "caption": "Lab 6.3: So sánh R1CS và PLONKish cho cùng bài toán",
   "tex": "chapters/ch6/main.tex",
-  "line": 958,
+  "line": 1026,
   "expected": null,
   "file": "ch06/ma_nguon_6_03_lab_6_3_so_sanh.py",
-  "page": 255,
+  "page": 272,
   "deps": [
    "6_02"
   ],
@@ -718,10 +718,10 @@
   "chapter": 7,
   "caption": "Lab 7.4: Tổng hợp và so sánh kết quả benchmark",
   "tex": "chapters/ch7/main.tex",
-  "line": 582,
+  "line": 617,
   "expected": null,
   "file": "ch07/ma_nguon_7_04_lab_7_4_tong_hop.py",
-  "page": 269,
+  "page": 287,
   "deps": [],
   "title": "Lab 7.4: Tổng hợp và so sánh kết quả benchmark"
  },
@@ -731,10 +731,10 @@
   "chapter": 8,
   "caption": "Tạo Merkle tree và input cho circuit bỏ phiếu",
   "tex": "chapters/ch8/main.tex",
-  "line": 1181,
+  "line": 1238,
   "expected": null,
   "file": "ch08/ma_nguon_8_28_tao_merkle_tree_va_input.py",
-  "page": 295,
+  "page": 314,
   "deps": [],
   "title": "Tạo Merkle tree và input cho circuit bỏ phiếu"
  },
@@ -744,11 +744,24 @@
   "chapter": 12,
   "caption": "Train model MNIST và export sang ONNX cho zkML",
   "tex": "chapters/ch12/main.tex",
-  "line": 724,
+  "line": 776,
   "expected": null,
   "file": "ch12/ma_nguon_12_03_train_model_mnist_va_export.py",
-  "page": 364,
+  "page": 384,
   "deps": [],
   "title": "Train model MNIST và export sang ONNX cho zkML"
+ },
+ {
+  "id": "13_01",
+  "number": "13.1",
+  "chapter": 13,
+  "caption": "Folding hai và ba instance relaxed R1CS theo công thức của Nova",
+  "tex": "chapters/ch13/main.tex",
+  "line": 171,
+  "expected": "z1 = [1, 12, 3, 9]  thỏa: True\nz2 = [1, 30, 5, 25]  thỏa: True\n\nr = 16\nGộp ngây thơ  z = [17, 7, 83, 21]  thỏa: False\nCross term    T = [93, 0]\nFolded        z = [17, 7, 83, 21]  E = [33, 0]  thỏa: True\n\nr = 41\nFolded lần 2  z = [58, 72, 79, 90]  E = [51, 0]  thỏa: True\n",
+  "file": "ch13/ma_nguon_13_01_folding_hai_va_ba_instance.py",
+  "page": 390,
+  "deps": [],
+  "title": "Folding hai và ba instance relaxed R1CS theo công thức của Nova"
  }
 ]

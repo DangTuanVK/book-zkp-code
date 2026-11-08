@@ -1,55 +1,51 @@
-# Mã nguồn 5.7 - Lab 5.3: Xây dựng Merkle tree để commit các evaluation
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 234
-# Trích tự động từ chapters/ch5/main.tex (dòng 3033) bằng extract.py; không sửa tay file này.
+# Mã nguồn 5.7 - Lab 5.3: Xây dựng Merkle tree để commit các evaluation và mở một vị trí
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 247
+# Trích tự động từ chapters/ch5/main.tex (dòng 3140) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 5.6 ---
 import contextlib as _ctx, io as _io
 with _ctx.redirect_stdout(_io.StringIO()):
-    from ma_nguon_5_06_lab_5_2_noi_suy import *  # noqa
+    from ma_nguon_5_06_lab_5_2_mien_va import *  # noqa
 # --- Hết phần thêm ---
 
 # ============================================================
 # BƯỚC 3: Commit bằng Merkle Tree
 # ============================================================
-
 def sha256_hash(*args):
-    """Hash nối tiếp các giá trị."""
+    """Hash nối tiếp các giá trị (rút gọn 16 ký tự hex cho dễ đọc)."""
     h = hashlib.sha256()
     for a in args:
-        h.update(str(a).encode())
-    return h.hexdigest()[:16]  # Rút gọn cho dễ đọc
+        h.update(str(a).encode() + b"|")
+    return h.hexdigest()[:16]
 
-def build_merkle(leaves):
-    """Xây Merkle tree, trả về (root, tree_layers)."""
-    layers = [leaves[:]]
-    current = leaves[:]
-    # Pad to power of 2
-    while len(current) & (len(current) - 1):
-        current.append(current[-1])
-    layers[0] = current[:]
-    while len(current) > 1:
-        next_layer = []
-        for i in range(0, len(current), 2):
-            next_layer.append(sha256_hash(current[i], current[i+1]))
-        layers.append(next_layer)
-        current = next_layer
-    return current[0], layers
+def build_merkle(values):
+    """Xây Merkle tree trên 2^k giá trị, trả về (root, các tầng)."""
+    layers = [[sha256_hash(v) for v in values]]
+    while len(layers[-1]) > 1:
+        cur = layers[-1]
+        layers.append([sha256_hash(cur[i], cur[i + 1])
+                       for i in range(0, len(cur), 2)])
+    return layers[-1][0], layers
 
 def get_proof(layers, index):
-    """Merkle proof cho leaf index."""
+    """Đường Merkle (các nút anh em) cho lá index."""
     proof = []
-    idx = index
     for layer in layers[:-1]:
-        sibling = idx ^ 1
-        if sibling < len(layer):
-            proof.append((layer[sibling], idx % 2))
-        idx //= 2
+        proof.append(layer[index ^ 1])
+        index //= 2
     return proof
 
-# Hash các evaluation → Merkle tree
-leaf_hashes = [sha256_hash(v) for v in extended_eval]
-root, tree = build_merkle(leaf_hashes)
+def verify_proof(root, index, value, proof):
+    h = sha256_hash(value)
+    for sib in proof:
+        h = sha256_hash(h, sib) if index % 2 == 0 else sha256_hash(sib, h)
+        index //= 2
+    return h == root
 
-print(f"\n=== Merkle Commitment ===")
-print(f"  Committed {len(extended_eval)} evaluations")
-print(f"  Merkle root: {root}")
+root_t, tree_t = build_merkle(tL)
+print("\n=== Merkle Commitment ===")
+print(f"  Cam kết {len(tL)} giá trị của t|L, root = {root_t}")
+pf = get_proof(tree_t, 3)
+print(f"  Mở vị trí 3: t(L[3]) = {tL[3]}, đường Merkle {len(pf)} hash, "
+      f"hợp lệ: {verify_proof(root_t, 3, tL[3], pf)}")
+print(f"  Mở sai giá trị {tL[3] + 1}: hợp lệ: {verify_proof(root_t, 3, tL[3] + 1, pf)}")

@@ -2,10 +2,11 @@
 # Lệnh: python ma_nguon_5_08_lab_5_4_fri_folding.py   (mã thoát: 0, 0.0 s)
 
 
-=== FRI Folding ===
-  Round 1: alpha=47, evals 16 → 8, root=a79162df656fb06e
-  Round 2: alpha=41, evals 8 → 4, root=dbe1be5e41034525
-  Round 3: alpha=51, evals 4 → 2, root=d48e75c47fc8bcac
-
-  Final values: [41, 11]
-  → Không phải hằng số (do domain nhỏ, đơn giản hóa)
+=== FRI Folding (f0 = t|L, bậc < 4) ===
+  Tầng 0: 16 giá trị, root=7c39041fada6fb1f
+          [47, 53, 23, 75, 51, 92, 26, 42, 96, 94, 89, 28, 58, 13, 17, 10]
+  Tầng 1: beta=45, 8 giá trị, root=0eb9bdcdf6dbc30d
+          [45, 8, 65, 27, 20, 57, 0, 38]
+  Tầng 2: beta=3, 4 giá trị, root=a174cb41611d09a2
+          [34, 34, 34, 34]
+  Tầng cuối hằng số? True

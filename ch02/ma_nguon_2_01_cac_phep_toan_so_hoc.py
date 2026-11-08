@@ -1,6 +1,6 @@
 # Mã nguồn 2.1 - Các phép toán số học modular cơ bản trong Python
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 41
-# Trích tự động từ chapters/ch2/main.tex (dòng 174) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 42
+# Trích tự động từ chapters/ch2/main.tex (dòng 176) bằng extract.py; không sửa tay file này.
 
 # === Số học modular cơ bản ===
 p = 7  # Modulus (số nguyên tố)

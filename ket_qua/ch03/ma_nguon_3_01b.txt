@@ -5,9 +5,10 @@
 ==================================================
 SCHNORR INTERACTIVE PROOF
 ==================================================
-1. Prover gửi commitment:  a = (13, 16)
-2. Verifier gửi challenge: e = 3
-3. Prover gửi response:    z = 0
+1. Prover gửi commitment:  a = (7, 20)
+2. Verifier gửi challenge: e = 24
+3. Prover gửi response:    z = 12
 4. Verification: ACCEPT
 
-Với witness giả (x=9): REJECT
+Với witness giả (x=17): REJECT
+Extractor từ (a,24,12) và (a,25,28): x = 16

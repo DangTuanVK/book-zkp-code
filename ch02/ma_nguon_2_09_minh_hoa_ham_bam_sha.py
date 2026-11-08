@@ -1,6 +1,6 @@
 # Mã nguồn 2.9 - Minh họa hàm băm SHA-256 với các đầu vào khác nhau
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 70
-# Trích tự động từ chapters/ch2/main.tex (dòng 2007) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 72
+# Trích tự động từ chapters/ch2/main.tex (dòng 2046) bằng extract.py; không sửa tay file này.
 
 import hashlib
 
@@ -14,5 +14,8 @@ inputs = [
 
 for data in inputs:
     h = hashlib.sha256(data).hexdigest()
-    preview = data[:20].decode(errors='replace')
-    print(f"SHA256(\"{preview}...\") = {h[:16]}...")
+    preview = data[:16].decode(errors='replace')  # 16 ký tự đầu
+    if len(data) > 16:
+        preview += "..."                           # đầu vào bị cắt bớt
+    label = f'SHA256("{preview}")'
+    print(f"{label:<28} = {h[:16]}...")

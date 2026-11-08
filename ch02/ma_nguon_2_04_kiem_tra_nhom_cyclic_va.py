@@ -1,6 +1,6 @@
 # Mã nguồn 2.4 - Kiểm tra nhóm cyclic Z_7^* và phần tử sinh
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 47
-# Trích tự động từ chapters/ch2/main.tex (dòng 551) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 48
+# Trích tự động từ chapters/ch2/main.tex (dòng 554) bằng extract.py; không sửa tay file này.
 
 # === Kiểm tra nhóm cyclic Z_7^* ===
 p = 7

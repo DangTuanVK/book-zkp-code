@@ -1,6 +1,6 @@
 # Mã nguồn 5.4 - Minh họa soundness của STARK: một hàng sai trong trace buộc Prover chọn giữa bị FRI bác bỏ và trượt kiểm tra ràng buộc
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 226
-# Trích tự động từ chapters/ch5/main.tex (dòng 2544) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 239
+# Trích tự động từ chapters/ch5/main.tex (dòng 2600) bằng extract.py; không sửa tay file này.
 
 # === Soundness của STARK trên ví dụ nhỏ: AIR bình phương x_{i+1} = x_i^2 ===
 import math
@@ -54,7 +54,7 @@ H = [pow(w, i, p) for i in range(n)]
 k = pow(g, (p - 1) // (n * blowup), p)           # căn nguyên thủy bậc 4n
 L = [g * pow(k, i, p) % p for i in range(n * blowup)]   # rời H, đóng với nhân w
 
-Zp = [1]                                         # Z'(x) = prod_{i<n-1} (x - w^i)
+Zp = [1]                                         # Z_tr(x) = prod_{i<n-1} (x - w^i)
 for h in H[:-1]:
     Zp = mul(Zp, [-h % p, 1])
 
@@ -65,13 +65,13 @@ def prover(trace):
     Q, R = divmod_poly(C, Zp)
     return t, C, Q, R
 
-def spot_check(t, fQ, z):
-    """Verifier kiểm tra tại z thuộc L: fQ(z) * Z'(z) == t(w z) - t(z)^2."""
-    return fQ(z) * ev(Zp, z) % p == (ev(t, w * z % p) - ev(t, z) ** 2) % p
+def spot_check(t, fQ, x):
+    """Verifier kiểm tra tại x thuộc L: fQ(x) * Z_tr(x) == t(w x) - t(x)^2."""
+    return fQ(x) * ev(Zp, x) % p == (ev(t, w * x % p) - ev(t, x) ** 2) % p
 
 def degree_on_L(f):
     """Bậc của đa thức nội suy từ giá trị của f trên L (điều FRI kiểm tra)."""
-    return len(interpolate(L, [f(z) for z in L])) - 1
+    return len(interpolate(L, [f(x) for x in L])) - 1
 
 honest = [3]
 for _ in range(n - 1):
@@ -81,23 +81,24 @@ cheat[5] = (cheat[5] + 1) % p                    # sửa một hàng: trace sai
 
 for name, trace in (("Trace đúng", honest), ("Trace sai ", cheat)):
     t, C, Q, R = prover(trace)
-    print(f"{name}: deg C = {len(C)-1}, dư khi chia Z' = {R}")
+    print(f"{name}: deg C = {len(C)-1}, dư khi chia Z_tr = {R}")
 
 t, C, Q, R = prover(cheat)
-# Chiến lược 1: gửi đúng thương C/Z' từng điểm -> qua mọi spot check, nhưng bậc cao
-f1 = lambda z: ev(C, z) * pow(ev(Zp, z), p - 2, p) % p
-ok1 = sum(spot_check(t, f1, z) for z in L)
+# Chiến lược 1: gửi đúng thương C/Z_tr từng điểm -> qua mọi spot check, nhưng bậc cao
+f1 = lambda x: ev(C, x) * pow(ev(Zp, x), p - 2, p) % p
+ok1 = sum(spot_check(t, f1, x) for x in L)
 print(f"Gian lận 1: qua {ok1}/{len(L)} spot check, bậc trên L = {degree_on_L(f1)}"
       f" (giới hạn {n-1}) -> FRI bác bỏ")
 # Chiến lược 2: gửi thương Q bậc thấp, bỏ qua phần dư -> qua FRI, trượt spot check
-f2 = lambda z: ev(Q, z)
-ok2 = sum(spot_check(t, f2, z) for z in L)
+f2 = lambda x: ev(Q, x)
+ok2 = sum(spot_check(t, f2, x) for x in L)
 print(f"Gian lận 2: bậc = {degree_on_L(f2)}, qua {ok2}/{len(L)} spot check"
       f" (cận lý thuyết {len(R)-1}/{len(L)})")
 
 # --- Số query FRI cho 128 bit bảo mật, theo ba chế độ phân tích ---
 print("\nrho    | duy nhất (1-rho)/2 | Johnson 1-sqrt(rho) | giả thuyết 1-rho")
 for rho in (1/2, 1/4, 1/8, 1/16):
-    qs = [math.ceil(128 / -math.log2(1 - d))
+    # làm tròn 9 chữ số trước khi lấy trần: tránh sai số dấu phẩy động (256.0000001)
+    qs = [math.ceil(round(128 / -math.log2(1 - d), 9))
           for d in ((1 - rho) / 2, 1 - math.sqrt(rho), 1 - rho)]
     print(f"1/{round(1/rho):<4} | {qs[0]:>18} | {qs[1]:>19} | {qs[2]:>16}")

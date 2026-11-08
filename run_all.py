@@ -36,6 +36,9 @@ def compare(actual, expected):
     return diffs
 
 
+STDOUT = {}   # stdout theo id, dùng cho khối nối tiếp (hậu tố b, c...)
+
+
 def run_one(b):
     path = HERE / b["file"]
     env = dict(os.environ, PYTHONHASHSEED="0", PYTHONIOENCODING="utf-8",
@@ -50,6 +53,7 @@ def run_one(b):
         rc, stdout, stderr = "timeout", ex.stdout or "", f"Quá {TIMEOUT} giây"
         stdout = stdout.decode() if isinstance(stdout, bytes) else stdout
     dt = time.time() - t0
+    STDOUT[b["id"]] = stdout
     res = OUT / f"ch{b['chapter']:02d}" / f"ma_nguon_{b['id']}.txt"
     res.parent.mkdir(parents=True, exist_ok=True)
     body = (f"# Mã nguồn {b['number']}: {b['file']}\n"
@@ -74,6 +78,13 @@ def run_one(b):
         diffs = None
     elif b.get("expected"):
         diffs = compare(stdout, b["expected"])
+        base = b["id"].rstrip("bcdefg")
+        if diffs and base != b["id"] and base in STDOUT:
+            # Sách in chung kết quả của mã nguồn gốc và phần nối tiếp
+            for sep in ("\n", "\n\n"):
+                if not compare(STDOUT[base].rstrip("\n") + sep + stdout, b["expected"]):
+                    diffs = []
+                    break
         status = "KHỚP SÁCH" if not diffs else "LỆCH SÁCH"
     else:
         diffs, status = None, "CHẠY ĐƯỢC"

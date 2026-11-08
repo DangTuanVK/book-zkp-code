@@ -1,6 +1,6 @@
 # Mã nguồn 6.1 - Lab 6.1: Xây dựng PLONKish gate table và kiểm tra constraints
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 6, trang 252
-# Trích tự động từ chapters/ch6/main.tex (dòng 791) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 6, trang 268
+# Trích tự động từ chapters/ch6/main.tex (dòng 814) bằng extract.py; không sửa tay file này.
 
 # === lab6_plonk.py – Mini PLONKish ===
 # Bài toán: chứng minh biết x sao cho x^2 + x = 12

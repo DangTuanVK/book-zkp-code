@@ -1,6 +1,6 @@
 # Mã nguồn 4.9 - Mô phỏng Groth16 trong số mũ: khi gamma = delta, proof cho out = 35 bị sửa thành proof hợp lệ cho out = 36
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 170
-# Trích tự động từ chapters/ch4/main.tex (dòng 3695) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 180
+# Trích tự động từ chapters/ch4/main.tex (dòng 3713) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 4.6 ---
 import contextlib as _ctx, io as _io
@@ -29,15 +29,15 @@ def setup(same_gamma_delta=False):
 
 def prove(pk, s):
     Ax, Bx, Cx, P = qap_polys(s)
-    H, rem = poly_divmod(P, Z)
+    h, rem = poly_divmod(P, Z)
     assert rem == [0], "witness sai"
     t, d = pk["tau"], pk["delta"]
     r, s_ = random.randrange(p), random.randrange(p)
     piA = (pk["alpha"] + poly_eval(Ax, t) + r * d) % p
     piB = (pk["beta"] + poly_eval(Bx, t) + s_ * d) % p
-    HZ_d = poly_eval(H, t) * poly_eval(Z, t) * pow(d, p - 2, p)
+    hZ_d = poly_eval(h, t) * poly_eval(Z, t) * pow(d, p - 2, p)
     piC = (sum(s[ell + 1 + k] * Lk for k, Lk in enumerate(pk["L_delta"]))
-           + HZ_d + s_ * piA + r * piB - r * s_ * d) % p
+           + hZ_d + s_ * piA + r * piB - r * s_ * d) % p
     return piA, piB, piC
 
 def verify(vk, x, proof):

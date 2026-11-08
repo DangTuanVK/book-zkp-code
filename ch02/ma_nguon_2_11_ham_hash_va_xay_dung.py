@@ -1,6 +1,6 @@
 # Mã nguồn 2.11 - Hàm hash và xây dựng cây Merkle
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 73
-# Trích tự động từ chapters/ch2/main.tex (dòng 2209) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 75
+# Trích tự động từ chapters/ch2/main.tex (dòng 2259) bằng extract.py; không sửa tay file này.
 
 import hashlib
 
@@ -12,7 +12,8 @@ def sha256(*args):
     return h.digest()
 
 def build_merkle_tree(leaves):
-    """Xây cây Merkle, trả về list các tầng (tầng 0 = lá)."""
+    """Xây cây Merkle, trả về list các tầng (tầng 0 = lá).
+    Tầng có số nút lẻ: nút cuối được ghép với chính nó."""
     tree = [leaves]
     current = leaves
     while len(current) > 1:
