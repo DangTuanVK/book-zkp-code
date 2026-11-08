@@ -1,0 +1,32 @@
+# Mã nguồn 5.9: ch05/ma_nguon_5_09_lab_5_5_fri_verify.py
+# Lệnh: python ma_nguon_5_09_lab_5_5_fri_verify.py   (mã thoát: 0, 0.0 s)
+
+
+=== FRI Query Phase ===
+  Query indices: [6, 5, 1]
+
+  --- Query index 6 ---
+    Round 1: f[12]=58, f[13]=0, alpha=81, next=16
+    Round 2: f[6]=16, f[7]=85, alpha=70, next=78
+    Round 3: f[2]=95, f[3]=78, alpha=72, next=42
+
+  --- Query index 5 ---
+    Round 1: f[10]=4, f[11]=7, alpha=81, next=53
+    Round 2: f[4]=94, f[5]=53, alpha=70, next=95
+    Round 3: f[2]=95, f[3]=78, alpha=72, next=42
+
+  --- Query index 1 ---
+    Round 1: f[2]=81, f[3]=62, alpha=81, next=94
+    Round 2: f[0]=4, f[1]=94, alpha=70, next=64
+    Round 3: f[0]=64, f[1]=85, alpha=72, next=3
+
+  FRI Verify: completed 3 queries
+
+=== So sánh: Witness đúng vs sai ===
+Bad trace: [3, 9, 80, 62]
+Transition check:
+  T[1] = T[0]^2? 9 vs 9 → OK
+  T[2] = T[1]^2? 80 vs 81 → FAIL
+  T[3] = T[2]^2? 62 vs 95 → FAIL
+→ AIR constraint vi phạm → đa thức constraint C(x) ≠ 0
+→ FRI sẽ phát hiện: C(x)/Z_H(x) không phải đa thức bậc thấp

@@ -1,0 +1,13 @@
+# Mã nguồn 5.4: ch05/ma_nguon_5_04_minh_hoa_soundness_cua_stark.py
+# Lệnh: python ma_nguon_5_04_minh_hoa_soundness_cua_stark.py   (mã thoát: 0, 0.0 s)
+
+Trace đúng: deg C = 14, dư khi chia Z' = [0]
+Trace sai : deg C = 14, dư khi chia Z' = [250, 158, 80, 64, 200, 163, 113]
+Gian lận 1: qua 32/32 spot check, bậc trên L = 31 (giới hạn 7) -> FRI bác bỏ
+Gian lận 2: bậc = 7, qua 0/32 spot check (cận lý thuyết 6/32)
+
+rho    | duy nhất (1-rho)/2 | Johnson 1-sqrt(rho) | giả thuyết 1-rho
+1/2    |                309 |                 257 |              128
+1/4    |                189 |                 128 |               64
+1/8    |                155 |                  86 |               43
+1/16   |                141 |                  64 |               32

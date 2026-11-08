@@ -1,0 +1,3 @@
+# Mã nguồn 2.12: ch02/ma_nguon_2_12_tao_va_xac_minh_merkle.py
+# Lệnh: python ma_nguon_2_12_tao_va_xac_minh_merkle.py   (mã thoát: 0, 0.0 s)
+

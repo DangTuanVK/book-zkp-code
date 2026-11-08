@@ -1,0 +1,13 @@
+# Mã nguồn 3.1b: ch03/ma_nguon_3_01b_thiet_lap_duong_cong_va_tiep.py
+# Lệnh: python ma_nguon_3_01b_thiet_lap_duong_cong_va_tiep.py   (mã thoát: 0, 0.0 s)
+
+
+==================================================
+SCHNORR INTERACTIVE PROOF
+==================================================
+1. Prover gửi commitment:  a = (13, 16)
+2. Verifier gửi challenge: e = 4
+3. Prover gửi response:    z = 0
+4. Verification: ACCEPT
+
+Với witness giả (x=0): REJECT

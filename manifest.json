@@ -1,0 +1,754 @@
+[
+ {
+  "id": "1_01",
+  "number": "1.1",
+  "chapter": 1,
+  "caption": "Completeness, soundness error và tấn công grinding",
+  "tex": "chapters/ch1/main.tex",
+  "line": 726,
+  "expected": "k  | trung thực | gian lận  | (1/2)^k\n1  | 1.000      | 0.49870   | 0.50000\n2  | 1.000      | 0.25219   | 0.25000\n5  | 1.000      | 0.03156   | 0.03125\n10 | 1.000      | 0.00103   | 0.00098\n\nk bit | số lần băm trung bình | 2^k\n8     | 251                   | 256\n12    | 3914                  | 4096\n16    | 70837                 | 65536\n",
+  "file": "ch01/ma_nguon_1_01_completeness_soundness_error_va_tan.py",
+  "page": 15,
+  "deps": [],
+  "title": "Completeness, soundness error và tấn công grinding"
+ },
+ {
+  "id": "2_01",
+  "number": "2.1",
+  "chapter": 2,
+  "caption": "Các phép toán số học modular cơ bản trong Python",
+  "tex": "chapters/ch2/main.tex",
+  "line": 174,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_01_cac_phep_toan_so_hoc.py",
+  "page": 41,
+  "deps": [],
+  "title": "Các phép toán số học modular cơ bản trong Python"
+ },
+ {
+  "id": "2_02",
+  "number": "2.2",
+  "chapter": 2,
+  "caption": "Minh họa bài toán logarit rời rạc với số nguyên tố 256-bit",
+  "tex": "chapters/ch2/main.tex",
+  "line": 206,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_02_minh_hoa_bai_toan_logarit.py",
+  "page": 42,
+  "deps": [],
+  "title": "Minh họa bài toán logarit rời rạc với số nguyên tố 256-bit"
+ },
+ {
+  "id": "2_03",
+  "number": "2.3",
+  "chapter": 2,
+  "caption": "Lớp \\texttt{Fp} biểu diễn phần tử trường hữu hạn $\\mathbb{F}_p$",
+  "tex": "chapters/ch2/main.tex",
+  "line": 518,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_03_lop_fp_bieu_dien_phan.py",
+  "page": 47,
+  "deps": [],
+  "title": "Lớp Fp biểu diễn phần tử trường hữu hạn F_p"
+ },
+ {
+  "id": "2_04",
+  "number": "2.4",
+  "chapter": 2,
+  "caption": "Kiểm tra nhóm cyclic $\\mathbb{Z}_7^*$ và phần tử sinh",
+  "tex": "chapters/ch2/main.tex",
+  "line": 551,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_04_kiem_tra_nhom_cyclic_va.py",
+  "page": 47,
+  "deps": [],
+  "title": "Kiểm tra nhóm cyclic Z_7^* và phần tử sinh"
+ },
+ {
+  "id": "2_05",
+  "number": "2.5",
+  "chapter": 2,
+  "caption": "Phép nhân vô hướng trên đường cong Elliptic (double-and-add)",
+  "tex": "chapters/ch2/main.tex",
+  "line": 818,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_05_phep_nhan_vo_huong_tren.py",
+  "page": 51,
+  "deps": [],
+  "title": "Phép nhân vô hướng trên đường cong Elliptic (double-and-add)"
+ },
+ {
+  "id": "2_06",
+  "number": "2.6",
+  "chapter": 2,
+  "caption": "Phép cộng điểm trên đường cong Elliptic $\\mathbb{F}_p$",
+  "tex": "chapters/ch2/main.tex",
+  "line": 1070,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_06_phep_cong_diem_tren_duong.py",
+  "page": 56,
+  "deps": [],
+  "title": "Phép cộng điểm trên đường cong Elliptic F_p"
+ },
+ {
+  "id": "2_07",
+  "number": "2.7",
+  "chapter": 2,
+  "caption": "Nhân vô hướng double-and-add và tìm bậc nhóm $E(\\mathbb{F}_{23})$",
+  "tex": "chapters/ch2/main.tex",
+  "line": 1158,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_07_nhan_vo_huong_double_and.py",
+  "page": 57,
+  "deps": [
+   "2_06"
+  ],
+  "title": "Nhân vô hướng double-and-add và tìm bậc nhóm E(F_23)"
+ },
+ {
+  "id": "2_07b",
+  "number": "2.7b",
+  "chapter": 2,
+  "caption": "(phần nối tiếp của Mã nguồn 2.7)",
+  "tex": "chapters/ch2/main.tex",
+  "line": 1185,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_07b_nhan_vo_huong_double_and_tiep.py",
+  "page": 57,
+  "deps": [
+   "2_07"
+  ],
+  "title": "(phần nối tiếp của Mã nguồn 2.7)"
+ },
+ {
+  "id": "2_08",
+  "number": "2.8",
+  "chapter": 2,
+  "caption": "Nội suy Lagrange trên trường hữu hạn $\\mathbb{F}_p$",
+  "tex": "chapters/ch2/main.tex",
+  "line": 1495,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_08_noi_suy_lagrange_tren_truong.py",
+  "page": 62,
+  "deps": [],
+  "title": "Nội suy Lagrange trên trường hữu hạn F_p"
+ },
+ {
+  "id": "2_09",
+  "number": "2.9",
+  "chapter": 2,
+  "caption": "Minh họa hàm băm SHA-256 với các đầu vào khác nhau",
+  "tex": "chapters/ch2/main.tex",
+  "line": 2007,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_09_minh_hoa_ham_bam_sha.py",
+  "page": 70,
+  "deps": [],
+  "title": "Minh họa hàm băm SHA-256 với các đầu vào khác nhau"
+ },
+ {
+  "id": "2_11",
+  "number": "2.11",
+  "chapter": 2,
+  "caption": "Hàm hash và xây dựng cây Merkle",
+  "tex": "chapters/ch2/main.tex",
+  "line": 2209,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_11_ham_hash_va_xay_dung.py",
+  "page": 73,
+  "deps": [],
+  "title": "Hàm hash và xây dựng cây Merkle"
+ },
+ {
+  "id": "2_12",
+  "number": "2.12",
+  "chapter": 2,
+  "caption": "Tạo và xác minh Merkle proof",
+  "tex": "chapters/ch2/main.tex",
+  "line": 2291,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_12_tao_va_xac_minh_merkle.py",
+  "page": 75,
+  "deps": [
+   "2_11"
+  ],
+  "title": "Tạo và xác minh Merkle proof"
+ },
+ {
+  "id": "2_13",
+  "number": "2.13",
+  "chapter": 2,
+  "caption": "Demo Merkle proof: chứng minh phần tử thuộc cây",
+  "tex": "chapters/ch2/main.tex",
+  "line": 2404,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_13_demo_merkle_proof_chung_minh.py",
+  "page": 76,
+  "deps": [
+   "2_12"
+  ],
+  "title": "Demo Merkle proof: chứng minh phần tử thuộc cây"
+ },
+ {
+  "id": "2_14",
+  "number": "2.14",
+  "chapter": 2,
+  "caption": "Lớp \\texttt{Fp} hoàn chỉnh: trường hữu hạn $\\mathbb{F}_p$",
+  "tex": "chapters/ch2/main.tex",
+  "line": 2546,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_14_lop_fp_hoan_chinh_truong.py",
+  "page": 78,
+  "deps": [],
+  "title": "Lớp Fp hoàn chỉnh: trường hữu hạn F_p"
+ },
+ {
+  "id": "2_15",
+  "number": "2.15",
+  "chapter": 2,
+  "caption": "Kiểm tra tính chất trường $\\mathbb{F}_{17}$",
+  "tex": "chapters/ch2/main.tex",
+  "line": 2573,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_15_kiem_tra_tinh_chat_truong.py",
+  "page": 78,
+  "deps": [
+   "2_14"
+  ],
+  "title": "Kiểm tra tính chất trường F_17"
+ },
+ {
+  "id": "2_16",
+  "number": "2.16",
+  "chapter": 2,
+  "caption": "Lớp \\texttt{ECPoint}: điểm trên đường cong Elliptic",
+  "tex": "chapters/ch2/main.tex",
+  "line": 2593,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_16_lop_ecpoint_diem_tren_duong.py",
+  "page": 80,
+  "deps": [
+   "2_14"
+  ],
+  "title": "Lớp ECPoint: điểm trên đường cong Elliptic"
+ },
+ {
+  "id": "2_17",
+  "number": "2.17",
+  "chapter": 2,
+  "caption": "Lớp \\texttt{EllipticCurve}, tìm bậc nhóm và minh họa ECDLP",
+  "tex": "chapters/ch2/main.tex",
+  "line": 2644,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_17_lop_ellipticcurve_tim_bac_nhom.py",
+  "page": 80,
+  "deps": [
+   "2_16"
+  ],
+  "title": "Lớp EllipticCurve, tìm bậc nhóm và minh họa ECDLP"
+ },
+ {
+  "id": "2_18",
+  "number": "2.18",
+  "chapter": 2,
+  "caption": "Pedersen Commitment: cam kết và mở giá trị bí mật",
+  "tex": "chapters/ch2/main.tex",
+  "line": 2682,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_18_pedersen_commitment_cam_ket_va.py",
+  "page": 82,
+  "deps": [
+   "2_17"
+  ],
+  "title": "Pedersen Commitment: cam kết và mở giá trị bí mật"
+ },
+ {
+  "id": "2_18b",
+  "number": "2.18b",
+  "chapter": 2,
+  "caption": "(phần nối tiếp của Mã nguồn 2.18)",
+  "tex": "chapters/ch2/main.tex",
+  "line": 2732,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_18b_pedersen_commitment_cam_ket_va_tiep.py",
+  "page": 82,
+  "deps": [
+   "2_18"
+  ],
+  "title": "(phần nối tiếp của Mã nguồn 2.18)"
+ },
+ {
+  "id": "2_19",
+  "number": "2.19",
+  "chapter": 2,
+  "caption": "Nội suy Lagrange và kiểm tra Schwartz-Zippel trên $\\mathbb{F}_p$",
+  "tex": "chapters/ch2/main.tex",
+  "line": 2764,
+  "expected": null,
+  "file": "ch02/ma_nguon_2_19_noi_suy_lagrange_va_kiem.py",
+  "page": 83,
+  "deps": [],
+  "title": "Nội suy Lagrange và kiểm tra Schwartz-Zippel trên F_p"
+ },
+ {
+  "id": "3_01",
+  "number": "3.1",
+  "chapter": 3,
+  "caption": "Thiết lập đường cong và sinh cặp khóa cho Schnorr ZKP",
+  "tex": "chapters/ch3/main.tex",
+  "line": 760,
+  "expected": null,
+  "file": "ch03/ma_nguon_3_01_thiet_lap_duong_cong_va.py",
+  "page": 98,
+  "deps": [
+   "2_17"
+  ],
+  "title": "Thiết lập đường cong và sinh cặp khóa cho Schnorr ZKP"
+ },
+ {
+  "id": "3_01b",
+  "number": "3.1b",
+  "chapter": 3,
+  "caption": "(phần nối tiếp của Mã nguồn 3.1)",
+  "tex": "chapters/ch3/main.tex",
+  "line": 801,
+  "expected": null,
+  "file": "ch03/ma_nguon_3_01b_thiet_lap_duong_cong_va_tiep.py",
+  "page": 98,
+  "deps": [
+   "3_01"
+  ],
+  "title": "(phần nối tiếp của Mã nguồn 3.1)"
+ },
+ {
+  "id": "3_02",
+  "number": "3.2",
+  "chapter": 3,
+  "caption": "Schnorr NIZK sử dụng biến đổi Fiat-Shamir",
+  "tex": "chapters/ch3/main.tex",
+  "line": 862,
+  "expected": null,
+  "file": "ch03/ma_nguon_3_02_schnorr_nizk_su_dung_bien.py",
+  "page": 101,
+  "deps": [
+   "3_01"
+  ],
+  "title": "Schnorr NIZK sử dụng biến đổi Fiat-Shamir"
+ },
+ {
+  "id": "3_03",
+  "number": "3.3",
+  "chapter": 3,
+  "caption": "Chứng minh DLEQ bằng giao thức Chaum-Pedersen NIZK",
+  "tex": "chapters/ch3/main.tex",
+  "line": 938,
+  "expected": null,
+  "file": "ch03/ma_nguon_3_03_chung_minh_dleq_bang_giao.py",
+  "page": 102,
+  "deps": [
+   "3_02"
+  ],
+  "title": "Chứng minh DLEQ bằng giao thức Chaum-Pedersen NIZK"
+ },
+ {
+  "id": "3_04",
+  "number": "3.4",
+  "chapter": 3,
+  "caption": "Đo lường hiệu năng và phân tích tính zero-knowledge, soundness",
+  "tex": "chapters/ch3/main.tex",
+  "line": 1005,
+  "expected": null,
+  "file": "ch03/ma_nguon_3_04_do_luong_hieu_nang_va.py",
+  "page": 103,
+  "deps": [
+   "3_02"
+  ],
+  "title": "Đo lường hiệu năng và phân tích tính zero-knowledge, soundness"
+ },
+ {
+  "id": "4_01",
+  "number": "4.1",
+  "chapter": 4,
+  "caption": "Hệ ràng buộc, lỗi thiếu ràng buộc và mẫu IsZero",
+  "tex": "chapters/ch4/main.tex",
+  "line": 558,
+  "expected": "a=1, b=6: True\na=3, b=2: False\n\nThiếu ràng buộc, x=50: True\nĐầy đủ,         x=50: False\nĐầy đủ,         x=3 : True\n\nIsZero(0) = 1, hợp lệ: True\nIsZero(5) = 0, hợp lệ: True\na=5, out=1 với mọi u: False\n",
+  "file": "ch04/ma_nguon_4_01_he_rang_buoc_loi_thieu.py",
+  "page": 116,
+  "deps": [],
+  "title": "Hệ ràng buộc, lỗi thiếu ràng buộc và mẫu IsZero"
+ },
+ {
+  "id": "4_02",
+  "number": "4.2",
+  "chapter": 4,
+  "caption": "Biểu diễn và tính toán arithmetic circuit cho $x^3 + x + 5 = 35$",
+  "tex": "chapters/ch4/main.tex",
+  "line": 709,
+  "expected": null,
+  "file": "ch04/ma_nguon_4_02_bieu_dien_va_tinh_toan.py",
+  "page": 119,
+  "deps": [],
+  "title": "Biểu diễn và tính toán arithmetic circuit cho x^3 + x + 5 = 35"
+ },
+ {
+  "id": "4_03",
+  "number": "4.3",
+  "chapter": 4,
+  "caption": "Arithmetization: cổng logic thành đa thức trên $\\mathbb{F}_p$, và\nchi phí của một bộ cộng 8 bit so với phép cộng bản địa",
+  "tex": "chapters/ch4/main.tex",
+  "line": 872,
+  "expected": "Bảng chân trị NOT/AND/OR/XOR: khớp trên {0,1}\nadd8(200, 99) = 43  (đúng: 43), dùng 40 cổng nhân\nCộng trực tiếp trên F_p: 299, dùng 0 cổng nhân\n",
+  "file": "ch04/ma_nguon_4_03_arithmetization_cong_logic_thanh_da.py",
+  "page": 121,
+  "deps": [],
+  "title": "Arithmetization: cổng logic thành đa thức trên F_p, và chi phí của một bộ cộng 8 bit so với phép cộng bản địa"
+ },
+ {
+  "id": "4_04",
+  "number": "4.4",
+  "chapter": 4,
+  "caption": "Đếm số ràng buộc của ba cặp cách biên dịch: thẳng và tối ưu",
+  "tex": "chapters/ch4/main.tex",
+  "line": 1213,
+  "expected": "Phép toán                      Thẳng  Tối ưu\nNghịch đảo trong F_p             121       1\nKiểm tra x < 2^64                 64       4\nĐọc arr[idx], n = 1024          2048       2\n",
+  "file": "ch04/ma_nguon_4_04_dem_so_rang_buoc_cua.py",
+  "page": 128,
+  "deps": [],
+  "title": "Đếm số ràng buộc của ba cặp cách biên dịch: thẳng và tối ưu"
+ },
+ {
+  "id": "4_05",
+  "number": "4.5",
+  "chapter": 4,
+  "caption": "Xây dựng và kiểm tra hệ ràng buộc R1CS",
+  "tex": "chapters/ch4/main.tex",
+  "line": 1668,
+  "expected": null,
+  "file": "ch04/ma_nguon_4_05_xay_dung_va_kiem_tra.py",
+  "page": 135,
+  "deps": [],
+  "title": "Xây dựng và kiểm tra hệ ràng buộc R1CS"
+ },
+ {
+  "id": "4_06",
+  "number": "4.6",
+  "chapter": 4,
+  "caption": "Chuyển đổi R1CS sang QAP và kiểm tra tính chia hết cho $Z_H(x)$",
+  "tex": "chapters/ch4/main.tex",
+  "line": 2037,
+  "expected": "Witness đúng (x=3): chia hết = True | H(x) = [35, 28]\nWitness sai  (x=4): chia hết = False | dư = [3, 16, 22]\n",
+  "file": "ch04/ma_nguon_4_06_chuyen_doi_r1cs_sang_qap.py",
+  "page": 142,
+  "deps": [],
+  "title": "Chuyển đổi R1CS sang QAP và kiểm tra tính chia hết cho Z_H(x)"
+ },
+ {
+  "id": "4_07",
+  "number": "4.7",
+  "chapter": 4,
+  "caption": "Ba tấn công lên một ``SNARK'' chỉ gồm QAP: chọn $H$ sau $\\tau$, tự\nchế $C'$, và dò witness khi không làm mù",
+  "tex": "chapters/ch4/main.tex",
+  "line": 2378,
+  "expected": null,
+  "file": "ch04/ma_nguon_4_07_ba_tan_cong_len_mot.py",
+  "page": 147,
+  "deps": [
+   "4_06"
+  ],
+  "title": "Ba tấn công lên một ``SNARK'' chỉ gồm QAP: chọn H sau tau, tự chế C', và dò witness khi không làm mù"
+ },
+ {
+  "id": "4_08",
+  "number": "4.8",
+  "chapter": 4,
+  "caption": "Pairing Tate trên đường cong tham số nhỏ: vòng lặp Miller\n(Thuật toán~\\ref{alg:miller-loop}) và lũy thừa cuối\n(Thuật toán~\\ref{alg:final-exp}); kiểm tra tính song tuyến tính",
+  "tex": "chapters/ch4/main.tex",
+  "line": 3470,
+  "expected": "e(P, P)              = (39496, 10308) | khác 1: True\ne(P, P)^r            = (1, 0)  (cấp r)\nSong tuyến tính      : True\ne(aP, bP) = e(abP, P): True\nBỏ lũy thừa cuối     : False (chưa duy nhất)\n",
+  "file": "ch04/ma_nguon_4_08_pairing_tate_tren_duong_cong.py",
+  "page": 166,
+  "deps": [],
+  "title": "Pairing Tate trên đường cong tham số nhỏ: vòng lặp Miller (Thuật toán~refalg:miller-loop) và lũy thừa cuối (Thuật toán~refalg:final-exp); kiểm tra tính song tuyến tính"
+ },
+ {
+  "id": "4_09",
+  "number": "4.9",
+  "chapter": 4,
+  "caption": "Mô phỏng Groth16 trong số mũ: khi $\\gamma = \\delta$, proof cho\n$\\text{out} = 35$ bị sửa thành proof hợp lệ cho $\\text{out} = 36$",
+  "tex": "chapters/ch4/main.tex",
+  "line": 3694,
+  "expected": "gamma != delta: verify(out=35) = True | proof giả cho out=36: False\ngamma =  delta: verify(out=35) = True | proof giả cho out=36: True\n",
+  "file": "ch04/ma_nguon_4_09_mo_phong_groth16_trong_so.py",
+  "page": 170,
+  "deps": [
+   "4_06"
+  ],
+  "title": "Mô phỏng Groth16 trong số mũ: khi gamma = delta, proof cho out = 35 bị sửa thành proof hợp lệ cho out = 36"
+ },
+ {
+  "id": "4_10",
+  "number": "4.10",
+  "chapter": 4,
+  "caption": "Pipeline R1CS và witness cho Mini-SNARK",
+  "tex": "chapters/ch4/main.tex",
+  "line": 3925,
+  "expected": null,
+  "file": "ch04/ma_nguon_4_10_pipeline_r1cs_va_witness_cho.py",
+  "page": 174,
+  "deps": [],
+  "title": "Pipeline R1CS và witness cho Mini-SNARK"
+ },
+ {
+  "id": "4_11",
+  "number": "4.11",
+  "chapter": 4,
+  "caption": "Nội suy Lagrange chuyển R1CS sang QAP và kiểm tra",
+  "tex": "chapters/ch4/main.tex",
+  "line": 3988,
+  "expected": null,
+  "file": "ch04/ma_nguon_4_11_noi_suy_lagrange_chuyen_r1cs.py",
+  "page": 175,
+  "deps": [
+   "4_10"
+  ],
+  "title": "Nội suy Lagrange chuyển R1CS sang QAP và kiểm tra"
+ },
+ {
+  "id": "4_12",
+  "number": "4.12",
+  "chapter": 4,
+  "caption": "Mini-SNARK: tạo và xác minh proof, thử gian lận",
+  "tex": "chapters/ch4/main.tex",
+  "line": 4066,
+  "expected": null,
+  "file": "ch04/ma_nguon_4_12_mini_snark_tao_va_xac.py",
+  "page": 177,
+  "deps": [
+   "4_11"
+  ],
+  "title": "Mini-SNARK: tạo và xác minh proof, thử gian lận"
+ },
+ {
+  "id": "4_13",
+  "number": "4.13",
+  "chapter": 4,
+  "caption": "Phân tích tại sao witness sai bị phát hiện qua đa thức",
+  "tex": "chapters/ch4/main.tex",
+  "line": 4133,
+  "expected": null,
+  "file": "ch04/ma_nguon_4_13_phan_tich_tai_sao_witness.py",
+  "page": 178,
+  "deps": [
+   "4_12"
+  ],
+  "title": "Phân tích tại sao witness sai bị phát hiện qua đa thức"
+ },
+ {
+  "id": "5_01",
+  "number": "5.1",
+  "chapter": 5,
+  "caption": "AIR cho phép bình phương liên tiếp trên $\\mathbb{F}_{97}$",
+  "tex": "chapters/ch5/main.tex",
+  "line": 792,
+  "expected": null,
+  "file": "ch05/ma_nguon_5_01_air_cho_phep_binh_phuong.py",
+  "page": 193,
+  "deps": [],
+  "title": "AIR cho phép bình phương liên tiếp trên F_97"
+ },
+ {
+  "id": "5_02",
+  "number": "5.2",
+  "chapter": 5,
+  "caption": "Chạy STARK từng bước trên $\\mathbb{F}_{97}$ với trace $a^8$,\n$n = 4$, $N = 16$: sinh mọi giá trị của Bảng~\\ref{tab:stark-walkthrough}\nvà Hình~\\ref{fig:stark-amplify}",
+  "tex": "chapters/ch5/main.tex",
+  "line": 1704,
+  "expected": "H = [1, 22, 96, 75]   L = [5, 40, 29, 38, 13, 7, 56, 60, 92, 57, 68, 59, 84, 90, 41, 37]\nGhi : trace = [3, 9, 81, 62]  t(X) = [63, 78, 76, 77]  t|L = [47, 53, 23, 75, 51, 92, 26, 42, 96, 94, 89, 28, 58, 13, 17, 10]  root_T = 955c9f8b\nGộp : alpha = (43, 85, 63)  CP(X) = [68, 62, 8, 66]  CP|L = [1, 60, 17, 65, 79, 58, 42, 3, 50, 68, 92, 89, 45, 86, 24, 18]  root_C = 1f643047\nHỏi : z = 42  t(z), t(wz), CP(z) = [63, 81, 41]\nGấp : gamma = (35, 86, 96)  f0 = [31, 11, 47, 75, 52, 65, 70, 79, 10, 37, 61, 90, 75, 55, 87, 21]\n      beta1 = 20  f1 = [14, 66, 96, 76, 57, 5, 72, 92]  beta2 = 58  f2 = [38, 38, 38, 38]\nMở  : query j = [1, 7]  cặp vị trí: [(1, 9), (7, 15)]\nTrace sai 1 ô: khác 1/4 điểm trên H, khác 16/16 điểm trên L\nt'|L = [73, 70, 0, 31, 76, 70, 19, 25, 57, 4, 79, 77, 45, 10, 56, 21]\n",
+  "file": "ch05/ma_nguon_5_02_chay_stark_tung_buoc_tren.py",
+  "page": 209,
+  "deps": [],
+  "title": "Chạy STARK từng bước trên F_97 với trace a^8, n = 4, N = 16: sinh mọi giá trị của Bảng~reftab:stark-walkthrough và Hình~reffig:stark-amplify"
+ },
+ {
+  "id": "5_03",
+  "number": "5.3",
+  "chapter": 5,
+  "caption": "Mini-STARK: Setup (tham số), Prove và Verify với LDE, đa thức hợp\nthành, DEEP, FRI, grinding và Fiat--Shamir",
+  "tex": "chapters/ch5/main.tex",
+  "line": 1829,
+  "expected": "Trace: [3, 9, 81, 6561] ...  y = x_7 = 15603345547385675601\n[1] Trace đúng            -> chấp nhận  (proof ~11904 byte)\n[2] Sai phát biểu (y + 1) -> từ chối: AIR sai tại điểm ngoài miền\n[3] Trace sai một hàng    -> từ chối: AIR sai tại điểm ngoài miền\n[4] Trace sai, sửa OOD    -> từ chối: FRI tầng cuối sai\n[5] Sửa một giá trị mở    -> từ chối: Merkle trace sai\n",
+  "file": "ch05/ma_nguon_5_03_mini_stark_setup_tham_so.py",
+  "page": 215,
+  "deps": [],
+  "title": "Mini-STARK: Setup (tham số), Prove và Verify với LDE, đa thức hợp thành, DEEP, FRI, grinding và Fiat-Shamir"
+ },
+ {
+  "id": "5_04",
+  "number": "5.4",
+  "chapter": 5,
+  "caption": "Minh họa soundness của STARK: một hàng sai trong trace buộc Prover\nchọn giữa bị FRI bác bỏ và trượt kiểm tra ràng buộc",
+  "tex": "chapters/ch5/main.tex",
+  "line": 2544,
+  "expected": "Trace đúng: deg C = 14, dư khi chia Z' = [0]\nTrace sai : deg C = 14, dư khi chia Z' = [250, 158, 80, 64, 200, 163, 113]\nGian lận 1: qua 32/32 spot check, bậc trên L = 31 (giới hạn 7) -> FRI bác bỏ\nGian lận 2: bậc = 7, qua 0/32 spot check (cận lý thuyết 6/32)\n\nrho    | duy nhất (1-rho)/2 | Johnson 1-sqrt(rho) | giả thuyết 1-rho\n1/2    |                309 |                 257 |              128\n1/4    |                189 |                 128 |               64\n1/8    |                155 |                  86 |               43\n1/16   |                141 |                  64 |               32\n",
+  "file": "ch05/ma_nguon_5_04_minh_hoa_soundness_cua_stark.py",
+  "page": 226,
+  "deps": [],
+  "title": "Minh họa soundness của STARK: một hàng sai trong trace buộc Prover chọn giữa bị FRI bác bỏ và trượt kiểm tra ràng buộc"
+ },
+ {
+  "id": "5_05",
+  "number": "5.5",
+  "chapter": 5,
+  "caption": "Lab 5.1: Tạo execution trace và kiểm tra AIR constraints",
+  "tex": "chapters/ch5/main.tex",
+  "line": 2948,
+  "expected": null,
+  "file": "ch05/ma_nguon_5_05_lab_5_1_tao_execution.py",
+  "page": 232,
+  "deps": [],
+  "title": "Lab 5.1: Tạo execution trace và kiểm tra AIR constraints"
+ },
+ {
+  "id": "5_06",
+  "number": "5.6",
+  "chapter": 5,
+  "caption": "Lab 5.2: Nội suy trace thành đa thức bằng Lagrange",
+  "tex": "chapters/ch5/main.tex",
+  "line": 2986,
+  "expected": null,
+  "file": "ch05/ma_nguon_5_06_lab_5_2_noi_suy.py",
+  "page": 233,
+  "deps": [
+   "5_05"
+  ],
+  "title": "Lab 5.2: Nội suy trace thành đa thức bằng Lagrange"
+ },
+ {
+  "id": "5_07",
+  "number": "5.7",
+  "chapter": 5,
+  "caption": "Lab 5.3: Xây dựng Merkle tree để commit các evaluation",
+  "tex": "chapters/ch5/main.tex",
+  "line": 3033,
+  "expected": null,
+  "file": "ch05/ma_nguon_5_07_lab_5_3_xay_dung.py",
+  "page": 234,
+  "deps": [
+   "5_06"
+  ],
+  "title": "Lab 5.3: Xây dựng Merkle tree để commit các evaluation"
+ },
+ {
+  "id": "5_08",
+  "number": "5.8",
+  "chapter": 5,
+  "caption": "Lab 5.4: FRI folding -- giảm bậc đa thức qua các vòng",
+  "tex": "chapters/ch5/main.tex",
+  "line": 3086,
+  "expected": null,
+  "file": "ch05/ma_nguon_5_08_lab_5_4_fri_folding.py",
+  "page": 236,
+  "deps": [
+   "5_07"
+  ],
+  "title": "Lab 5.4: FRI folding - giảm bậc đa thức qua các vòng"
+ },
+ {
+  "id": "5_09",
+  "number": "5.9",
+  "chapter": 5,
+  "caption": "Lab 5.5: FRI verify -- kiểm tra consistency và phát hiện witness sai",
+  "tex": "chapters/ch5/main.tex",
+  "line": 3171,
+  "expected": null,
+  "file": "ch05/ma_nguon_5_09_lab_5_5_fri_verify.py",
+  "page": 237,
+  "deps": [
+   "5_08"
+  ],
+  "title": "Lab 5.5: FRI verify - kiểm tra consistency và phát hiện witness sai"
+ },
+ {
+  "id": "6_01",
+  "number": "6.1",
+  "chapter": 6,
+  "caption": "Lab 6.1: Xây dựng PLONKish gate table và kiểm tra constraints",
+  "tex": "chapters/ch6/main.tex",
+  "line": 791,
+  "expected": null,
+  "file": "ch06/ma_nguon_6_01_lab_6_1_xay_dung.py",
+  "page": 252,
+  "deps": [],
+  "title": "Lab 6.1: Xây dựng PLONKish gate table và kiểm tra constraints"
+ },
+ {
+  "id": "6_02",
+  "number": "6.2",
+  "chapter": 6,
+  "caption": "Lab 6.2: Copy constraints và grand product permutation argument",
+  "tex": "chapters/ch6/main.tex",
+  "line": 869,
+  "expected": null,
+  "file": "ch06/ma_nguon_6_02_lab_6_2_copy_constraints.py",
+  "page": 254,
+  "deps": [
+   "6_01"
+  ],
+  "title": "Lab 6.2: Copy constraints và grand product permutation argument"
+ },
+ {
+  "id": "6_03",
+  "number": "6.3",
+  "chapter": 6,
+  "caption": "Lab 6.3: So sánh R1CS và PLONKish cho cùng bài toán",
+  "tex": "chapters/ch6/main.tex",
+  "line": 958,
+  "expected": null,
+  "file": "ch06/ma_nguon_6_03_lab_6_3_so_sanh.py",
+  "page": 255,
+  "deps": [
+   "6_02"
+  ],
+  "title": "Lab 6.3: So sánh R1CS và PLONKish cho cùng bài toán"
+ },
+ {
+  "id": "7_04",
+  "number": "7.4",
+  "chapter": 7,
+  "caption": "Lab 7.4: Tổng hợp và so sánh kết quả benchmark",
+  "tex": "chapters/ch7/main.tex",
+  "line": 582,
+  "expected": null,
+  "file": "ch07/ma_nguon_7_04_lab_7_4_tong_hop.py",
+  "page": 269,
+  "deps": [],
+  "title": "Lab 7.4: Tổng hợp và so sánh kết quả benchmark"
+ },
+ {
+  "id": "8_28",
+  "number": "8.28",
+  "chapter": 8,
+  "caption": "Tạo Merkle tree và input cho circuit bỏ phiếu",
+  "tex": "chapters/ch8/main.tex",
+  "line": 1181,
+  "expected": null,
+  "file": "ch08/ma_nguon_8_28_tao_merkle_tree_va_input.py",
+  "page": 294,
+  "deps": [],
+  "title": "Tạo Merkle tree và input cho circuit bỏ phiếu"
+ },
+ {
+  "id": "14_02",
+  "number": "14.2",
+  "chapter": 14,
+  "caption": "Train model MNIST và export sang ONNX cho zkML",
+  "tex": "chapters/ch14/main.tex",
+  "line": 210,
+  "expected": null,
+  "file": "ch14/ma_nguon_14_02_train_model_mnist_va_export.py",
+  "page": 366,
+  "deps": [],
+  "title": "Train model MNIST và export sang ONNX cho zkML"
+ }
+]

@@ -1,0 +1,3 @@
+# Mã nguồn 2.11: ch02/ma_nguon_2_11_ham_hash_va_xay_dung.py
+# Lệnh: python ma_nguon_2_11_ham_hash_va_xay_dung.py   (mã thoát: 0, 0.0 s)
+

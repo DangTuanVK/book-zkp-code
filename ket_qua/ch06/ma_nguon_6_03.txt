@@ -1,0 +1,25 @@
+# Mã nguồn 6.3: ch06/ma_nguon_6_03_lab_6_3_so_sanh.py
+# Lệnh: python ma_nguon_6_03_lab_6_3_so_sanh.py   (mã thoát: 0, 0.0 s)
+
+
+=======================================================
+SO SÁNH: R1CS vs PLONKish cho x^2 + x = 12
+=======================================================
+
+R1CS:
+  Biến: s = [1, out, x, w1] = [1, 12, 3, 9]
+  Ràng buộc: 2 (1 nhân + 1 output check)
+  Ma trận: 2×4 × 3 = 24 phần tử
+  Wire connections: implicit trong ma trận
+
+PLONKish:
+  Gate table: 3 hàng × (3 wire + 5 selector) = 24 phần tử
+  Permutation: σ = [1, 4, 3, 2, 0, 6, 5, 7, 8]
+  Wire connections: explicit permutation + grand product
+  Ưu điểm: universal setup, custom gates, lookup
+
+Kết luận:
+  R1CS: đơn giản hơn, proof nhỏ hơn (Groth16)
+  PLONKish: linh hoạt hơn, universal setup, custom gates
+  Cùng bài toán nhỏ → khác biệt ít
+  Bài toán lớn (zkEVM) → PLONKish + lookup thắng rõ

@@ -1,0 +1,8 @@
+# Mã nguồn 4.8: ch04/ma_nguon_4_08_pairing_tate_tren_duong_cong.py
+# Lệnh: python ma_nguon_4_08_pairing_tate_tren_duong_cong.py   (mã thoát: 0, 0.0 s)
+
+e(P, P)              = (39496, 10308) | khác 1: True
+e(P, P)^r            = (1, 0)  (cấp r)
+Song tuyến tính      : True
+e(aP, bP) = e(abP, P): True
+Bỏ lũy thừa cuối     : False (chưa duy nhất)

@@ -1,0 +1,8 @@
+# Mã nguồn 2.3: ch02/ma_nguon_2_03_lop_fp_bieu_dien_phan.py
+# Lệnh: python ma_nguon_2_03_lop_fp_bieu_dien_phan.py   (mã thoát: 0, 0.0 s)
+
+a + b = 2
+a - b = 1
+a * b = 6
+a / b = 3
+a * a^(-1) = 1

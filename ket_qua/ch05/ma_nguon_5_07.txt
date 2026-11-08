@@ -1,0 +1,7 @@
+# Mã nguồn 5.7: ch05/ma_nguon_5_07_lab_5_3_xay_dung.py
+# Lệnh: python ma_nguon_5_07_lab_5_3_xay_dung.py   (mã thoát: 0, 0.0 s)
+
+
+=== Merkle Commitment ===
+  Committed 16 evaluations
+  Merkle root: 82e637bfd26a5760

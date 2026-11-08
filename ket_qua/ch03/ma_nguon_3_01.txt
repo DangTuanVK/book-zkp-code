@@ -1,0 +1,9 @@
+# Mã nguồn 3.1: ch03/ma_nguon_3_01_thiet_lap_duong_cong_va.py
+# Lệnh: python ma_nguon_3_01_thiet_lap_duong_cong_va.py   (mã thoát: 0, 0.0 s)
+
+Đường cong: y^2 = x^3 + x + 1 (mod 23)
+Generator G = (0, 1), order = 28
+
+--- Key Generation ---
+Secret key x = 14
+Public key H = [x]G = (4, 0)

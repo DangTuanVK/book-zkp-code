@@ -1,0 +1,14 @@
+# Mã nguồn 4.12: ch04/ma_nguon_4_12_mini_snark_tao_va_xac.py
+# Lệnh: python ma_nguon_4_12_mini_snark_tao_va_xac.py   (mã thoát: 0, 0.0 s)
+
+
+=== BƯỚC 5: Mini-SNARK ===
+Proof: {'A_tau': 35, 'B_tau': 14, 'C_tau': 23, 'H_tau': 5}
+Verify: True
+
+--- Thử gian lận (x=4) ---
+P_fake(τ) = 18
+QUAN TRỌNG: Tại τ cụ thể, gian lận có thể 'lọt'.
+Groth16 thật ẩn τ trong CRS và dùng pairing để ngăn điều này:
+  Prover chỉ thấy [τ^i]G, không biết τ (qua trusted setup).
+  Nếu P(x) không chia hết cho Z_H(x), pairing check sẽ thất bại.

@@ -1,0 +1,8 @@
+# Mã nguồn 2.7b: ch02/ma_nguon_2_07b_nhan_vo_huong_double_and_tiep.py
+# Lệnh: python ma_nguon_2_07b_nhan_vo_huong_double_and_tiep.py   (mã thoát: 0, 0.0 s)
+
+
+Bí mật k = 17
+Public Q = [k]G = (1, 7)
+Với p = 23, brute force dễ dàng.
+Với p ~ 2^256, cần ~2^128 phép tính – KHÔNG KHẢ THI!

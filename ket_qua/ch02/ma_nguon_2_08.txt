@@ -1,0 +1,8 @@
+# Mã nguồn 2.8: ch02/ma_nguon_2_08_noi_suy_lagrange_tren_truong.py
+# Lệnh: python ma_nguon_2_08_noi_suy_lagrange_tren_truong.py   (mã thoát: 0, 0.0 s)
+
+f(1) = 3, expected 3, match: True
+f(2) = 7, expected 7, match: True
+f(4) = 5, expected 5, match: True
+f(3) = 2
+f(0) = 7

@@ -1,0 +1,8 @@
+# Mã nguồn 4.10: ch04/ma_nguon_4_10_pipeline_r1cs_va_witness_cho.py
+# Lệnh: python ma_nguon_4_10_pipeline_r1cs_va_witness_cho.py   (mã thoát: 0, 0.0 s)
+
+=== BƯỚC 1-2: R1CS & Witness ===
+Witness s = [1, 35, 3, 9, 27]
+  RC1: 3 * 3 = 9, exp 9, OK
+  RC2: 9 * 3 = 27, exp 27, OK
+  RC3: 0 * 1 = 0, exp 0, OK

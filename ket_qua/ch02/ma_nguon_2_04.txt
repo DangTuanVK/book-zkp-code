@@ -1,0 +1,12 @@
+# Mã nguồn 2.4: ch02/ma_nguon_2_04_kiem_tra_nhom_cyclic_va.py
+# Lệnh: python ma_nguon_2_04_kiem_tra_nhom_cyclic_va.py   (mã thoát: 0, 0.0 s)
+
+Nhóm cyclic Z_7^* sinh bởi g = 3:
+  3^0 = 1
+  3^1 = 3
+  3^2 = 2
+  3^3 = 6
+  3^4 = 4
+  3^5 = 5
+Sinh đủ tất cả phần tử? True
+Bậc nhóm: 6

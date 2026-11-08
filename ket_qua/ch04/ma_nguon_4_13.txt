@@ -1,0 +1,20 @@
+# Mã nguồn 4.13: ch04/ma_nguon_4_13_phan_tich_tai_sao_witness.py
+# Lệnh: python ma_nguon_4_13_phan_tich_tai_sao_witness.py   (mã thoát: 0, 0.0 s)
+
+
+=== Phân tích đa thức ===
+P(x) tại evaluation domain (witness đúng, x=3):
+  P(1) = 0
+  P(2) = 0
+  P(3) = 0
+
+P(x) tại evaluation domain (witness SAI, x=4):
+  P(1) = 0
+  P(2) = 0
+  P(3) = 3
+
+KẾT LUẬN:
+  Witness đúng → P(r_i) = 0 ∀i → Z_H | P → H(x) tồn tại ✓
+  Witness sai  → P(r_i) ≠ 0    → Z_H ∤ P → H(x) KHÔNG tồn tại ✗
+  → Schwartz-Zippel: kiểm tra tại τ ngẫu nhiên phát hiện gian lận
+    với xác suất ≥ 1 - deg(P)/p ≈ 1 - 6/41

@@ -1,0 +1,14 @@
+# Mã nguồn 2.19: ch02/ma_nguon_2_19_noi_suy_lagrange_va_kiem.py
+# Lệnh: python ma_nguon_2_19_noi_suy_lagrange_va_kiem.py   (mã thoát: 0, 0.0 s)
+
+Điểm đã biết: [(1, 12), (2, 28), (3, 50)]
+  f(0) = 2 (nội suy), 2 (thực), match: True
+  f(4) = 78 (nội suy), 78 (thực), match: True
+  f(5) = 15 (nội suy), 15 (thực), match: True
+  f(50) = 92 (nội suy), 92 (thực), match: True
+
+--- Schwartz-Zippel Test ---
+r = 37
+f(r) = 3, g(r) = 6
+f(r) == g(r)? False
+→ Nếu khác tại r ngẫu nhiên: f ≠ g (xác suất lỗi ≤ d/p ≈ 0)

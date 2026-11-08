@@ -1,0 +1,25 @@
+# Mã nguồn 7.4: ch07/ma_nguon_7_04_lab_7_4_tong_hop.py
+# Lệnh: python ma_nguon_7_04_lab_7_4_tong_hop.py   (mã thoát: 0, 0.0 s)
+
+Hệ thống              Prove (s)  Verify (ms)  Proof (B)              Setup
+========================================================================
+Groth16                    1.20          3.5        804   circuit-specific
+PLONK                      2.10          5.2       1580          universal
+Noir (UltraPlonk)          1.80          4.8       1200          universal
+
+=== Phân tích ===
+  Prover nhanh nhất:  Groth16
+  Proof nhỏ nhất:     Groth16
+  Verify nhanh nhất:  Groth16
+
+=== Thử thay đổi kích thước circuit ===
+Sửa PoseidonChain(n) với n = 10, 50, 100, 500
+Chạy lại Lab 7.1--7.3 cho mỗi n
+Vẽ biểu đồ prove_time vs n để thấy scaling behavior
+
+    n    ~Constraints  Groth16 (s)  PLONK (s)
+---------------------------------------------
+   10           3,000          1.2        2.1
+   50          15,000          6.0       10.5
+  100          30,000         12.0       21.0
+  500         150,000         60.0      105.0

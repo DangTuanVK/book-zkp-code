@@ -1,0 +1,8 @@
+# Mã nguồn 4.2: ch04/ma_nguon_4_02_bieu_dien_va_tinh_toan.py
+# Lệnh: python ma_nguon_4_02_bieu_dien_va_tinh_toan.py   (mã thoát: 0, 0.0 s)
+
+Assignment: {'x': 3, 'five': 5, 'w1': 9, 'w2': 27, 'w3': 30, 'w4': 35}
+Circuit valid: True
+Output w4 = 35 (expected 35)
+
+Bad assignment (x=4): w4 = 32 (≠ 35)

@@ -1,0 +1,13 @@
+# Mã nguồn 4.5: ch04/ma_nguon_4_05_xay_dung_va_kiem_tra.py
+# Lệnh: python ma_nguon_4_05_xay_dung_va_kiem_tra.py   (mã thoát: 0, 0.1 s)
+
+s = [ 1 35  3  9 27]
+R1CS valid: True
+
+s_bad = [ 1 35  4 16 64]
+R1CS valid: False
+
+Chi tiết (x=3):
+  RC1: 3 × 3 = 9, expected 9, OK
+  RC2: 9 × 3 = 27, expected 27, OK
+  RC3: 0 × 1 = 0, expected 0, OK

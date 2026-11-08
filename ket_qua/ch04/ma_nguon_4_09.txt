@@ -1,0 +1,5 @@
+# Mã nguồn 4.9: ch04/ma_nguon_4_09_mo_phong_groth16_trong_so.py
+# Lệnh: python ma_nguon_4_09_mo_phong_groth16_trong_so.py   (mã thoát: 0, 0.0 s)
+
+gamma != delta: verify(out=35) = True | proof giả cho out=36: False
+gamma =  delta: verify(out=35) = True | proof giả cho out=36: True

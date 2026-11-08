@@ -1,0 +1,6 @@
+# Mã nguồn 2.13: ch02/ma_nguon_2_13_demo_merkle_proof_chung_minh.py
+# Lệnh: python ma_nguon_2_13_demo_merkle_proof_chung_minh.py   (mã thoát: 0, 0.0 s)
+
+Root: 40242fd200ea1d2d...
+Proof cho item_3: 3 sibling hashes
+Kết quả xác minh: True

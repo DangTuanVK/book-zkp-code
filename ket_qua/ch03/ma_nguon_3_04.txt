@@ -1,0 +1,19 @@
+# Mã nguồn 3.4: ch03/ma_nguon_3_04_do_luong_hieu_nang_va.py
+# Lệnh: python ma_nguon_3_04_do_luong_hieu_nang_va.py   (mã thoát: 0, 0.2 s)
+
+
+==================================================
+PHÂN TÍCH HIỆU NĂNG
+==================================================
+Tạo 100 proof:   0.006s (0.1 ms/proof)
+Verify 100 proof: 0.012s (0.1 ms/proof)
+Tất cả valid: True
+
+--- Zero-Knowledge Analysis ---
+Thống kê z values từ 100 proof (nên phân phối đều):
+  Số giá trị z khác nhau: 17 / 100
+  (Nếu ~= 100: phân phối đều → zero-knowledge)
+
+--- Soundness Test ---
+Brute-force 1000 proof ngẫu nhiên: 34 accepted
+Xác suất: 0.0340 (expected ~1/28 ≈ 0.0357)

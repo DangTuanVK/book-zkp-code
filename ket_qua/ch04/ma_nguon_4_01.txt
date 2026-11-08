@@ -1,0 +1,13 @@
+# Mã nguồn 4.1: ch04/ma_nguon_4_01_he_rang_buoc_loi_thieu.py
+# Lệnh: python ma_nguon_4_01_he_rang_buoc_loi_thieu.py   (mã thoát: 0, 0.0 s)
+
+a=1, b=6: True
+a=3, b=2: False
+
+Thiếu ràng buộc, x=50: True
+Đầy đủ,         x=50: False
+Đầy đủ,         x=3 : True
+
+IsZero(0) = 1, hợp lệ: True
+IsZero(5) = 0, hợp lệ: True
+a=5, out=1 với mọi u: False

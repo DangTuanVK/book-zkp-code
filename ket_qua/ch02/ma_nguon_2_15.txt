@@ -1,0 +1,5 @@
+# Mã nguồn 2.15: ch02/ma_nguon_2_15_kiem_tra_tinh_chat_truong.py
+# Lệnh: python ma_nguon_2_15_kiem_tra_tinh_chat_truong.py   (mã thoát: 0, 0.0 s)
+
+Tất cả tính chất trường F_17 đúng!
+  a+b=1, a*b=9, a/b=13, a^(-1)=5

@@ -1,0 +1,13 @@
+# Mã nguồn 4.11: ch04/ma_nguon_4_11_noi_suy_lagrange_chuyen_r1cs.py
+# Lệnh: python ma_nguon_4_11_noi_suy_lagrange_chuyen_r1cs.py   (mã thoát: 0, 0.0 s)
+
+
+=== BƯỚC 3-4: QAP & Setup ===
+τ (toxic waste) = 10
+A(τ) = 9
+B(τ) = 13
+C(τ) = 27
+Z_H(τ) = 12
+P(τ) = A(τ)·B(τ) - C(τ) = 8
+H(τ) = P(τ)/Z_H(τ) = 28
+QAP check: H(τ)·Z_H(τ) = 8 == P(τ)? True

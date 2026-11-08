@@ -1,0 +1,15 @@
+# Mã nguồn 5.5: ch05/ma_nguon_5_05_lab_5_1_tao_execution.py
+# Lệnh: python ma_nguon_5_05_lab_5_1_tao_execution.py   (mã thoát: 0, 0.0 s)
+
+=== Execution Trace (a^8, a=3) ===
+  T[0] = 3
+  T[1] = 9
+  T[2] = 81
+  T[3] = 62
+  Kết quả: 3^8 = 62
+
+AIR transition constraints:
+  T[1] = T[0]^2? 9 = 9 → OK
+  T[2] = T[1]^2? 81 = 81 → OK
+  T[3] = T[2]^2? 62 = 62 → OK
+  All constraints: PASS

@@ -1,0 +1,11 @@
+# Mã nguồn 5.8: ch05/ma_nguon_5_08_lab_5_4_fri_folding.py
+# Lệnh: python ma_nguon_5_08_lab_5_4_fri_folding.py   (mã thoát: 0, 0.0 s)
+
+
+=== FRI Folding ===
+  Round 1: alpha=36, evals 16 → 8, root=117e4ed81641aa76
+  Round 2: alpha=24, evals 8 → 4, root=662ef8d41f3d0941
+  Round 3: alpha=65, evals 4 → 2, root=98706e081b6d81b6
+
+  Final values: [6, 5]
+  → Không phải hằng số (do domain nhỏ, đơn giản hóa)

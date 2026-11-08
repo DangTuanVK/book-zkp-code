@@ -1,0 +1,9 @@
+# Mã nguồn 5.3: ch05/ma_nguon_5_03_mini_stark_setup_tham_so.py
+# Lệnh: python ma_nguon_5_03_mini_stark_setup_tham_so.py   (mã thoát: 0, 0.1 s)
+
+Trace: [3, 9, 81, 6561] ...  y = x_7 = 15603345547385675601
+[1] Trace đúng            -> chấp nhận  (proof ~11904 byte)
+[2] Sai phát biểu (y + 1) -> từ chối: AIR sai tại điểm ngoài miền
+[3] Trace sai một hàng    -> từ chối: AIR sai tại điểm ngoài miền
+[4] Trace sai, sửa OOD    -> từ chối: FRI tầng cuối sai
+[5] Sửa một giá trị mở    -> từ chối: Merkle trace sai

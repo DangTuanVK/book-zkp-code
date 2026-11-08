@@ -1,0 +1,3 @@
+# Mã nguồn 2.6: ch02/ma_nguon_2_06_phep_cong_diem_tren_duong.py
+# Lệnh: python ma_nguon_2_06_phep_cong_diem_tren_duong.py   (mã thoát: 0, 0.0 s)
+

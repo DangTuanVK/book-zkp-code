@@ -1,0 +1,6 @@
+# Mã nguồn 4.3: ch04/ma_nguon_4_03_arithmetization_cong_logic_thanh_da.py
+# Lệnh: python ma_nguon_4_03_arithmetization_cong_logic_thanh_da.py   (mã thoát: 0, 0.0 s)
+
+Bảng chân trị NOT/AND/OR/XOR: khớp trên {0,1}
+add8(200, 99) = 43  (đúng: 43), dùng 40 cổng nhân
+Cộng trực tiếp trên F_p: 299, dùng 0 cổng nhân

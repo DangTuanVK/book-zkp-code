@@ -1,0 +1,9 @@
+# Mã nguồn 2.18b: ch02/ma_nguon_2_18b_pedersen_commitment_cam_ket_va_tiep.py
+# Lệnh: python ma_nguon_2_18b_pedersen_commitment_cam_ket_va_tiep.py   (mã thoát: 0, 0.0 s)
+
+
+--- Pedersen Homomorphic ---
+C(3) + C(7) = (12, 4)
+C(3+7=10) = (12, 4)
+Bằng nhau? True
+→ Có thể cộng commitment mà không cần mở!

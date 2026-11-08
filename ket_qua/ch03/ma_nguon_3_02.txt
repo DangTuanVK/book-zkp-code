@@ -1,0 +1,17 @@
+# Mã nguồn 3.2: ch03/ma_nguon_3_02_schnorr_nizk_su_dung_bien.py
+# Lệnh: python ma_nguon_3_02_schnorr_nizk_su_dung_bien.py   (mã thoát: 0, 0.0 s)
+
+
+==================================================
+SCHNORR NIZK (FIAT-SHAMIR)
+==================================================
+Proof: (a=(7, 12), z=4)
+Proof size: 2 phần tử
+Verification: ACCEPT
+
+--- Tạo 5 proof khác nhau cho cùng statement ---
+  Proof 1: a=(17, 20), z=22 → True
+  Proof 2: a=(13, 16), z=18 → True
+  Proof 3: a=(9, 7), z=1 → True
+  Proof 4: a=(5, 4), z=6 → True
+  Proof 5: a=(3, 13), z=25 → True

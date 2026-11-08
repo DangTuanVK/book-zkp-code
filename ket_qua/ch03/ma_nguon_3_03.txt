@@ -1,0 +1,12 @@
+# Mã nguồn 3.3: ch03/ma_nguon_3_03_chung_minh_dleq_bang_giao.py
+# Lệnh: python ma_nguon_3_03_chung_minh_dleq_bang_giao.py   (mã thoát: 0, 0.0 s)
+
+
+==================================================
+CHAUM-PEDERSEN DLEQ NIZK
+==================================================
+Secret x = 6
+h1 = [x]G = (7, 11)
+h2 = [x]F = (6, 19)
+DLEQ Proof: valid = True
+Gian lận (x khác nhau): valid = False

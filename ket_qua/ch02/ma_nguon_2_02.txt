@@ -1,0 +1,6 @@
+# Mã nguồn 2.2: ch02/ma_nguon_2_02_minh_hoa_bai_toan_logarit.py
+# Lệnh: python ma_nguon_2_02_minh_hoa_bai_toan_logarit.py   (mã thoát: 0, 0.0 s)
+
+Secret x: 21603491894513989977993195500511469612381207497858293355691203034862312277469
+Public y: 4899728178781929036944744304255667329592858744714535552264715864312631752810
+Từ y, tìm lại x: BÀI TOÁN LOGARIT RỜI RẠC – cực kỳ khó!

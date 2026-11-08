@@ -1,0 +1,28 @@
+# Mã nguồn 5.1: ch05/ma_nguon_5_01_air_cho_phep_binh_phuong.py
+# Lệnh: python ma_nguon_5_01_air_cho_phep_binh_phuong.py   (mã thoát: 0, 0.0 s)
+
+Execution trace (a^8, a=3):
+  Step 0: 3
+  Step 1: 9
+  Step 2: 81
+  Step 3: 62
+  Kết quả: 3^8 = 62 (mod 97)
+
+Kiểm tra transition constraints:
+  Step 0->1: 9 - 3^2 = 9 - 9 = 0 OK
+  Step 1->2: 81 - 9^2 = 81 - 81 = 0 OK
+  Step 2->3: 62 - 81^2 = 62 - 62 = 0 OK
+
+Boundary constraints:
+  T[0] = 3 == 3? True
+  T[3] = 62 == 62? True
+
+Nội suy Lagrange:
+  t(0) = 3 == 3? True
+  t(1) = 9 == 9? True
+  t(2) = 81 == 81? True
+  t(3) = 62 == 62? True
+
+Constraint polynomial C(τ=48):
+  t(τ) = 92, t(τ+1) = 91
+  C(τ) = t(τ+1) - t(τ)^2 = 66
