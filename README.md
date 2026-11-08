@@ -1,7 +1,7 @@
 # Mã nguồn Python của sách "Chứng minh mà không tiết lộ"
 
 Mã nguồn đi kèm sách **Chứng minh mà không tiết lộ -- Lý thuyết và thực hành
-Zero-Knowledge Proof** (TS. Đặng Minh Tuấn). Thư mục này chứa toàn bộ 55 khối
+Zero-Knowledge Proof** (TS. Đặng Minh Tuấn). Thư mục này chứa toàn bộ 54 khối
 mã Python in trong sách. Mỗi file được đánh số đúng như "Mã nguồn X.Y" trong
 sách và đã được chạy thử. Kết quả chạy được lưu trong `ket_qua/`.
 
@@ -19,7 +19,9 @@ run_all.py                    chạy tất cả, lưu kết quả, so với sác
 
 Số mã nguồn trong sách đánh chung cho mọi ngôn ngữ (Python, Rust, Circom,
 bash...), nên số của các file Python không liên tục: ví dụ Chương 4 có Mã
-nguồn 4.1 đến 4.13, còn Chương 8 chỉ có Mã nguồn 8.28 là Python. Một số khối
+nguồn 4.1 đến 4.13, còn Chương 12 chỉ có Mã nguồn 12.4 là Python. Repo này
+chỉ gồm mã Python; mã Circom, Rust (Halo2), Noir, Leo và Cairo trong sách
+được chạy thử riêng với công cụ tương ứng. Một số khối
 mã trong sách không có số riêng vì là phần nối tiếp của mã nguồn ngay trước;
 các file này mang hậu tố `b`, ví dụ `ma_nguon_2_07b_...py`.
 
@@ -69,7 +71,7 @@ Chạy vài mã nguồn qua `run_all.py`: `python run_all.py 2_08 4_06`.
 
 ## Kết quả kiểm tra
 
-Toàn bộ 55 mã nguồn chạy không lỗi với Python 3.10, numpy 2.2, torch 2.5.1.
+Toàn bộ 54 mã nguồn chạy không lỗi với Python 3.10, numpy 2.2, torch 2.5.1.
 Với 27 mã nguồn có in "Kết quả chạy" trong sách, kết quả thực tế trùng từng
 dòng với sách. Chi tiết trong [ket_qua/BAO_CAO.md](ket_qua/BAO_CAO.md).
 

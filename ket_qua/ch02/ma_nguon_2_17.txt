@@ -30,5 +30,5 @@ Generator G = (0, 1)
   [26]G = (6, 4)
   [27]G = (0, 22)
 Bậc nhóm: [28]G = O → order = 28
-Secret x=5, Public Q=(18, 3)
+Secret x=12, Public Q=(17, 20)
 Với p~2^256: tìm x từ Q KHÔNG KHẢ THI!
