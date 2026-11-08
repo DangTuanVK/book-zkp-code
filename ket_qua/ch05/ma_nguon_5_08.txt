@@ -3,9 +3,9 @@
 
 
 === FRI Folding ===
-  Round 1: alpha=36, evals 16 → 8, root=117e4ed81641aa76
-  Round 2: alpha=24, evals 8 → 4, root=662ef8d41f3d0941
-  Round 3: alpha=65, evals 4 → 2, root=98706e081b6d81b6
+  Round 1: alpha=47, evals 16 → 8, root=a79162df656fb06e
+  Round 2: alpha=41, evals 8 → 4, root=dbe1be5e41034525
+  Round 3: alpha=51, evals 4 → 2, root=d48e75c47fc8bcac
 
-  Final values: [6, 5]
+  Final values: [41, 11]
   → Không phải hằng số (do domain nhỏ, đơn giản hóa)

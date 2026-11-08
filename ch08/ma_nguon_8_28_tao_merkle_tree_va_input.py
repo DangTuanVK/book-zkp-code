@@ -1,5 +1,5 @@
 # Mã nguồn 8.28 - Tạo Merkle tree và input cho circuit bỏ phiếu
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 8, trang 294
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 8, trang 295
 # Trích tự động từ chapters/ch8/main.tex (dòng 1181) bằng extract.py; không sửa tay file này.
 
 # === generate_input.py – Tạo input cho circuit ===

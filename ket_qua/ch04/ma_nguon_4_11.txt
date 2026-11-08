@@ -3,11 +3,11 @@
 
 
 === BƯỚC 3-4: QAP & Setup ===
-τ (toxic waste) = 10
-A(τ) = 9
-B(τ) = 13
-C(τ) = 27
-Z_H(τ) = 12
-P(τ) = A(τ)·B(τ) - C(τ) = 8
-H(τ) = P(τ)/Z_H(τ) = 28
-QAP check: H(τ)·Z_H(τ) = 8 == P(τ)? True
+τ (toxic waste) = 38
+A(τ) = 34
+B(τ) = 24
+C(τ) = 20
+Z_H(τ) = 3
+P(τ) = A(τ)·B(τ) - C(τ) = 17
+H(τ) = P(τ)/Z_H(τ) = 33
+QAP check: H(τ)·Z_H(τ) = 17 == P(τ)? True

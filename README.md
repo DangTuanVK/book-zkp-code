@@ -44,7 +44,7 @@ lại của file giống hệt sách. Danh sách phụ thuộc nằm trong `deps
 ## Cài đặt và chạy
 
 Phần lớn mã nguồn chỉ cần Python 3.10 trở lên với thư viện chuẩn. Ngoại lệ:
-Mã nguồn 4.5 cần `numpy`; Mã nguồn 14.2 cần `torch` và `onnx`.
+Mã nguồn 4.5 cần `numpy`; Mã nguồn 12.3 cần `torch` và `onnx`.
 
 ```bash
 # Cách 1: conda / micromamba

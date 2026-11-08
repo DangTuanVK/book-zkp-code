@@ -6,8 +6,8 @@
 SCHNORR INTERACTIVE PROOF
 ==================================================
 1. Prover gửi commitment:  a = (13, 16)
-2. Verifier gửi challenge: e = 4
+2. Verifier gửi challenge: e = 3
 3. Prover gửi response:    z = 0
 4. Verification: ACCEPT
 
-Với witness giả (x=0): REJECT
+Với witness giả (x=9): REJECT

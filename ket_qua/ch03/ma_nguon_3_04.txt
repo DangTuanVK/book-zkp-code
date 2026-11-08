@@ -11,9 +11,9 @@ Tất cả valid: True
 
 --- Zero-Knowledge Analysis ---
 Thống kê z values từ 100 proof (nên phân phối đều):
-  Số giá trị z khác nhau: 17 / 100
+  Số giá trị z khác nhau: 16 / 100
   (Nếu ~= 100: phân phối đều → zero-knowledge)
 
 --- Soundness Test ---
-Brute-force 1000 proof ngẫu nhiên: 34 accepted
-Xác suất: 0.0340 (expected ~1/28 ≈ 0.0357)
+Brute-force 1000 proof ngẫu nhiên: 31 accepted
+Xác suất: 0.0310 (expected ~1/28 ≈ 0.0357)

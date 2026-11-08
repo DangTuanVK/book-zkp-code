@@ -734,20 +734,20 @@
   "line": 1181,
   "expected": null,
   "file": "ch08/ma_nguon_8_28_tao_merkle_tree_va_input.py",
-  "page": 294,
+  "page": 295,
   "deps": [],
   "title": "Tạo Merkle tree và input cho circuit bỏ phiếu"
  },
  {
-  "id": "14_02",
-  "number": "14.2",
-  "chapter": 14,
+  "id": "12_03",
+  "number": "12.3",
+  "chapter": 12,
   "caption": "Train model MNIST và export sang ONNX cho zkML",
-  "tex": "chapters/ch14/main.tex",
-  "line": 210,
+  "tex": "chapters/ch12/main.tex",
+  "line": 724,
   "expected": null,
-  "file": "ch14/ma_nguon_14_02_train_model_mnist_va_export.py",
-  "page": 366,
+  "file": "ch12/ma_nguon_12_03_train_model_mnist_va_export.py",
+  "page": 364,
   "deps": [],
   "title": "Train model MNIST và export sang ONNX cho zkML"
  }

@@ -1,4 +1,4 @@
 # Thư viện ngoài (phần lớn mã nguồn chỉ cần thư viện chuẩn của Python 3.10+)
 numpy>=1.24        # Mã nguồn 4.5
-torch==2.5.1       # Mã nguồn 14.2 (bản CPU: --index-url https://download.pytorch.org/whl/cpu)
-onnx>=1.16         # Mã nguồn 14.2 (xuất mô hình ONNX)
+torch==2.5.1       # Mã nguồn 12.3 (bản CPU: --index-url https://download.pytorch.org/whl/cpu)
+onnx>=1.16         # Mã nguồn 12.3 (xuất mô hình ONNX)

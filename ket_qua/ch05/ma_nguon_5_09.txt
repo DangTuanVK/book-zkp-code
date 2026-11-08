@@ -3,22 +3,22 @@
 
 
 === FRI Query Phase ===
-  Query indices: [6, 5, 1]
-
-  --- Query index 6 ---
-    Round 1: f[12]=58, f[13]=0, alpha=81, next=16
-    Round 2: f[6]=16, f[7]=85, alpha=70, next=78
-    Round 3: f[2]=95, f[3]=78, alpha=72, next=42
+  Query indices: [5, 6, 4]
 
   --- Query index 5 ---
-    Round 1: f[10]=4, f[11]=7, alpha=81, next=53
-    Round 2: f[4]=94, f[5]=53, alpha=70, next=95
-    Round 3: f[2]=95, f[3]=78, alpha=72, next=42
+    Round 1: f[10]=4, f[11]=7, alpha=15, next=49
+    Round 2: f[4]=70, f[5]=49, alpha=72, next=71
+    Round 3: f[2]=71, f[3]=56, alpha=6, next=40
 
-  --- Query index 1 ---
-    Round 1: f[2]=81, f[3]=62, alpha=81, next=94
-    Round 2: f[0]=4, f[1]=94, alpha=70, next=64
-    Round 3: f[0]=64, f[1]=85, alpha=72, next=3
+  --- Query index 6 ---
+    Round 1: f[12]=58, f[13]=0, alpha=15, next=61
+    Round 2: f[6]=61, f[7]=14, alpha=72, next=56
+    Round 3: f[2]=71, f[3]=56, alpha=6, next=40
+
+  --- Query index 4 ---
+    Round 1: f[8]=91, f[9]=12, alpha=15, next=70
+    Round 2: f[4]=70, f[5]=49, alpha=72, next=71
+    Round 3: f[2]=71, f[3]=56, alpha=6, next=40
 
   FRI Verify: completed 3 queries
 

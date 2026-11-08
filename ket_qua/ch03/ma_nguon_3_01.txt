@@ -5,5 +5,5 @@
 Generator G = (0, 1), order = 28
 
 --- Key Generation ---
-Secret key x = 14
-Public key H = [x]G = (4, 0)
+Secret key x = 8
+Public key H = [x]G = (5, 19)

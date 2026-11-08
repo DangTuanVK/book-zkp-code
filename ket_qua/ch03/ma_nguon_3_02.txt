@@ -5,13 +5,13 @@
 ==================================================
 SCHNORR NIZK (FIAT-SHAMIR)
 ==================================================
-Proof: (a=(7, 12), z=4)
+Proof: (a=(12, 19), z=20)
 Proof size: 2 phần tử
 Verification: ACCEPT
 
 --- Tạo 5 proof khác nhau cho cùng statement ---
-  Proof 1: a=(17, 20), z=22 → True
-  Proof 2: a=(13, 16), z=18 → True
-  Proof 3: a=(9, 7), z=1 → True
-  Proof 4: a=(5, 4), z=6 → True
-  Proof 5: a=(3, 13), z=25 → True
+  Proof 1: a=(6, 4), z=23 → True
+  Proof 2: a=(9, 16), z=15 → True
+  Proof 3: a=(9, 7), z=14 → True
+  Proof 4: a=(18, 3), z=26 → True
+  Proof 5: a=(12, 19), z=20 → True

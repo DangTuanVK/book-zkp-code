@@ -6,7 +6,7 @@ Trạng thái: **KHỚP SÁCH** (chạy được và kết quả trùng với "K
 
 | Mã nguồn | Trang | Nội dung | Trạng thái | Thời gian | Kết quả |
 |---|---|---|---|---|---|
-| 1.1 | 15 | Completeness, soundness error và tấn công grinding | KHỚP SÁCH | 13.6 s | [ma_nguon_1_01.txt](ch01/ma_nguon_1_01.txt) |
+| 1.1 | 15 | Completeness, soundness error và tấn công grinding | KHỚP SÁCH | 13.5 s | [ma_nguon_1_01.txt](ch01/ma_nguon_1_01.txt) |
 | 2.1 | 41 | Các phép toán số học modular cơ bản trong Python | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_2_01.txt](ch02/ma_nguon_2_01.txt) |
 | 2.2 | 42 | Minh họa bài toán logarit rời rạc với số nguyên tố 256-bit | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_2_02.txt](ch02/ma_nguon_2_02.txt) |
 | 2.3 | 47 | Lớp Fp biểu diễn phần tử trường hữu hạn F_p | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_2_03.txt](ch02/ma_nguon_2_03.txt) |
@@ -58,5 +58,5 @@ Trạng thái: **KHỚP SÁCH** (chạy được và kết quả trùng với "K
 | 6.2 | 254 | Lab 6.2: Copy constraints và grand product permutation argument | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_6_02.txt](ch06/ma_nguon_6_02.txt) |
 | 6.3 | 255 | Lab 6.3: So sánh R1CS và PLONKish cho cùng bài toán | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_6_03.txt](ch06/ma_nguon_6_03.txt) |
 | 7.4 | 269 | Lab 7.4: Tổng hợp và so sánh kết quả benchmark | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_7_04.txt](ch07/ma_nguon_7_04.txt) |
-| 8.28 | 294 | Tạo Merkle tree và input cho circuit bỏ phiếu | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_8_28.txt](ch08/ma_nguon_8_28.txt) |
-| 14.2 | 366 | Train model MNIST và export sang ONNX cho zkML | CHẠY ĐƯỢC | 1.3 s | [ma_nguon_14_02.txt](ch14/ma_nguon_14_02.txt) |
+| 8.28 | 295 | Tạo Merkle tree và input cho circuit bỏ phiếu | CHẠY ĐƯỢC | 0.0 s | [ma_nguon_8_28.txt](ch08/ma_nguon_8_28.txt) |
+| 12.3 | 364 | Train model MNIST và export sang ONNX cho zkML | CHẠY ĐƯỢC | 1.2 s | [ma_nguon_12_03.txt](ch12/ma_nguon_12_03.txt) |

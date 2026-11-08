@@ -3,11 +3,11 @@
 
 
 === BƯỚC 5: Mini-SNARK ===
-Proof: {'A_tau': 35, 'B_tau': 14, 'C_tau': 23, 'H_tau': 5}
+Proof: {'A_tau': 0, 'B_tau': 29, 'C_tau': 0, 'H_tau': 0}
 Verify: True
 
 --- Thử gian lận (x=4) ---
-P_fake(τ) = 18
+P_fake(τ) = 19
 QUAN TRỌNG: Tại τ cụ thể, gian lận có thể 'lọt'.
 Groth16 thật ẩn τ trong CRS và dùng pairing để ngăn điều này:
   Prover chỉ thấy [τ^i]G, không biết τ (qua trusted setup).
