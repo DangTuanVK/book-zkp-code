@@ -90,3 +90,8 @@ python run_all.py
 
 Mã nguồn trong sách nhằm minh họa: tham số nhỏ, không tối ưu, không an toàn để
 dùng trong sản phẩm thực tế.
+
+## Giấy phép
+
+Mã nguồn được phát hành theo [giấy phép MIT](LICENSE). Nội dung sách (văn bản,
+hình vẽ) không thuộc phạm vi giấy phép này.
