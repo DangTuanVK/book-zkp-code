@@ -1,6 +1,6 @@
 # Mã nguồn 5.6 - Lab 5.2: Miền H, L và nội suy trace thành đa thức bằng Lagrange
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 250
-# Trích tự động từ chapters/ch5/main.tex (dòng 3136) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 257
+# Trích tự động từ chapters/ch5/main.tex (dòng 3497) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 5.5 ---
 import contextlib as _ctx, io as _io

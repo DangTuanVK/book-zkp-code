@@ -1,6 +1,6 @@
 # Mã nguồn 2.11 - Hàm hash và xây dựng cây Merkle
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 76
-# Trích tự động từ chapters/ch2/main.tex (dòng 2339) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 77
+# Trích tự động từ chapters/ch2/main.tex (dòng 2395) bằng extract.py; không sửa tay file này.
 
 import hashlib
 

@@ -23,6 +23,6 @@ Nội suy Lagrange:
   t(2) = 81 == 81? True
   t(3) = 62 == 62? True
 
-Constraint polynomial C(τ=27):
-  t(τ) = 24, t(τ+1) = 55
-  C(τ) = t(τ+1) - t(τ)^2 = 61
+Constraint polynomial C(τ=81):
+  t(τ) = 31, t(τ+1) = 36
+  C(τ) = t(τ+1) - t(τ)^2 = 45

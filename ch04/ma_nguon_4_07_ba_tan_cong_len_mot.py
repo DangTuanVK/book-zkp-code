@@ -1,5 +1,5 @@
 # Mã nguồn 4.7 - Ba tấn công lên một ``SNARK'' chỉ gồm QAP: chọn h sau tau, tự chế C', và dò witness khi không làm mù
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 157
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 158
 # Trích tự động từ chapters/ch4/main.tex (dòng 2398) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 4.6 ---

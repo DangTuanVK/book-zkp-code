@@ -1,7 +1,7 @@
 # Mã nguồn 12.4: ch12/ma_nguon_12_04_train_model_mnist_va_export.py
-# Lệnh: python ma_nguon_12_04_train_model_mnist_va_export.py   (mã thoát: 0, 1.2 s)
+# Lệnh: python ma_nguon_12_04_train_model_mnist_va_export.py   (mã thoát: 0, 1.3 s)
 
 Model exported to mnist_model.onnx
-Prediction: digit 3
+Prediction: digit 0
 
 # --- File tạo ra (đã chuyển vào ma_nguon_12_04_tep/): input.json, mnist_model.onnx

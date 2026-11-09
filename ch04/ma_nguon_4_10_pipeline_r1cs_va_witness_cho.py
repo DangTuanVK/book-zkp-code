@@ -1,5 +1,5 @@
 # Mã nguồn 4.10 - Pipeline R1CS và witness cho Mini-SNARK
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 185
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 186
 # Trích tự động từ chapters/ch4/main.tex (dòng 4011) bằng extract.py; không sửa tay file này.
 
 # === lab4_minisnark.py – Mini-SNARK end-to-end ===

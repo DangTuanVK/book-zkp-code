@@ -1,6 +1,6 @@
 # Mã nguồn 5.5 - Lab 5.1: Tạo execution trace và kiểm tra AIR constraints
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 249
-# Trích tự động từ chapters/ch5/main.tex (dòng 3078) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 255
+# Trích tự động từ chapters/ch5/main.tex (dòng 3439) bằng extract.py; không sửa tay file này.
 
 # === lab5_fri.py – Mini-FRI Protocol trên F_97 ===
 import hashlib

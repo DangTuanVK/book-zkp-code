@@ -1,5 +1,5 @@
 # Mã nguồn 4.13 - Phân tích tại sao witness sai bị phát hiện qua đa thức
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 190
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 191
 # Trích tự động từ chapters/ch4/main.tex (dòng 4290) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 4.12 ---

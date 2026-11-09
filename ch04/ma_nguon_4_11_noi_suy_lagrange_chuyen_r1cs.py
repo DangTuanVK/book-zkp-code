@@ -1,5 +1,5 @@
 # Mã nguồn 4.11 - Nội suy Lagrange chuyển R1CS sang QAP, tính thương h(x) và mô phỏng setup
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 188
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 189
 # Trích tự động từ chapters/ch4/main.tex (dòng 4090) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 4.10 ---

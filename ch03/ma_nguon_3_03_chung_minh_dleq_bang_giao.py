@@ -1,5 +1,5 @@
 # Mã nguồn 3.3 - Chứng minh DLEQ bằng giao thức Chaum-Pedersen NIZK
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 3, trang 109
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 3, trang 110
 # Trích tự động từ chapters/ch3/main.tex (dòng 1107) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 3.2 ---

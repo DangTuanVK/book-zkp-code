@@ -1,6 +1,6 @@
 # Mã nguồn 2.19 - Nội suy Lagrange và kiểm tra Schwartz-Zippel trên F_p
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 87
-# Trích tự động từ chapters/ch2/main.tex (dòng 2964) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 88
+# Trích tự động từ chapters/ch2/main.tex (dòng 3020) bằng extract.py; không sửa tay file này.
 
 # === lab2_polynomial.py – Đa thức trên F_p ===
 import random

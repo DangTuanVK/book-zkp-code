@@ -1,5 +1,5 @@
 # Mã nguồn 4.5 - Xây dựng và kiểm tra hệ ràng buộc R1CS
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 145
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 146
 # Trích tự động từ chapters/ch4/main.tex (dòng 1667) bằng extract.py; không sửa tay file này.
 
 # === R1CS cho x^3 + x + 5 = 35 ===

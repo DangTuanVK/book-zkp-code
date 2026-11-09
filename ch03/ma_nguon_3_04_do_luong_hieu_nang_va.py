@@ -1,5 +1,5 @@
 # Mã nguồn 3.4 - Đo lường hiệu năng và phân tích tính zero-knowledge, soundness
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 3, trang 112
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 3, trang 113
 # Trích tự động từ chapters/ch3/main.tex (dòng 1186) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 3.2 ---

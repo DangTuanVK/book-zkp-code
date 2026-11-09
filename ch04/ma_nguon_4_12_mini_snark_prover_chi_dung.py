@@ -1,5 +1,5 @@
 # Mã nguồn 4.12 - Mini-SNARK: Prover chỉ dùng SRS; gian lận thất bại vì phép chia còn dư, chỉ lọt khi tau bị lộ
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 189
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 190
 # Trích tự động từ chapters/ch4/main.tex (dòng 4214) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 4.11 ---

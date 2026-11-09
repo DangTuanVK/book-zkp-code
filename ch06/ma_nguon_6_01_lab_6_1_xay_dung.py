@@ -1,5 +1,5 @@
 # Mã nguồn 6.1 - Lab 6.1: Xây dựng PLONKish gate table và kiểm tra constraints
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 6, trang 275
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 6, trang 282
 # Trích tự động từ chapters/ch6/main.tex (dòng 943) bằng extract.py; không sửa tay file này.
 
 # === lab6_plonk.py – Mini PLONKish ===

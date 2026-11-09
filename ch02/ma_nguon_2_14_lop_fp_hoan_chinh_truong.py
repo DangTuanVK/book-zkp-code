@@ -1,6 +1,6 @@
 # Mã nguồn 2.14 - Lớp Fp hoàn chỉnh: trường hữu hạn F_p
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 81
-# Trích tự động từ chapters/ch2/main.tex (dòng 2695) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 82
+# Trích tự động từ chapters/ch2/main.tex (dòng 2751) bằng extract.py; không sửa tay file này.
 
 # === lab2_field.py – Trường hữu hạn F_p hoàn chỉnh ===
 class Fp:

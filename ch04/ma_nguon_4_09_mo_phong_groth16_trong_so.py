@@ -1,5 +1,5 @@
 # Mã nguồn 4.9 - Mô phỏng Groth16 trong số mũ: khi gamma = delta, proof cho out = 35 bị sửa thành proof hợp lệ cho out = 36
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 181
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 182
 # Trích tự động từ chapters/ch4/main.tex (dòng 3774) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 4.6 ---

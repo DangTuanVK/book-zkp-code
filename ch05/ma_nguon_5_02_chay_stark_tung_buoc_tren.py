@@ -1,6 +1,6 @@
 # Mã nguồn 5.2 - Chạy STARK từng bước trên F_97 với trace a^8, n = 4, N = 16: sinh mọi giá trị của Bảng~reftab:stark-walkthrough và Hình~reffig:stark-amplify
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 225
-# Trích tự động từ chapters/ch5/main.tex (dòng 1791) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 231
+# Trích tự động từ chapters/ch5/main.tex (dòng 2124) bằng extract.py; không sửa tay file này.
 
 # Chạy STARK từng bước với tham số nhỏ: F_97, trace a^8 (n = 4), |L| = 16
 import hashlib

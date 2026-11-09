@@ -1,6 +1,6 @@
 # Mã nguồn 2.16 - Lớp ECPoint: điểm trên đường cong Elliptic
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 82
-# Trích tự động từ chapters/ch2/main.tex (dòng 2742) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 83
+# Trích tự động từ chapters/ch2/main.tex (dòng 2798) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 2.14 ---
 import contextlib as _ctx, io as _io

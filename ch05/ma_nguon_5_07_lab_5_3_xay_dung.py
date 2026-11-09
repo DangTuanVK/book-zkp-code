@@ -1,6 +1,6 @@
 # Mã nguồn 5.7 - Lab 5.3: Xây dựng Merkle tree để commit các evaluation và mở một vị trí
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 252
-# Trích tự động từ chapters/ch5/main.tex (dòng 3195) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 258
+# Trích tự động từ chapters/ch5/main.tex (dòng 3556) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 5.6 ---
 import contextlib as _ctx, io as _io

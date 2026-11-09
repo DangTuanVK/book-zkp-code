@@ -1,5 +1,5 @@
 # Mã nguồn 3.1b - (phần nối tiếp của Mã nguồn 3.1)
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 3, trang 103
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 3, trang 104
 # Trích tự động từ chapters/ch3/main.tex (dòng 927) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 3.1 ---

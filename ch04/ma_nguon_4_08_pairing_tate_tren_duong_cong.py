@@ -1,5 +1,5 @@
 # Mã nguồn 4.8 - Pairing Tate trên đường cong tham số nhỏ: vòng lặp Miller (Thuật toán~refalg:miller-loop) và lũy thừa cuối (Thuật toán~refalg:final-exp); kiểm tra tính song tuyến tính
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 177
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 178
 # Trích tự động từ chapters/ch4/main.tex (dòng 3550) bằng extract.py; không sửa tay file này.
 
 # === Pairing Tate trên đường cong tham số nhỏ: vòng lặp Miller + lũy thừa cuối ===
