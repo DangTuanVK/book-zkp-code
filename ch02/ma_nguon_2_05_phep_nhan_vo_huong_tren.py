@@ -1,6 +1,6 @@
 # Mã nguồn 2.5 - Phép nhân vô hướng trên đường cong Elliptic (double-and-add)
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 53
-# Trích tự động từ chapters/ch2/main.tex (dòng 849) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch2/main.tex (dòng 854) bằng extract.py; không sửa tay file này.
 
 def scalar_mult(k, P, a, p):
     """Tính [k]P trên đường cong y^2 = x^3 + ax + b (mod p).

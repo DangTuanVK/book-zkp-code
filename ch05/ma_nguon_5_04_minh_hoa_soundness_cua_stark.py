@@ -1,6 +1,6 @@
 # Mã nguồn 5.4 - Minh họa soundness của STARK: một hàng sai trong trace buộc Prover chọn giữa bị FRI bác bỏ và trượt kiểm tra ràng buộc
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 240
-# Trích tự động từ chapters/ch5/main.tex (dòng 2628) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 243
+# Trích tự động từ chapters/ch5/main.tex (dòng 2655) bằng extract.py; không sửa tay file này.
 
 # === Soundness của STARK trên ví dụ nhỏ: AIR bình phương x_{i+1} = x_i^2 ===
 import math

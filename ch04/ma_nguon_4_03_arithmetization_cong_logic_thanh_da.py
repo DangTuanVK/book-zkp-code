@@ -1,6 +1,6 @@
 # Mã nguồn 4.3 - Arithmetization: cổng logic thành đa thức trên F_p, và chi phí của một bộ cộng 8 bit so với phép cộng bản địa
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 131
-# Trích tự động từ chapters/ch4/main.tex (dòng 877) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch4/main.tex (dòng 878) bằng extract.py; không sửa tay file này.
 
 # === Từ cổng logic đến cổng số học: mọi mạch Boolean "dịch" được sang F_p ===
 p = 2**61 - 1                              # một số nguyên tố bất kỳ đủ lớn

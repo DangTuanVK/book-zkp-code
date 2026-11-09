@@ -1,5 +1,5 @@
 # Mã nguồn 7.4 - Lab 7.4: Tổng hợp và so sánh kết quả benchmark
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 7, trang 294
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 7, trang 298
 # Trích tự động từ chapters/ch7/main.tex (dòng 787) bằng extract.py; không sửa tay file này.
 
 # === lab7_results.py – Tổng hợp và so sánh kết quả benchmark ===

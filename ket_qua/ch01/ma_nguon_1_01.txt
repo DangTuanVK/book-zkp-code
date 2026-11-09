@@ -1,5 +1,5 @@
 # Mã nguồn 1.1: ch01/ma_nguon_1_01_completeness_soundness_error_va_tan.py
-# Lệnh: python ma_nguon_1_01_completeness_soundness_error_va_tan.py   (mã thoát: 0, 15.0 s)
+# Lệnh: python ma_nguon_1_01_completeness_soundness_error_va_tan.py   (mã thoát: 0, 14.1 s)
 
 k  | trung thực | gian lận  | (1/2)^k
 1  | 1.000      | 0.49870   | 0.50000

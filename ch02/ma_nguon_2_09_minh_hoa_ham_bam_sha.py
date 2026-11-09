@@ -1,6 +1,6 @@
 # Mã nguồn 2.9 - Minh họa hàm băm SHA-256 với các đầu vào khác nhau
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 72
-# Trích tự động từ chapters/ch2/main.tex (dòng 2096) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 73
+# Trích tự động từ chapters/ch2/main.tex (dòng 2119) bằng extract.py; không sửa tay file này.
 
 import hashlib
 

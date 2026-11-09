@@ -1,6 +1,6 @@
 # Mã nguồn 5.9 - Lab 5.5: FRI verify - kiểm tra tính nhất quán giữa các tầng và phát hiện witness sai
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 252
-# Trích tự động từ chapters/ch5/main.tex (dòng 3310) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 255
+# Trích tự động từ chapters/ch5/main.tex (dòng 3337) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 5.8 ---
 import contextlib as _ctx, io as _io

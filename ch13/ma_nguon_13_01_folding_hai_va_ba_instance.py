@@ -1,6 +1,6 @@
 # Mã nguồn 13.1 - Folding hai và ba instance relaxed R1CS theo công thức của Nova
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 13, trang 421
-# Trích tự động từ chapters/ch13/main.tex (dòng 180) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 13, trang 427
+# Trích tự động từ chapters/ch13/main.tex (dòng 189) bằng extract.py; không sửa tay file này.
 
 # === nova_fold.py – Folding relaxed R1CS (không có commitment) ===
 import random

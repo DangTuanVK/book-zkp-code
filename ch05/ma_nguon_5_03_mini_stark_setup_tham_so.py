@@ -1,6 +1,6 @@
 # Mã nguồn 5.3 - Mini-STARK: Setup (tham số), Prove và Verify với LDE, đa thức hợp thành, DEEP, FRI, grinding và Fiat-Shamir
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 228
-# Trích tự động từ chapters/ch5/main.tex (dòng 1889) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 231
+# Trích tự động từ chapters/ch5/main.tex (dòng 1916) bằng extract.py; không sửa tay file này.
 
 # === Mini-STARK: chứng minh "x_{i+1} = x_i^2, x_0 = 3" qua n bước ===
 # Không zero-knowledge, tham số nhỏ: chỉ để minh họa các bước của thuật toán.
@@ -126,9 +126,9 @@ def prove(trace, y, fake_ood=False):
     opens = []                                          # 10. pha query
     for _ in range(Q):
         j = tr.challenge() % (N // 2)
-        pos = [j, j + N // 2, (j + BLOWUP) % N, (j + N // 2 + BLOWUP) % N]
+        pos = [j, j + N // 2]                           # cặp điểm x = L[j], -x = L[j + N/2]
         o = {"t": [(tL[i], path(T_tree, i)) for i in pos],
-             "cp": [(cpL[i], path(C_tree, i)) for i in pos[:2]], "fri": []}
+             "cp": [(cpL[i], path(C_tree, i)) for i in pos], "fri": []}
         for vals_r, tree in fri:
             h = len(vals_r) // 2; jj = j % h
             o["fri"].append([(vals_r[i], path(tree, i)) for i in (jj, jj + h)])
@@ -158,16 +158,16 @@ def verify(y, pi):
     tr.absorb(pi["nonce"])
     for o in pi["opens"]:
         j = tr.challenge() % (N // 2)
-        pos = [j, j + N // 2, (j + BLOWUP) % N, (j + N // 2 + BLOWUP) % N]
+        pos = [j, j + N // 2]                           # cặp điểm x, -x
         for i, (v, pth) in zip(pos, o["t"]):            # 3. Merkle của trace
             if not check_path(pi["T"], i, v, pth):
                 return "từ chối: Merkle trace sai"
-        for i, (v, pth) in zip(pos[:2], o["cp"]):
+        for i, (v, pth) in zip(pos, o["cp"]):
             if not check_path(pi["C"], i, v, pth):
                 return "từ chối: Merkle hợp thành sai"
         tv = [v for v, _ in o["t"]]; cv = [v for v, _ in o["cp"]]
         pair = []                                       # 4. tính f tại x và -x
-        for a, b, x in ((0, 2, L[j]), (1, 3, L[j + N // 2])):
+        for a, x in ((0, L[j]), (1, L[j + N // 2])):
             pair.append((g0 * (tv[a] - t_z) * inv(x - z)
                          + g1 * (tv[a] - t_wz) * inv(x - w * z)
                          + g2 * (cv[a] - cp_z) * inv(x - z)) % p)

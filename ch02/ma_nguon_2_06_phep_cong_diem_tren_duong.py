@@ -1,6 +1,6 @@
 # Mã nguồn 2.6 - Phép cộng điểm trên đường cong Elliptic F_p
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 57
-# Trích tự động từ chapters/ch2/main.tex (dòng 1116) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 58
+# Trích tự động từ chapters/ch2/main.tex (dòng 1121) bằng extract.py; không sửa tay file này.
 
 # === Phép cộng điểm trên đường cong Elliptic ===
 def point_add(P, Q, a, p):
