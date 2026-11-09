@@ -1,5 +1,5 @@
 # Mã nguồn 3.4: ch03/ma_nguon_3_04_do_luong_hieu_nang_va.py
-# Lệnh: python ma_nguon_3_04_do_luong_hieu_nang_va.py   (mã thoát: 0, 6.5 s)
+# Lệnh: python ma_nguon_3_04_do_luong_hieu_nang_va.py   (mã thoát: 0, 6.6 s)
 
 
 ==================================================

@@ -1,6 +1,6 @@
-# Mã nguồn 2.17 - Lớp EllipticCurve, tìm bậc nhóm và minh họa ECDLP
+# Mã nguồn 2.17 - Lớp EllipticCurve, tìm cấp nhóm và minh họa ECDLP
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 83
-# Trích tự động từ chapters/ch2/main.tex (dòng 2708) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch2/main.tex (dòng 2761) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 2.16 ---
 import contextlib as _ctx, io as _io

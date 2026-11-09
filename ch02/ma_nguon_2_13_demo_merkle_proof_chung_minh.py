@@ -1,6 +1,6 @@
 # Mã nguồn 2.13 - Demo Merkle proof: chứng minh phần tử thuộc cây 8 lá và cây 5 lá
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 79
-# Trích tự động từ chapters/ch2/main.tex (dòng 2460) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch2/main.tex (dòng 2513) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 2.12 ---
 import contextlib as _ctx, io as _io

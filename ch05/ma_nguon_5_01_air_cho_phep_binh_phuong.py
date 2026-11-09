@@ -1,6 +1,6 @@
 # Mã nguồn 5.1 - AIR cho phép bình phương liên tiếp trên F_97
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 204
-# Trích tự động từ chapters/ch5/main.tex (dòng 803) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 5, trang 206
+# Trích tự động từ chapters/ch5/main.tex (dòng 811) bằng extract.py; không sửa tay file này.
 
 # === AIR cho a^8 (bình phương liên tiếp) trên F_97 ===
 

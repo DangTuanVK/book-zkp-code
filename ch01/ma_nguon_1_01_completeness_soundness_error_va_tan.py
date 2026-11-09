@@ -1,6 +1,6 @@
 # Mã nguồn 1.1 - Completeness, soundness error và tấn công grinding
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 1, trang 15
-# Trích tự động từ chapters/ch1/main.tex (dòng 731) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch1/main.tex (dòng 740) bằng extract.py; không sửa tay file này.
 
 import hashlib
 import random

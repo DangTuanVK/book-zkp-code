@@ -1,6 +1,6 @@
 # Mã nguồn 4.4 - Đếm số ràng buộc của ba cặp cách biên dịch: thẳng và tối ưu
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 138
-# Trích tự động từ chapters/ch4/main.tex (dòng 1213) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch4/main.tex (dòng 1218) bằng extract.py; không sửa tay file này.
 
 # Đếm số ràng buộc nhân (R1CS) của ba cặp cách biên dịch: thẳng và tối ưu
 p = 2**61 - 1                       # một số nguyên tố Mersenne làm trường mẫu

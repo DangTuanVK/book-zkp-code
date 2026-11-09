@@ -1,6 +1,6 @@
 # Mã nguồn 3.4 - Đo lường hiệu năng và phân tích tính zero-knowledge, soundness
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 3, trang 111
-# Trích tự động từ chapters/ch3/main.tex (dòng 1142) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch3/main.tex (dòng 1167) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 3.2 ---
 import contextlib as _ctx, io as _io

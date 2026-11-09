@@ -1,6 +1,6 @@
 # Mã nguồn 4.6 - Chuyển đổi R1CS sang QAP và kiểm tra tính chia hết cho Z_H(x)
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 152
-# Trích tự động từ chapters/ch4/main.tex (dòng 2031) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch4/main.tex (dòng 2043) bằng extract.py; không sửa tay file này.
 
 # === QAP từ R1CS: làm việc với ĐA THỨC, không chỉ giá trị tại một điểm ===
 p = 41

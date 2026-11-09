@@ -1,6 +1,6 @@
 # Mã nguồn 2.12 - Tạo và xác minh Merkle proof
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 77
-# Trích tự động từ chapters/ch2/main.tex (dòng 2343) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch2/main.tex (dòng 2396) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 2.11 ---
 import contextlib as _ctx, io as _io

@@ -1,11 +1,11 @@
 # Mã nguồn 3.1 - Thiết lập đường cong và sinh cặp khóa cho Schnorr ZKP
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 3, trang 103
-# Trích tự động từ chapters/ch3/main.tex (dòng 826) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch3/main.tex (dòng 851) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 2.17 ---
 import contextlib as _ctx, io as _io
 with _ctx.redirect_stdout(_io.StringIO()):
-    from ma_nguon_2_17_lop_ellipticcurve_tim_bac_nhom import *  # noqa
+    from ma_nguon_2_17_lop_ellipticcurve_tim_cap_nhom import *  # noqa
 # --- Hết phần thêm ---
 
 # === lab3_schnorr.py – Schnorr ZKP hoàn chỉnh ===

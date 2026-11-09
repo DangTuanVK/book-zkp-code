@@ -1,6 +1,6 @@
 # Mã nguồn 2.18b - (phần nối tiếp của Mã nguồn 2.18)
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 85
-# Trích tự động từ chapters/ch2/main.tex (dòng 2815) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch2/main.tex (dòng 2879) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 2.18 ---
 import contextlib as _ctx, io as _io

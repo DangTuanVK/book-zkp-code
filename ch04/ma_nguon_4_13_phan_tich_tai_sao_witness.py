@@ -1,6 +1,6 @@
 # Mã nguồn 4.13 - Phân tích tại sao witness sai bị phát hiện qua đa thức
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 189
-# Trích tự động từ chapters/ch4/main.tex (dòng 4228) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 4, trang 190
+# Trích tự động từ chapters/ch4/main.tex (dòng 4262) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 4.12 ---
 import contextlib as _ctx, io as _io

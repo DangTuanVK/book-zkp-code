@@ -1,5 +1,5 @@
-# Mã nguồn 2.17: ch02/ma_nguon_2_17_lop_ellipticcurve_tim_bac_nhom.py
-# Lệnh: python ma_nguon_2_17_lop_ellipticcurve_tim_bac_nhom.py   (mã thoát: 0, 0.0 s)
+# Mã nguồn 2.17: ch02/ma_nguon_2_17_lop_ellipticcurve_tim_cap_nhom.py
+# Lệnh: python ma_nguon_2_17_lop_ellipticcurve_tim_cap_nhom.py   (mã thoát: 0, 0.0 s)
 
 Generator G = (0, 1)
   [ 1]G = (0, 1)
@@ -30,5 +30,5 @@ Generator G = (0, 1)
   [26]G = (6, 4)
   [27]G = (0, 22)
 Bậc nhóm: [28]G = O → order = 28
-Secret x=1, Public Q=(0, 1)
+Secret x=19, Public Q=(19, 5)
 Với p~2^256: tìm x từ Q KHÔNG KHẢ THI!

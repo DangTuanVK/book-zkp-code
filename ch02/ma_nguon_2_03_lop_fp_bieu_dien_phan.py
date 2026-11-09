@@ -1,6 +1,6 @@
 # Mã nguồn 2.3 - Lớp Fp biểu diễn phần tử trường hữu hạn F_p
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 48
-# Trích tự động từ chapters/ch2/main.tex (dòng 521) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch2/main.tex (dòng 537) bằng extract.py; không sửa tay file này.
 
 # === Trường hữu hạn F_p đơn giản ===
 class Fp:

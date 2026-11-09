@@ -1,6 +1,6 @@
-# Mã nguồn 2.7 - Nhân vô hướng double-and-add và tìm bậc nhóm E(F_23)
+# Mã nguồn 2.7 - Nhân vô hướng double-and-add và tìm cấp nhóm E(F_23)
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 59
-# Trích tự động từ chapters/ch2/main.tex (dòng 1169) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch2/main.tex (dòng 1204) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 2.6 ---
 import contextlib as _ctx, io as _io

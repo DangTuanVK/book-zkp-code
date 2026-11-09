@@ -1,6 +1,6 @@
 # Mã nguồn 3.3 - Chứng minh DLEQ bằng giao thức Chaum-Pedersen NIZK
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 3, trang 109
-# Trích tự động từ chapters/ch3/main.tex (dòng 1063) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch3/main.tex (dòng 1088) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 3.2 ---
 import contextlib as _ctx, io as _io

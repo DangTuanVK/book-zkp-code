@@ -1,6 +1,6 @@
 # Mã nguồn 2.8 - Nội suy Lagrange trên trường hữu hạn F_p
-# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 65
-# Trích tự động từ chapters/ch2/main.tex (dòng 1521) bằng extract.py; không sửa tay file này.
+# Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 64
+# Trích tự động từ chapters/ch2/main.tex (dòng 1563) bằng extract.py; không sửa tay file này.
 
 # === Nội suy Lagrange trên F_p ===
 

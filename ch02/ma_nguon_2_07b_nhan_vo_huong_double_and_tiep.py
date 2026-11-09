@@ -1,6 +1,6 @@
 # Mã nguồn 2.7b - (phần nối tiếp của Mã nguồn 2.7)
 # Sách: Chứng minh mà không tiết lộ (TS. Đặng Minh Tuấn), Chương 2, trang 59
-# Trích tự động từ chapters/ch2/main.tex (dòng 1196) bằng extract.py; không sửa tay file này.
+# Trích tự động từ chapters/ch2/main.tex (dòng 1231) bằng extract.py; không sửa tay file này.
 
 # --- Dòng thêm, không có trong sách: dùng lại định nghĩa từ Mã nguồn 2.7 ---
 import contextlib as _ctx, io as _io
